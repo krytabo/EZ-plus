@@ -50,17 +50,108 @@
     <link rel="stylesheet" href="css/fullpage/fullpage.css">
 
     <style type="text/css">
+        button:focus{
+            outline: none;
+        }
         .logo{
             display: flex;
             align-items: center;
         }
-        #menu {
-            /*position: absolute;*/
+
+        .scrollToTopBtn {
+            background-color: black;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 48px;
+            width: 48px;
+
+            /* place it at the bottom right corner */
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            /* keep it at the top of everything else */
+            z-index: 100;
+            /* hide with opacity */
+            opacity: 0;
+            /* also add a translate effect */
+            transform: translateY(100px);
+            /* and a transition */
+            transition: all .5s ease
+        }
+
+        .showBtn {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+
+        .main-menu ul li a{
+            color: #fff;
+        }
+
+        .header-logo-menu.active_sc{
+            background-color: #000000b0;
+            border-bottom: 0;
+            padding: 10px 0;
+        }
+
+        .main-menu ul .current>a, .main-menu ul li a:hover{
+            color: #1e87f0;
+        }
+
+        .mean-container a.meanmenu-reveal{
+            padding: 17px 15px;
+        }
+
+        .mean-container a.meanmenu-reveal span{
+            background: #fff;
+        }
+
+        .scroll-down {
+            position: relative;
+            bottom: -70px;
+            left: 50%;
+        }
+        .scroll-down span:nth-child(2) {
+            animation-delay: -0.2s;
+        }
+        .scroll-down span:nth-child(3) {
+            animation-delay: -0.4s;
+        }
+        .scroll-down span {
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-bottom: 2.5px solid #fff;
+            border-right: 2.5px solid #fff;
+            transform: rotate(45deg);
+            margin: -10px;
+            animation: animate 2s infinite;
+        }
+        @keyframes animate {
+            0% {
+                opacity: 0;
+                transform: rotate(45deg) translate(-20px,-20px);
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: rotate(45deg) translate(20px,20px);
+            }
+        }
+
+        /*#menu {
+            !*position: absolute;*!
             position: fixed;
             left: 0px;
             top: 50%;
-            /*-webkit-transform: translateY(-50%);
-            transform: translateY(-50%);*/
+            !*-webkit-transform: translateY(-50%);
+            transform: translateY(-50%);*!
             z-index: 99;
             width: 120px;
             text-align: start;
@@ -69,6 +160,28 @@
             border-radius: 0 10px 10px 0;
             -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%)
+        }*/
+
+        .sidemenu{
+            position: fixed;
+            left: 0px;
+            top: 50%;
+            z-index: 99;
+            width: 120px;
+            text-align: start;
+            background: #3333338c;
+            padding: 10px 20px;
+            border-radius: 0 10px 10px 0;
+            opacity: 0;
+            /* also add a translate effect */
+            transform: translateX(-100px);
+            /* and a transition */
+            transition: all .5s ease
+        }
+
+        .showsidemenu{
+            opacity: 1;
+            transform: translateX(0)
         }
 
         #menu li {
@@ -103,6 +216,63 @@
             background: #fff;
         }
 
+        .img-bg {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            height: 100% !important;
+            width: 100%;
+            z-index: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-image: url(https://images.unsplash.com/photo-1515975325863-a4ceb4b7d6c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80);
+        }
+
+/*        #section0{
+            background-image: url(https://images.unsplash.com/photo-1515975325863-a4ceb4b7d6c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80);
+            background-repeat:no-repeat;
+            background-size:cover;
+        }*/
+
+        #section0 h3{
+            font-size: 26px;
+            line-height: 26px;
+            letter-spacing: 20px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        #section0 p{
+            font-size: 16px;
+            color: #fff;
+            letter-spacing: 10px;
+            font-weight: bold;
+        }
+
+        #section0 .fp-tableCell{
+            background:rgba(27, 27, 27,0.8);
+        }
+
+        #section1 .fp-tableCell,#section3 .fp-tableCell,#section5 .fp-tableCell{
+            background:#f4f4f4cf;
+            clip-path: polygon(0 0,100% 100px,100% calc(100% - 100px), 0 100%);
+            -webkit-clip-path: polygon(0 0,100% 100px,100% calc(100% - 100px), 0 100%);
+            padding: 7.5rem 0;
+        }
+
+        #section2 .fp-tableCell,#section4 .fp-tableCell{
+        background: #c0dfffc7;
+            -webkit-clip-path: polygon(0 100px,100% 0,100% 100%,0 calc(100% - 100px));
+            clip-path: polygon(0 100px,100% 0,100% 100%,0 calc(100% - 100px));
+            padding: 7.5rem 0;
+        }
+
+ /*       #section1 .fp-tableCell{
+            background:#f4f4f4;
+            opacity: 0.90;
+        }
+
         #section2{
             background-image: url(https://images.unsplash.com/photo-1591955506264-3f5a6834570a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
             background-repeat:no-repeat;
@@ -110,7 +280,9 @@
         }
 
         #section2 .fp-tableCell{
-            background:rgba(199, 229, 240,0.8);
+            !*background:rgba(199, 229, 240,0.8);*!
+            background: #c0dfffe3;
+            opacity: 0.90;
         }
 
         #section2 .overlay {
@@ -122,18 +294,57 @@
             background:rgba(199, 229, 240,0.8);
         }
 
-        .fp-tableCell{
-            padding: 0 0 0 150px;
+        #section3 .fp-tableCell{
+            background:#f4f4f4;
+            opacity: 0.90;
         }
+
+        #section4{
+            background-image: url(https://www.mo-ss.com/web-design-work/live-forever/guansen/images/pattern1.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+
+        #section4 .fp-tableCell{
+            !*background:rgba(244, 244, 244,0.8);*!
+            background: #c0dfffe3;
+            opacity: 0.90;
+        }
+
+        #section5 .fp-tableCell{
+            background:#f4f4f4;
+            !*background: #c0dfffe3;*!
+            opacity: 0.90;
+        }*/
+
+        #section6 .fp-tableCell{
+            background:#f4f4f4;
+        }
+
+/*        .fp-tableCell{
+            padding: 0 0 0 150px;
+        }*/
 
         .section:last-child .fp-tableCell{
             padding: 0;
             padding-top: 150px;
         }
 
+        .section:last-child{
+            margin-top: -6.5rem;
+        }
+
         .section:last-child #menu {
             -webkit-transform: translate(-120%);
             transform: translate(-120%);
+        }
+
+        .section{
+            margin-top: -5.5rem;
+        }
+
+        .section:nth-child(odd) .fp-tableCell .container .row{
+            flex-direction: row-reverse
         }
 
         @media (max-width: 991px) {
@@ -205,7 +416,7 @@
 
         @media (max-width: 991px) {
             #menu {
-                display: none;
+                display: none !important;
             }
         }
         @media (max-width: 1400px) {
@@ -361,6 +572,7 @@
         .swiper-pagination .swiper-pagination-bullet-active .dot {
             background: #007bff;
         }
+
     </style>
 
     <style>
@@ -635,6 +847,7 @@
         @media (max-width: 991px) {
             .swiper-list-table{
                 margin:  0;
+                text-align: center;
             }
             .swiper-list-table .swiper-slide{
                 height: auto !important;
@@ -648,6 +861,53 @@
             }
             .swiper-list h4{
                 margin-bottom: 0;
+            }
+        }
+
+        /*============= wave_two_section_index css ==========*/
+        .wave_two_section_index {
+            position: relative;
+        }
+
+        .wave_two_section_index .t_first{
+            bottom: 100px;
+            right: 50px;
+        }
+        .wave_two_section_index .t_two {
+            right: 150px;
+            left: auto;
+            top: 200px;
+        }
+        .wave_two_section_index .t_three {
+            left: 10%;
+            top: auto;
+            bottom: 370px;
+        }
+
+        @media (max-width: 991px) {
+            #section0 h3{
+                font-size: 20px;
+                letter-spacing: 10px;
+            }
+
+            #section0 p{
+                font-size: 20px;
+                letter-spacing: 5px;
+            }
+            .wave_two_section_index .t_first{
+                bottom: 36%;
+                right: 10px;
+                width: 50%;
+            }
+            .wave_two_section_index .t_two {
+                right: 15px;
+                left: auto;
+                top: 100px;
+            }
+            .wave_two_section_index .t_three {
+                left: 10%;
+                top: 20%;
+                bottom: 370px;
             }
         }
 
@@ -680,11 +940,13 @@
             right: 220px;
             bottom: 185px;
         }
+        .wave_two_section_two .t_three {
+            right: 150px;
+            left: auto;
+            top: 250px;
+        }
 
         /*============= wave_two_section_three css ==========*/
-        .wave_two_section_three {
-            background: #f8f9fc;
-        }
         .wave_two_section_three .t_first {
             left: 4%;
             bottom: 50px;
@@ -699,6 +961,12 @@
         }
         .wave_two_section_three .t_two img {
             position: relative !important;
+        }
+
+        .wave_two_section_three .t_three {
+            right: 150px;
+            left: auto;
+            top: 250px;
         }
 
 
@@ -725,6 +993,10 @@
             height: 100%
         }
     </style>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+
 </head>
 <body>
 
@@ -735,7 +1007,7 @@
             <div class="row no-gutters">
                 <div class="col-lg-3 logo">
                     <a class="navbar-brand" href="index.html">
-                        <img src="img/icon/企業形象-彩色.png" alt="menu" />
+                        <img src="img/icon/企業形象-白色.png" alt="menu" />
                     </a>
                 </div>
                 <div class="col-lg-9">
@@ -796,7 +1068,7 @@
     </div>
 </div>
 
-<ul id="menu">
+<ul id="menu" class="sidemenu">
     <li data-menuanchor="1"><a class="p-service-anchor__link" href="#1">考勤系統</a></li>
     <li data-menuanchor="2"><a href="#2">#BIM</a></li>
     <li data-menuanchor="3"><a href="#3">CRM</a></li>
@@ -807,9 +1079,69 @@
     <li data-menuanchor="6"><a href="#6">聯絡我們</a></li>
 </ul>
 
+
+
 <div id="fullpage">
 
+
     <div id="wrapper">
+
+        <div class="img-bg wave_two_section_index">
+            <div class="t_first p_absoulte">
+                <div data-speed="-0.08">
+                    <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
+                </div>
+            </div>
+            <div class="t_two p_absoulte">
+                <div data-speed="0.08">
+                    <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
+                </div>
+            </div>
+            <div class="t_three p_absoulte">
+                <div data-speed="0.08">
+                    <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--首頁-->
+        <div class="section wave_two_section_index parallax-window" id="section0">
+<!--            <div class="t_first p_absoulte">
+                <div data-speed="0.02">
+                    <img class="layer layer2" src="img/home/bg/dot.svg" alt="">
+                </div>
+            </div>-->
+            <div class="t_two p_absoulte">
+                <div data-speed="-0.05">
+                    <img class="layer layer2" src="img/home/bg/round_img1.png" alt="">
+                </div>
+            </div>
+            <div class="t_three p_absoulte">
+                <div data-speed="0.02">
+                    <img class="layer layer2" src="img/home/bg/triangle_1.png" alt="">
+                </div>
+            </div>
+
+            <div class="intro">
+                <div class="container custom_container">
+                    <div class="align-items-center home_section" style="text-align: center;" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+                        <img style="width: 100%;max-width: 650px;" src="img/icon/企業形象-白色.png" alt="">
+                        <h3  uk-scrollspy-class="uk-animation-slide-bottom">應用科技・創見未來</h3>
+                        <p>BIM X FM X IOT X AI</p>
+
+                        <div class="scroll-down" id="moveTo">
+                            <a href="#1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!--考勤系統-->
         <div class="section wave_two_section_one parallax-window" id="section1">
             <div class="t_first p_absoulte">
@@ -909,6 +1241,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <a href="product/attence.html" class="btn btn-style2">瞭解更多</a>
                             </div>
                         </div>
 
@@ -927,6 +1261,11 @@
             <div class="t_two p_absoulte">
                 <div data-speed="0.08">
                     <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
+                </div>
+            </div>
+            <div class="t_three p_absoulte">
+                <div data-speed="0.02">
+                    <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
                 </div>
             </div>
 
@@ -1011,6 +1350,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <a href="product/bim.html" class="btn btn-style2">瞭解更多</a>
                             </div>
                         </div>
 
@@ -1029,6 +1369,11 @@
             <div class="t_two p_absoulte">
                 <div data-speed="0.08">
                     <img class="layer layer2" src="img/home/bg/pijom_2.png" alt="">
+                </div>
+            </div>
+            <div class="t_three p_absoulte">
+                <div data-speed="0.02">
+                    <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
                 </div>
             </div>
 
@@ -1112,6 +1457,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <a href="product/crm.html" class="btn btn-style2">瞭解更多</a>
                             </div>
                         </div>
 
@@ -1133,10 +1479,11 @@
                 </div>
             </div>
             <div class="t_three p_absoulte">
-                <div data-speed="0.08">
+                <div data-speed="0.02">
                     <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
                 </div>
             </div>
+
 
             <div class="intro">
                 <div class="container custom_container">
@@ -1181,21 +1528,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--                  <div class="swiper-slide">
-                                    <div class="w_img_one">
-                                      <img class="animate-animated animate-zoomIn" src="img/banner/考勤-2.svg" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="w_img_one">
-                                      <img class="animate-animated animate-zoomIn" src="img/banner/考勤-3.svg" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="w_img_one">
-                                      <img class="animate-animated animate-zoomIn" src="img/banner/考勤-4.svg" alt="">
-                                    </div>
-                                  </div>-->
                                 </div>
                             </div>
                         </div>
@@ -1234,6 +1566,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <a href="product/iot.html" class="btn btn-style2">瞭解更多</a>
                             </div>
                         </div>
 
@@ -1252,6 +1585,11 @@
             <div class="t_two p_absoulte">
                 <div data-speed="0.08">
                     <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
+                </div>
+            </div>
+            <div class="t_three p_absoulte">
+                <div data-speed="0.02">
+                    <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
                 </div>
             </div>
 
@@ -1336,6 +1674,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <a href="product/ihome.html" class="btn btn-style2">瞭解更多</a>
                             </div>
                         </div>
 
@@ -1427,9 +1766,16 @@
     </div>
 </footer>
 
+<button class="scrollToTopBtn"><i class="ri-arrow-up-s-line"></i>️</button>
 
 <!--jquery-->
 <script src="js/jquery-1.12.4.min.js"></script>
+
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit-icons.min.js"></script>
+
 
 <!--swiper-->
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -1439,17 +1785,74 @@
 <script src="js/fullpage/fullpage.js"></script>
 <script src="js/fullpage/fullpage.min.js"></script>
 
+<!--menu hide-->
+<script>
+    var sidemenu = document.querySelector(".sidemenu")
+    var rootElement = document.documentElement
+
+    function handleScroll() {
+        var scrollTotal = rootElement.scrollHeight + rootElement.clientHeight
+        if ((rootElement.scrollTop) > 50) {
+            sidemenu.classList.add("showsidemenu")
+        }
+        else {
+            sidemenu.classList.remove("showsidemenu")
+        }
+    }
+    document.addEventListener("scroll", handleScroll)
+</script>
+
+<!--back to top-->
+<script>
+    var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+    var rootElement = document.documentElement
+
+    function handleScroll() {
+        // Do something on scroll
+        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+        if ((rootElement.scrollTop / scrollTotal ) > 0.80) {
+            // Show button
+            scrollToTopBtn.classList.add("showBtn")
+        } else {
+            // Hide button
+            scrollToTopBtn.classList.remove("showBtn")
+        }
+    }
+
+    function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+    scrollToTopBtn.addEventListener("click", scrollToTop)
+    document.addEventListener("scroll", handleScroll)
+</script>
+
 <!-- fullpage -->
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-        sectionsColor: ['#f4f4f4', '#c7e5f0', '#ffe5d4', '#d8f8d3', '#f4f4f4'],
-        anchors: ['1', '2', '3', '4', '5', '6'],
+        // sectionsColor: ['#f4f4f4','#f4f4f4', '#c7e5f0', '#ffe5d4', '#d8f8d3', '#f4f4f4'],
+        anchors: ['0','1', '2', '3', '4', '5', '6'],
         menu: '#menu',
         dragAndMove: true,
         scrollOverflow: true,
         verticalCentered: true,
         autoScrolling:false,
     });
+
+    $(document).ready(function() {
+        $('#moveSectionUp').click(function (e) {
+            e.preventDefault();
+            $.fn.fullpage.moveSectionUp();
+        });
+
+        $('#moveSectionDown').click(function (e) {
+            e.preventDefault();
+            $.fn.fullpage.moveSectionDown();
+        });
+    })
 </script>
 <!--<script type="text/javascript">
 
