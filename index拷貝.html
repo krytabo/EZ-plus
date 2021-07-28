@@ -1,1870 +1,1881 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>億集創見</title>
-
-    <link rel="icon" href="img/fav/favicon-96x96.png">
-
-    <!-- Touch Icons - iOS and Android 2.1+ -->
-    <link rel="apple-touch-icon" href="img/fav/android-icon-48x48.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/fav/android-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-icon-114x114.png" />
-
-    <!--bootstrap v4.0.0-->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <!--reset css-->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <!--menu css-->
-    <link rel="stylesheet" type="text/css" href="css/menu-maker.css">
-    <!--animate-->
-    <link rel="stylesheet" type="text/css" href="css/animation.css">
-    <!--owl-carousel-->
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
-    <!--pop up css-->
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-    <!--fontawesome cdn-->
-    <link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
-    <!--main style-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!--fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!--modernizr-->
-    <script src="js/vendor/modernizr.js"></script>
-
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <!--  fullpage-->
-    <link rel="stylesheet" href="css/fullpage/fullpage.css">
-    <link rel="stylesheet" href="css/fullpage/fullpage.min.css">
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <!--  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>-->
-
-    <style type="text/css">
-        .logo{
-            display: flex;
-            align-items: center;
-        }
-        #menu {
-            /*position: absolute;*/
-            position: fixed;
-            left: 0px;
-            top: 50%;
-            /*-webkit-transform: translateY(-50%);
-            transform: translateY(-50%);*/
-            z-index: 99;
-            width: 120px;
-            text-align: start;
-            background: #3333338c;
-            padding: 10px 20px;
-            border-radius: 0 10px 10px 0;
-            -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%)
-        }
-
-        #menu li {
-            margin: 10px 0;
-            font-size: 18px;
-            color: #fff;
-        }
-
-        #menu li a {
-            background: transparent;
-            border: none;
-            position: relative;
-            color: inherit;
-            line-height: 30px;
-            padding: 3px 0;
-        }
-
-        #menu li a::after {
-            right: 0;
-            bottom: 0;
-            content: "";
-            height: 2px;
-            width: 2px;
-            background: #3333338c;
-            position: absolute;
-            -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-        }
-
-        #menu li.active a::after {
-            width: 100%;
-            background: #fff;
-        }
-
-        #section2{
-            background-image: url(https://images.unsplash.com/photo-1591955506264-3f5a6834570a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
-            background-repeat:no-repeat;
-            background-size:cover;
-        }
-
-        #section2 .fp-tableCell{
-            background:rgba(199, 229, 240,0.8);
-        }
-
-        #section2 .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background:rgba(199, 229, 240,0.8);
-        }
-
-        /*    .section {
-              padding: 0 0 0 150px;
-            }*/
-
-        .fp-tableCell{
-            padding: 0 0 0 150px;
-        }
-
-        .section:last-child .fp-tableCell{
-            padding: 0;
-            padding-top: 150px;
-        }
-
-        .section:last-child #menu {
-            -webkit-transform: translate(-120%);
-            transform: translate(-120%);
-        }
-
-        @media (max-width: 991px) {
-            .fp-tableCell {
-                padding: 0;
-            }
-        }
-
-        /*    .section-footer {
-              height: 2000px;
-            }*/
-
-        .full_footer {
-            bottom: 0;
-            width: 100%;
-            left: 0;
-            padding: 0 0 10px;
-            z-index: 1;
-            position: fixed !important;
-        }
-
-        .list-unstyled {
-            display: flex;
-        }
-
-        .container-fluid {
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .h_slider_nav {
-            height: 100%;
-            display: flex;
-            justify-content: flex-end;
-            font-size: 20px;
-        }
-
-        .align-items-end {
-            -ms-flex-align: end !important;
-            align-items: flex-end !important;
-        }
-
-        .pr_details_nav span {
-            line-height: 12px;
-        }
-
-        .pr_details_nav span.next {
-            margin-left: 50px;
-            position: relative;
-        }
-
-        .pr_details_nav span.next:before {
-            content: "";
-            width: 1px;
-            height: 12px;
-            background: #777;
-            display: inline-block;
-            left: -25px;
-            position: absolute;
-        }
-
-        .w_content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .w_content .circle_line {
-            animation: zoomIn 0.9s both 0.5s;
-            position: absolute;
-            transform: translateY(-45%);
-            z-index: -1;
-        }
-
-        .w_img_one {
-            position: relative;
-        }
-
-        .w_img_one img {
-            position: relative;
-            z-index: 1;
-        }
-
-        /* .w_img_one {
-       position: absolute;
-       z-index: 1;
-       width: 100%;
-       height: 100%;
-       display: grid;
-       align-content: center;
-       justify-content: center;
-     }
-     .w_img_one:before {
-       content: "";
-       width: 100%;
-       height: 100%;
-       background: url("img/banner/round_animation.svg") no-repeat scroll center center;
-       position: absolute;
-       animation: rotate 10s both 5s infinite;
-     }
-
-     @keyframes rotate {
-       0% {
-         transform: rotate(0deg);
-       }
-       100% {
-         transform: rotate(360deg);
-       }
-     }
-     .rotate {
-       animation-name: rotate;
-     }*/
-
-
-        @media (max-width: 576px) {
-            .w_content h4 {
-                font-size: 40px;
-                line-height: 80px;
-                text-align: center;
-            }
-        }
-
-        @media (max-width: 991px) {
-            #menu {
-                display: none;
-            }
-
-            .w_content .circle_line {
-                width: 290px;
-                top: 30px;
-            }
-
-            .w_content {
-                text-align: center;
-            }
-        }
-
-        @media (max-width: 1400px) {
-            .w_content .circle_line {
-                left: 0px;
-            }
-
-            .w_img_one img {
-                max-width: 100%;
-            }
-
-        }
-
-        .w_content h4 {
-            line-height: 1.05;
-            font-size: 50px;
-            font-weight: bold;
-        }
-
-        .w_content p {
-            margin-bottom: 0;
-            margin-top: 20px;
-        }
-
-        .w_content a {
-            margin-top: 30px;
-        }
-
-        .slider-control {
-            width: 44px;
-            height: 44px;
-            display: inline-block;
-            text-align: center;
-            border-radius: 50%;
-            margin: 7px;
-            border: 1px solid #333;
-            line-height: 44px;
-            color: #333;
-            font-size: 1.5em;
-            font-family: "courier new";
-            position: relative;
-        }
-
-        .slider-control span,
-        .slider-control:not(.disabled):after {
-            transition: transform .25s cubic-bezier(.4, 0, .2, 1);
-        }
-
-        .slider-control span {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-            top: 0;
-            left: 0;
-        }
-
-        .slider-control:not(.disabled):after {
-            display: block;
-            content: '';
-            background-color: #fff;
-            height: 1px;
-            width: 14px;
-            position: absolute;
-            top: 50%;
-            left: auto;
-            right: 14px;
-            transform: scaleX(0) translateX(0);
-        }
-
-        .fp-controlArrow {
-            display: none;
-        }
-
-        .social_icon a {
-            font-size: 22px;
-            color: #333;
-        }
-
-        .swiper-photo {
-            position: relative;
-            height: 50%;
-        }
-
-        .swiper-photo .swiper-container {
-            max-height: 50vh;
-            width: 100%;
-        }
-
-        .swiper-photo .swiper-container img {
-            max-height: 50vh;
-            width: 100%;
-            object-fit: contain;
-        }
-
-        .swiper-list {
-            height: 50%;
-            z-index: 1;
-        }
-
-        .swiper-list h4 {
-            font-weight: 500;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .swiper-list p {
-            font-size: 1.125rem;
-            font-weight: 400;
-            line-height: 1.75;
-            margin: 0;
-        }
-
-        @media (max-width: 991px) {
-            .swiper-photo {
-                width: 100%;
-            }
-
-            .swiper-list {
-                padding: 0 50px;
-            }
-        }
-
-        @media (min-width: 48em) {
-            .swiper-list h4 {
-                font-size: 2.25rem;
-            }
-        }
-
-        @media (min-width: 62em) {
-            .swiper-photo {
-                width: 50%;
-                margin: 0;
-            }
-
-            .swiper-list {
-                width: 50%;
-                padding: 0 0 0 3rem;
-            }
-        }
-
-        .swiper-slide {
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            position: relative;
-        }
-
-        .swiper-slide img {
-            display: block;
-            /* width: 100%;
-      object-fit: cover; */
-            max-height: 500px;
-        }
-
-        .swiper-pagination-bullet {
-            border-radius: 0%;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet {
-            width: 100%;
-            height: 50px;
-            text-align: start;
-            vertical-align: middle;
-            opacity: 1;
-            background: center;
-            padding: 0 20px;
-            position: relative;
-            display: flex !important;
-            align-items: center;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet h4 {
-            font-size: 22px;
-            font-weight: bold;
-            line-height: 25px;
-            margin-bottom: 5px;
-            color: #c3c3c3;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet p {
-            font-size: 18px;
-            line-height: 20px;
-            color: #c3c3c3;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active h4,
-        .swiper-pagination .swiper-pagination-bullet-active p {
-            color: #333;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active {
-            opacity: 1;
-            transition: background 3s ease;
-        }
-
-        @media only screen and (max-width: 480px) {
-            .swiper-pagination .swiper-pagination-bullet {
-                font-size: 1.4em;
-            ;
-            }
-        }
-
-        .swiper-pagination .swiper-pagination-bullet .pagination_about {
-            display: none;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active .pagination_about {
-            display: block;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet .dot {
-            position: relative;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: #e6e6e6;
-            margin-right: 20px;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active .dot {
-            background: #007bff;
-        }
-    </style>
-
-    <style>
-        .gallery-container {
-            width: 730px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .gallery-main {
-            width: 600px;
-            height: 300px;
-            box-shadow: 0 50px 75px 50px rgba(30, 30, 30, 0.18);
-            border: 1px solid #e9e9e9;
-        }
-        .gallery-main .swiper-button-prev, .gallery-main .swiper-button-next {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            top: auto;
-            left: auto;
-            height: 75px;
-            width: 40px;
-            color: #e9e9e9;
-            background: #1e1e1e;
-        }
-        .gallery-main .swiper-button-prev::after, .gallery-main .swiper-button-next::after {
-            font-size: 12px;
-        }
-        .gallery-main .swiper-button-prev {
-            right: 40px;
-            border-right: 1px solid #e9e9e9;
-        }
-        .gallery-title {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            font-family: "Epilogue", sans-serif;
-            font-size: 50px;
-            font-weight: 700;
-            text-align: right;
-            text-transform: uppercase;
-            text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-            color: #fff;
-        }
-        .swiper-slide-active .gallery-title {
-            animation: slide-in 0.3s ease-in both;
-        }
-        .gallery-thumbs {
-            order: -1;
-            width: 100px;
-            height: 300px;
-            margin-right: 15px;
-            padding-left: 15px;
-        }
-        .gallery-thumbs .swiper-slide img {
-            transition: 0.3s;
-        }
-        .gallery-thumbs .swiper-slide-active {
-            opacity: 0.9;
-        }
-        .gallery-thumbs .swiper-slide-thumb-active {
-            opacity: 1;
-        }
-        .gallery-thumbs .swiper-slide-thumb-active img {
-            margin-left: -15px;
-        }
-        /** * Optionnal */
-        html, body {
-            width: 100%;
-            height: 100%;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        @keyframes slide-in {
-            from {
-                opacity: 0;
-                right: -50%;
-            }
-        }
-
-        .gallery-circle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            width: 100%;
-            padding-top: 100%;
-        }
-
-        .gallery-circle div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            width: 0;
-            height: 0;
-            border: 1px solid #fff;
-            border-radius: 50%;
-            -webkit-animation: circle 2s infinite;
-            animation: circle 2s infinite
-        }
-
-        .gallery-circle div:nth-child(1) {
-            -webkit-animation-delay: .25s;
-            animation-delay: .25s
-        }
-
-        .gallery-circle div:nth-child(2) {
-            -webkit-animation-delay: .5s;
-            animation-delay: .5s
-        }
-
-        .gallery-circle div:nth-child(3) {
-            -webkit-animation-delay: .75s;
-            animation-delay: .75s
-        }
-
-        .gallery-circle div:nth-child(4) {
-            -webkit-animation-delay: 1s;
-            animation-delay: 1s
-        }
-
-        .gallery-circle div:nth-child(5) {
-            -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s
-        }
-
-        .gallery-circle div:nth-child(6) {
-            -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s
-        }
-
-        @-webkit-keyframes circle {
-            0% {
-                width: 0;
-                height: 0;
-                opacity: 0
-            }
-
-            50% {
-                opacity: 1
-            }
-
-            100% {
-                width: 100%;
-                height: 100%;
-                opacity: 0
-            }
-        }
-
-        @keyframes circle {
-            0% {
-                width: 0;
-                height: 0;
-                opacity: 0
-            }
-
-            50% {
-                opacity: 1
-            }
-
-            100% {
-                width: 100%;
-                height: 100%;
-                opacity: 0
-            }
-        }
-
-        .gallery-circle-primary div {
-            border-color: #007bff
-        }
-
-        .gallery-circle-white div {
-            border-color: #ffffff
-        }
-
-        .gallery-circle-black div {
-            border-color: #333333
-        }
-
-        .gallery-circle-red div {
-            border-color: #dc3545
-        }
-
-        .gallery-circle-yellow div {
-            border-color: #fabf13
-        }
-
-        .gallery-circle-gree div {
-            border-color: #28a745
-        }
-
-        .gallery-circle-purple div {
-            border-color: #8731e8
-        }
-
-        .home-animation-circle{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .gallery-thumbs {
-            height: 20%;
-            box-sizing: border-box;
-            padding: 10px 0;
-        }
-        .gallery-thumbs .swiper-slide {
-            width: 20%;
-            height: 100%;
-            opacity: 0.4;
-        }
-        .gallery-thumbs .swiper-slide-active {
-            opacity: 1;
-        }
-
-
-        .swiper-list-table {
-            height: 20%;
-            box-sizing: border-box;
-            padding: 10px 0;
-            margin: 3rem 0;
-        }
-
-        .swiper-list-table .swiper-slide{
-            width: 100% !important;
-            height: 60px !important;
-            text-align: start;
-            vertical-align: middle;
-            opacity: 1;
-            background: center;
-            /*padding: 0 20px;*/
-            position: relative;
-            display: flex !important;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .swiper-list-table .swiper-slide .pagination_about {
-            display: none;
-        }
-
-        .swiper-list-table .swiper-slide-thumb-active .pagination_about {
-            display: block;
-        }
-
-        .swiper-list-table .swiper-slide .dot {
-            position: relative;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: #fff;
-        }
-
-        .swiper-list-table .swiper-slide-thumb-active .dot {
-            background: #007bff;
-        }
-
-        .swipet-btn-group .swiper-wrapper{
-            flex-wrap: wrap;
-        }
-
-        .swiper-list-table h4 {
-            font-size: 1.125rem;
-            font-weight: 400;
-            line-height: 25px;
-            margin-bottom: 5px;
-            color: #6c757d;
-        }
-
-        .swiper-list-table .swiper-slide-thumb-active h4 {
-            color: #333;
-            font-weight: bold;
-        }
-
-        .swiper-list-table p {
-            font-size: 18px;
-            line-height: 20px;
-        }
-
-        .home_section:nth-child(even){
-            flex-direction: row-reverse;
-        }
-
-        @media (max-width: 991px) {
-            .swiper-list-table{
-                margin:  0;
-            }
-            .swiper-list-table .swiper-slide{
-                height: auto !important;
-                margin-bottom: 10px;
-            }
-            .swipet-btn-group{
-                align-content: center;
-            }
-            .home_section{
-                flex-direction: row-reverse;
-            }
-            .swiper-list h4{
-                margin-bottom: 0;
-            }
-        }
-
-        /*============= wave_two_section_one css ==========*/
-        .wave_two_section_one {
-            position: relative;
-        }
-        .wave_two_section_one .t_two {
-            bottom: 100px;
-            right: 600px;
-        }
-        .wave_two_section_one .t_three {
-            right: 150px;
-            left: auto;
-            top: 250px;
-        }
-
-        /*============= wave_two_section_two css ==========*/
-
-        .wave_two_section_two {
-            position: relative;
-            z-index: 1;
-        }
-        .wave_two_section_two .t_first {
-            left: 10%;
-            top: auto;
-            bottom: 370px;
-        }
-        .wave_two_section_two .t_two {
-            right: 220px;
-            bottom: 185px;
-        }
-
-        /*============= wave_two_section_three css ==========*/
-        .wave_two_section_three {
-            background: #f8f9fc;
-        }
-        .wave_two_section_three .t_first {
-            left: 4%;
-            bottom: 50px;
-            top: auto;
-        }
-        .wave_two_section_three .t_first img {
-            position: relative !important;
-        }
-        .wave_two_section_three .t_two {
-            top: 200px;
-            right: 8%;
-        }
-        .wave_two_section_three .t_two img {
-            position: relative !important;
-        }
-
-
-        .p_absoulte {
-            position: absolute;
-        }
-
-
-        .c-gallery__media {
-            position: relative
-        }
-
-        .c-gallery__bg {
-            position: relative;
-            display: block;
-            width: 100%
-        }
-
-        .c-gallery__bg:not(:first-child) {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%
-        }
-    </style>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>億集創見</title>
+  <!-- Standard Favicon -->
+  <link rel="icon" href="img/fav/favicon-96x96.png">
+
+  <!-- Touch Icons - iOS and Android 2.1+ -->
+  <link rel="apple-touch-icon" href="img/fav/android-icon-48x48.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/fav/android-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-icon-114x114.png" />
+
+  <!--bootstrap v4.0.0-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!--reset css-->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <!--menu css-->
+  <link rel="stylesheet" type="text/css" href="css/menu-maker.css">
+  <!--animate-->
+  <link rel="stylesheet" type="text/css" href="css/animation.css">
+  <!--owl-carousel-->
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+  <!--pop up css-->
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+  <!--fontawesome cdn-->
+  <link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+  <!--main style-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--modernizr-->
+  <script src="js/vendor/modernizr.js"></script>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!--  fullpage-->
+  <link rel="stylesheet" href="css/fullpage/fullpage.css">
+  <link rel="stylesheet" href="css/fullpage/fullpage.min.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!--  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>-->
+
+  <style type="text/css">
+    .logo{
+      display: flex;
+      align-items: center;
+    }
+    #menu {
+      /*position: absolute;*/
+      position: fixed;
+      left: 0px;
+      top: 50%;
+      /*-webkit-transform: translateY(-50%);
+      transform: translateY(-50%);*/
+      z-index: 99;
+      width: 120px;
+      text-align: start;
+      background: #3333338c;
+      padding: 10px 20px;
+      border-radius: 0 10px 10px 0;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%)
+    }
+
+    #menu li {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    #menu li a {
+      background: transparent;
+      border: none;
+      position: relative;
+      color: inherit;
+      line-height: 30px;
+      padding: 3px 0;
+    }
+
+    #menu li a::after {
+      right: 0;
+      bottom: 0;
+      content: "";
+      height: 2px;
+      width: 2px;
+      background: #3333338c;
+      position: absolute;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+
+    #menu li.active a::after {
+      width: 100%;
+      background: #fff;
+    }
+
+    #section2{
+      background-image: url(https://images.unsplash.com/photo-1591955506264-3f5a6834570a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+      background-repeat:no-repeat;
+      background-size:cover;
+    }
+
+    #section2 .fp-tableCell{
+      background:rgba(199, 229, 240,0.8);
+    }
+
+    #section2 .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:rgba(199, 229, 240,0.8);
+    }
+
+/*    .section {
+      padding: 0 0 0 150px;
+    }*/
+
+    .fp-tableCell{
+      padding: 0 0 0 150px;
+    }
+
+    .section:last-child .fp-tableCell{
+      padding: 0;
+      padding-top: 150px;
+    }
+
+    .section:last-child #menu {
+      -webkit-transform: translate(-120%);
+      transform: translate(-120%);
+    }
+
+    @media (max-width: 991px) {
+      .fp-tableCell {
+        padding: 0;
+      }
+    }
+
+/*    .section-footer {
+      height: 2000px;
+    }*/
+
+    .full_footer {
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      padding: 0 0 10px;
+      z-index: 1;
+      position: fixed !important;
+    }
+
+    .list-unstyled {
+      display: flex;
+    }
+
+    .container-fluid {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .h_slider_nav {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 20px;
+    }
+
+    .align-items-end {
+      -ms-flex-align: end !important;
+      align-items: flex-end !important;
+    }
+
+    .pr_details_nav span {
+      line-height: 12px;
+    }
+
+    .pr_details_nav span.next {
+      margin-left: 50px;
+      position: relative;
+    }
+
+    .pr_details_nav span.next:before {
+      content: "";
+      width: 1px;
+      height: 12px;
+      background: #777;
+      display: inline-block;
+      left: -25px;
+      position: absolute;
+    }
+
+    .w_content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .w_content .circle_line {
+      animation: zoomIn 0.9s both 0.5s;
+      position: absolute;
+      transform: translateY(-45%);
+      z-index: -1;
+    }
+
+    .w_img_one {
+      position: relative;
+    }
+
+    .w_img_one img {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* .w_img_one {
+   position: absolute;
+   z-index: 1;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   align-content: center;
+   justify-content: center;
+ }
+ .w_img_one:before {
+   content: "";
+   width: 100%;
+   height: 100%;
+   background: url("img/banner/round_animation.svg") no-repeat scroll center center;
+   position: absolute;
+   animation: rotate 10s both 5s infinite;
+ }
+
+ @keyframes rotate {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+ .rotate {
+   animation-name: rotate;
+ }*/
+
+
+    @media (max-width: 576px) {
+      .w_content h4 {
+        font-size: 40px;
+        line-height: 80px;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 991px) {
+      #menu {
+        display: none;
+      }
+
+      .w_content .circle_line {
+        width: 290px;
+        top: 30px;
+      }
+
+      .w_content {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 1400px) {
+      .w_content .circle_line {
+        left: 0px;
+      }
+
+      .w_img_one img {
+        max-width: 100%;
+      }
+
+    }
+
+    .w_content h4 {
+      line-height: 1.05;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .w_content p {
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+
+    .w_content a {
+      margin-top: 30px;
+    }
+
+    .slider-control {
+      width: 44px;
+      height: 44px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      margin: 7px;
+      border: 1px solid #333;
+      line-height: 44px;
+      color: #333;
+      font-size: 1.5em;
+      font-family: "courier new";
+      position: relative;
+    }
+
+    .slider-control span,
+    .slider-control:not(.disabled):after {
+      transition: transform .25s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .slider-control span {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 0;
+      left: 0;
+    }
+
+    .slider-control:not(.disabled):after {
+      display: block;
+      content: '';
+      background-color: #fff;
+      height: 1px;
+      width: 14px;
+      position: absolute;
+      top: 50%;
+      left: auto;
+      right: 14px;
+      transform: scaleX(0) translateX(0);
+    }
+
+    .fp-controlArrow {
+      display: none;
+    }
+
+    .social_icon a {
+      font-size: 22px;
+      color: #333;
+    }
+
+    .swiper-photo {
+      position: relative;
+      height: 50%;
+    }
+
+    .swiper-photo .swiper-container {
+      max-height: 50vh;
+      width: 100%;
+    }
+
+    .swiper-photo .swiper-container img {
+      max-height: 50vh;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    .swiper-list {
+      height: 50%;
+      z-index: 1;
+    }
+
+    .swiper-list h4 {
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .swiper-list p {
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    @media (max-width: 991px) {
+      .swiper-photo {
+        width: 100%;
+      }
+
+      .swiper-list {
+        padding: 0 50px;
+      }
+    }
+
+    @media (min-width: 48em) {
+      .swiper-list h4 {
+        font-size: 2.25rem;
+      }
+    }
+
+    @media (min-width: 62em) {
+      .swiper-photo {
+        width: 50%;
+        margin: 0;
+      }
+
+      .swiper-list {
+        width: 50%;
+        padding: 0 0 0 3rem;
+      }
+    }
+
+    .swiper-slide {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      position: relative;
+    }
+
+    .swiper-slide img {
+      display: block;
+      /* width: 100%;
+object-fit: cover; */
+      max-height: 500px;
+    }
+
+    .swiper-pagination-bullet {
+      border-radius: 0%;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+      width: 100%;
+      height: 50px;
+      text-align: start;
+      vertical-align: middle;
+      opacity: 1;
+      background: center;
+      padding: 0 20px;
+      position: relative;
+      display: flex !important;
+      align-items: center;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet h4 {
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 25px;
+      margin-bottom: 5px;
+      color: #c3c3c3;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet p {
+      font-size: 18px;
+      line-height: 20px;
+      color: #c3c3c3;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active h4,
+    .swiper-pagination .swiper-pagination-bullet-active p {
+      color: #333;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+      opacity: 1;
+      transition: background 3s ease;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .swiper-pagination .swiper-pagination-bullet {
+        font-size: 1.4em;
+      ;
+      }
+    }
+
+    .swiper-pagination .swiper-pagination-bullet .pagination_about {
+      display: none;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active .pagination_about {
+      display: block;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet .dot {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #e6e6e6;
+      margin-right: 20px;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active .dot {
+      background: #007bff;
+    }
+  </style>
+
+  <style>
+    .gallery-container {
+      width: 730px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .gallery-main {
+      width: 600px;
+      height: 300px;
+      box-shadow: 0 50px 75px 50px rgba(30, 30, 30, 0.18);
+      border: 1px solid #e9e9e9;
+    }
+    .gallery-main .swiper-button-prev, .gallery-main .swiper-button-next {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      top: auto;
+      left: auto;
+      height: 75px;
+      width: 40px;
+      color: #e9e9e9;
+      background: #1e1e1e;
+    }
+    .gallery-main .swiper-button-prev::after, .gallery-main .swiper-button-next::after {
+      font-size: 12px;
+    }
+    .gallery-main .swiper-button-prev {
+      right: 40px;
+      border-right: 1px solid #e9e9e9;
+    }
+    .gallery-title {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-family: "Epilogue", sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+      text-align: right;
+      text-transform: uppercase;
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      color: #fff;
+    }
+    .swiper-slide-active .gallery-title {
+      animation: slide-in 0.3s ease-in both;
+    }
+    .gallery-thumbs {
+      order: -1;
+      width: 100px;
+      height: 300px;
+      margin-right: 15px;
+      padding-left: 15px;
+    }
+    .gallery-thumbs .swiper-slide img {
+      transition: 0.3s;
+    }
+    .gallery-thumbs .swiper-slide-active {
+      opacity: 0.9;
+    }
+    .gallery-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+    .gallery-thumbs .swiper-slide-thumb-active img {
+      margin-left: -15px;
+    }
+    /** * Optionnal */
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @keyframes slide-in {
+      from {
+        opacity: 0;
+        right: -50%;
+      }
+    }
+
+    .gallery-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 100%;
+      padding-top: 100%;
+    }
+
+    .gallery-circle div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      -webkit-animation: circle 2s infinite;
+      animation: circle 2s infinite
+    }
+
+    .gallery-circle div:nth-child(1) {
+      -webkit-animation-delay: .25s;
+      animation-delay: .25s
+    }
+
+    .gallery-circle div:nth-child(2) {
+      -webkit-animation-delay: .5s;
+      animation-delay: .5s
+    }
+
+    .gallery-circle div:nth-child(3) {
+      -webkit-animation-delay: .75s;
+      animation-delay: .75s
+    }
+
+    .gallery-circle div:nth-child(4) {
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s
+    }
+
+    .gallery-circle div:nth-child(5) {
+      -webkit-animation-delay: 1.25s;
+      animation-delay: 1.25s
+    }
+
+    .gallery-circle div:nth-child(6) {
+      -webkit-animation-delay: 1.5s;
+      animation-delay: 1.5s
+    }
+
+    @-webkit-keyframes circle {
+      0% {
+        width: 0;
+        height: 0;
+        opacity: 0
+      }
+
+      50% {
+        opacity: 1
+      }
+
+      100% {
+        width: 100%;
+        height: 100%;
+        opacity: 0
+      }
+    }
+
+    @keyframes circle {
+      0% {
+        width: 0;
+        height: 0;
+        opacity: 0
+      }
+
+      50% {
+        opacity: 1
+      }
+
+      100% {
+        width: 100%;
+        height: 100%;
+        opacity: 0
+      }
+    }
+
+    .gallery-circle-primary div {
+      border-color: #007bff
+    }
+
+    .gallery-circle-white div {
+      border-color: #ffffff
+    }
+
+    .gallery-circle-black div {
+      border-color: #333333
+    }
+
+    .gallery-circle-red div {
+      border-color: #dc3545
+    }
+
+    .gallery-circle-yellow div {
+      border-color: #fabf13
+    }
+
+    .gallery-circle-gree div {
+      border-color: #28a745
+    }
+
+    .gallery-circle-purple div {
+      border-color: #8731e8
+    }
+
+    .home-animation-circle{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .gallery-thumbs {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+      width: 20%;
+      height: 100%;
+      opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-active {
+      opacity: 1;
+    }
+
+
+    .swiper-list-table {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+      margin: 3rem 0;
+    }
+
+    .swiper-list-table .swiper-slide{
+      width: 100% !important;
+      height: 60px !important;
+      text-align: start;
+      vertical-align: middle;
+      opacity: 1;
+      background: center;
+      /*padding: 0 20px;*/
+      position: relative;
+      display: flex !important;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .swiper-list-table .swiper-slide .pagination_about {
+      display: none;
+    }
+
+    .swiper-list-table .swiper-slide-thumb-active .pagination_about {
+      display: block;
+    }
+
+    .swiper-list-table .swiper-slide .dot {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #fff;
+    }
+
+    .swiper-list-table .swiper-slide-thumb-active .dot {
+      background: #007bff;
+    }
+
+    .swipet-btn-group .swiper-wrapper{
+      flex-wrap: wrap;
+    }
+
+    .swiper-list-table h4 {
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 25px;
+      margin-bottom: 5px;
+      color: #6c757d;
+    }
+
+    .swiper-list-table .swiper-slide-thumb-active h4 {
+      color: #333;
+      font-weight: bold;
+    }
+
+    .swiper-list-table p {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    .home_section:nth-child(even){
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: 991px) {
+      .swiper-list-table{
+        margin:  0;
+      }
+      .swiper-list-table .swiper-slide{
+        height: auto !important;
+        margin-bottom: 10px;
+      }
+      .swipet-btn-group{
+        align-content: center;
+      }
+      .home_section{
+        flex-direction: row-reverse;
+      }
+      .swiper-list h4{
+        margin-bottom: 0;
+      }
+    }
+
+    /*============= wave_two_section_one css ==========*/
+    .wave_two_section_one {
+      position: relative;
+    }
+    .wave_two_section_one .t_two {
+      bottom: 100px;
+      right: 600px;
+    }
+    .wave_two_section_one .t_three {
+      right: 150px;
+      left: auto;
+      top: 250px;
+    }
+
+    /*============= wave_two_section_two css ==========*/
+
+    .wave_two_section_two {
+      position: relative;
+      z-index: 1;
+    }
+    .wave_two_section_two .t_first {
+      left: 10%;
+      top: auto;
+      bottom: 370px;
+    }
+    .wave_two_section_two .t_two {
+      right: 220px;
+      bottom: 185px;
+    }
+
+    /*============= wave_two_section_three css ==========*/
+    .wave_two_section_three {
+      background: #f8f9fc;
+    }
+    .wave_two_section_three .t_first {
+      left: 4%;
+      bottom: 50px;
+      top: auto;
+    }
+    .wave_two_section_three .t_first img {
+      position: relative !important;
+    }
+    .wave_two_section_three .t_two {
+      top: 200px;
+      right: 8%;
+    }
+    .wave_two_section_three .t_two img {
+      position: relative !important;
+    }
+
+
+    .p_absoulte {
+      position: absolute;
+    }
+
+
+    .c-gallery__media {
+      position: relative
+    }
+
+    .c-gallery__bg {
+      position: relative;
+      display: block;
+      width: 100%
+    }
+
+    .c-gallery__bg:not(:first-child) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%
+    }
+  </style>
 </head>
+
 <body>
 <!--  <div class="se-pre-con"></div>-->
 
 <!-- Menu -->
 <div class="header-logo-menu bg_cover">
-    <div class="container">
-        <div class="navigatin" id="main_nav_id">
-            <div class="row no-gutters">
-                <div class="col-lg-3 logo">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/icon/企業形象-彩色.png" alt="menu" />
-                    </a>
-                </div>
-                <div class="col-lg-9">
-                    <nav id="mobile-menu" class="main-menu">
-                        <ul>
-                            <li class="current">
-                                <a href="index.html">首頁</a>
-                            </li>
-                            <li>
-                                <a href="news.html">最新消息</a>
-                            </li>
-                            <li>
-                                <a href="#">產品介紹</a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">#BIM (暫無)</a></li>
-                                    <li><a href="#">CRM (暫無)</a></li>
-                                    <li><a href="#">IOT (暫無)</a></li>
-                                    <li><a href="product/ihome.html">iHome</a></li>
-                                    <li><a href="product/attence.html">考勤系統</a></li>
-                                    <!-- <li><a href="#">建築前期資產管理 (暫無)</a></li> -->
-                                    <!-- <li><a href="#">產權管理 (暫無)</a></li> -->
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">優惠方案 (暫無)</a>
-                            </li>
-                            <li>
-                                <a href="clients.html">應用案例</a>
-                            </li>
-                            <li>
-                                <a href="#">關於我們</a>
-                                <ul class="sub-menu">
-                                    <li><a href="about/company.html">公司簡介</a></li>
-                                    <li><a href="about/technology.html">技術核心</a></li>
-                                    <li><a href="about/joinus.html">加入我們</a></li>
-                                </ul>
-                            </li>
-                            <!-- <li>
-                                <a href="#news_id">News</a>
-                            </li>
-                            <li>
-                                <a href="#">Pages</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="single.html">Single</a></li>
-                                    <li><a href="contact.html">Conatct</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="btn btn-style1" href="#">Download</a>
-                            </li> -->
-                        </ul>
-                    </nav>
-                    <div class="mobile-menu"></div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="navigatin" id="main_nav_id">
+      <div class="row no-gutters">
+        <div class="col-lg-3 logo">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/icon/企業形象-彩色.png" alt="menu" />
+          </a>
         </div>
+        <div class="col-lg-9">
+          <nav id="mobile-menu" class="main-menu">
+            <ul>
+              <li class="current">
+                <a href="index.html">首頁</a>
+              </li>
+              <li>
+                <a href="news.html">最新消息</a>
+              </li>
+              <li>
+                <a href="#">產品介紹</a>
+                <ul class="sub-menu">
+                  <li><a href="#">#BIM (暫無)</a></li>
+                  <li><a href="#">CRM (暫無)</a></li>
+                  <li><a href="#">IOT (暫無)</a></li>
+                  <li><a href="product/ihome.html">iHome</a></li>
+                  <li><a href="product/attence.html">考勤系統</a></li>
+                  <!-- <li><a href="#">建築前期資產管理 (暫無)</a></li> -->
+                  <!-- <li><a href="#">產權管理 (暫無)</a></li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="#">優惠方案 (暫無)</a>
+              </li>
+              <li>
+                <a href="clients.html">應用案例</a>
+              </li>
+              <li>
+                <a href="#">關於我們</a>
+                <ul class="sub-menu">
+                  <li><a href="about/company.html">公司簡介</a></li>
+                  <li><a href="about/technology.html">技術核心</a></li>
+                  <li><a href="about/joinus.html">加入我們</a></li>
+                </ul>
+              </li>
+              <!-- <li>
+                  <a href="#news_id">News</a>
+              </li>
+              <li>
+                  <a href="#">Pages</a>
+                  <ul class="sub-menu">
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="single.html">Single</a></li>
+                      <li><a href="contact.html">Conatct</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a class="btn btn-style1" href="#">Download</a>
+              </li> -->
+            </ul>
+          </nav>
+          <div class="mobile-menu"></div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <ul id="menu">
-    <li data-menuanchor="1"><a class="p-service-anchor__link" href="#1">考勤系統</a></li>
-    <li data-menuanchor="2"><a href="#2">#BIM</a></li>
-    <li data-menuanchor="3"><a href="#3">CRM</a></li>
-    <li data-menuanchor="4"><a href="#4">IOT</a></li>
-    <li data-menuanchor="5"><a href="#5">iHome</a></li>
-    <span></span>
-    <hr>
-    <li data-menuanchor="6"><a href="#6">聯絡我們</a></li>
+  <li data-menuanchor="1"><a class="p-service-anchor__link" href="#1">考勤系統</a></li>
+  <li data-menuanchor="2"><a href="#2">#BIM</a></li>
+  <li data-menuanchor="3"><a href="#3">CRM</a></li>
+  <li data-menuanchor="4"><a href="#4">IOT</a></li>
+  <li data-menuanchor="5"><a href="#5">iHome</a></li>
+  <span></span>
+  <hr>
+  <li data-menuanchor="6"><a href="#6">聯絡我們</a></li>
 </ul>
 
 <div id="fullpage">
 
-    <div id="wrapper">
-        <!--考勤系統-->
-        <div class="section wave_two_section_one parallax-window" id="section1">
-            <div class="t_first p_absoulte">
-                <div data-speed="-0.08">
-                    <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
-                </div>
-            </div>
-            <div class="t_two p_absoulte">
-                <div data-speed="0.08">
-                    <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
-                </div>
-            </div>
-            <div class="t_three p_absoulte">
-                <div data-speed="0.08">
-                    <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
-                </div>
-            </div>
-
-            <div class="intro">
-                <div class="container custom_container">
-                    <div class="align-items-center home_section row">
-
-                        <div class="swiper-photo">
-                            <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-primary">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div class="attence_photo swiper-container">
-                                <div class="swiper-wrapper">
-
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--                  <div class="swiper-slide">
-                                    <div class="w_img_one">
-                                      <img class="animate-animated animate-zoomIn" src="img/banner/考勤-2.svg" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="w_img_one">
-                                      <img class="animate-animated animate-zoomIn" src="img/banner/考勤-3.svg" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="w_img_one">
-                                      <img class="animate-animated animate-zoomIn" src="img/banner/考勤-4.svg" alt="">
-                                    </div>
-                                  </div>-->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swipet-btn-group swiper-list">
-                            <h4>考勤系統</h4>
-                            <p>為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div thumbsSlider="" class="swiper-container attence_list swiper-list-table">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-btn">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>後台管理</h4>
-                                            <p class="pagination_about">後台輕鬆管理人員</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>行動打卡</h4>
-                                            <p class="pagination_about">線上快速打卡</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>行事曆</h4>
-                                            <p class="pagination_about">班表一目瞭然</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>巡邏簽到</h4>
-                                            <p class="pagination_about">異常通報、線上簽到</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+  <div id="wrapper">
+    <!--考勤系統-->
+    <div class="section wave_two_section_one parallax-window" id="section1">
+      <div class="t_first p_absoulte">
+        <div data-speed="-0.08">
+          <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
         </div>
+      </div>
+      <div class="t_two p_absoulte">
+        <div data-speed="0.08">
+          <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
+        </div>
+      </div>
+      <div class="t_three p_absoulte">
+        <div data-speed="0.08">
+          <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
+        </div>
+      </div>
 
-        <!--<div class="section" id="section2">
-    <div class="slide" id="slide2-1">
-    <div class="intro">
-      <div class="container custom_container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="w_content">
-              <img class="circle_line" src="img/home/dot.png" alt="">
-              <h4 class="animate-animated animate__fadeInUp">考勤系統</h4>
-              <p style="font-size: 30px;">跟傳統打卡說掰掰</p>
+      <div class="intro">
+        <div class="container custom_container">
+          <div class="align-items-center home_section row">
 
-              <div class="slider-controls">
-                <a class="slider-control slider-control-prev moveslideleft" href="#">
-                  <span> <i class="ri-arrow-left-s-line"></i> </span>
-                </a>
-                <a class="slider-control slider-control-next moveslideright" href="#">
-                  <span> <i class="ri-arrow-right-s-line"></i> </span>
-                </a>
+            <div class="swiper-photo">
+              <div class="home-animation-circle">
+                <div class="gallery-circle gallery-circle-primary">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
               </div>
+              <div class="attence_photo swiper-container">
+                <div class="swiper-wrapper">
 
-              <a href="product/attence.html" class="btn btn-style2 animate-animated animate__fadeInUp">瞭解更多</a>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!--                  <div class="swiper-slide">
+                  <div class="w_img_one">
+                    <img class="animate-animated animate-zoomIn" src="img/banner/考勤-2.svg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w_img_one">
+                    <img class="animate-animated animate-zoomIn" src="img/banner/考勤-3.svg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w_img_one">
+                    <img class="animate-animated animate-zoomIn" src="img/banner/考勤-4.svg" alt="">
+                  </div>
+                </div>-->
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="w_img_one">
-              <img class="animate-animated animate-zoomIn" src="img/home/slider_dashboard.svg" alt="">
+
+            <div class="swipet-btn-group swiper-list">
+              <h4>考勤系統</h4>
+              <p>為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
+              <div thumbsSlider="" class="swiper-container attence_list swiper-list-table">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-btn">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>後台管理</h4>
+                      <p class="pagination_about">後台輕鬆管理人員</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>行動打卡</h4>
+                      <p class="pagination_about">線上快速打卡</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>行事曆</h4>
+                      <p class="pagination_about">班表一目瞭然</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>巡邏簽到</h4>
+                      <p class="pagination_about">異常通報、線上簽到</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
 
+    <!--<div class="section" id="section2">
+<div class="slide" id="slide2-1">
+<div class="intro">
+  <div class="container custom_container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="w_content">
+          <img class="circle_line" src="img/home/dot.png" alt="">
+          <h4 class="animate-animated animate__fadeInUp">考勤系統</h4>
+          <p style="font-size: 30px;">跟傳統打卡說掰掰</p>
+
+          <div class="slider-controls">
+            <a class="slider-control slider-control-prev moveslideleft" href="#">
+              <span> <i class="ri-arrow-left-s-line"></i> </span>
+            </a>
+            <a class="slider-control slider-control-next moveslideright" href="#">
+              <span> <i class="ri-arrow-right-s-line"></i> </span>
+            </a>
+          </div>
+
+          <a href="product/attence.html" class="btn btn-style2 animate-animated animate__fadeInUp">瞭解更多</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="w_img_one">
+          <img class="animate-animated animate-zoomIn" src="img/home/slider_dashboard.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="slide" id="slide2-2">
+<h1>Slide 2</h1>
+</div>
+
+</div>-->
+
+    <!--BIM-->
+    <div class="section wave_two_section_three parallax-window" id="section2">
+      <div class="t_first p_absoulte">
+        <div data-speed="-0.08">
+          <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
+        </div>
+      </div>
+      <div class="t_two p_absoulte">
+        <div data-speed="0.08">
+          <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
+        </div>
+      </div>
+
+      <div class="intro">
+        <div class="container custom_container">
+          <div class="align-items-center home_section row">
+
+            <div class="swiper-photo">
+              <div class="home-animation-circle">
+                <div class="gallery-circle gallery-circle-black">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="bim_photo swiper-container">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swipet-btn-group swiper-list">
+              <h4>#BIM</h4>
+              <p>為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
+              <div thumbsSlider="" class="swiper-container bim_list swiper-list-table">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-btn">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>後台管理</h4>
+                      <p class="pagination_about">後台輕鬆管理人員</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>行動打卡</h4>
+                      <p class="pagination_about">線上快速打卡</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>行事曆</h4>
+                      <p class="pagination_about">班表一目瞭然</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>巡邏簽到</h4>
+                      <p class="pagination_about">異常通報、線上簽到</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="slide" id="slide2-2">
-    <h1>Slide 2</h1>
+    <!--CRM-->
+    <div class="section wave_two_section_two parallax-window" id="section3">
+      <div class="t_first p_absoulte">
+        <div data-speed="-0.08">
+          <img class="layer layer2" src="img/home/bg/pijom.png" alt="">
+        </div>
+      </div>
+      <div class="t_two p_absoulte">
+        <div data-speed="0.08">
+          <img class="layer layer2" src="img/home/bg/pijom_2.png" alt="">
+        </div>
+      </div>
+
+      <div class="intro">
+        <div class="container custom_container">
+          <div class="align-items-center home_section row">
+
+            <div class="swiper-photo">
+              <div class="home-animation-circle">
+                <div class="gallery-circle gallery-circle-black">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="crm_photo swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swipet-btn-group swiper-list">
+              <h4>CRM</h4>
+              <p>為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
+              <div thumbsSlider="" class="swiper-container crm_list swiper-list-table">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-btn">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>後台管理</h4>
+                      <p class="pagination_about">後台輕鬆管理人員</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>行動打卡</h4>
+                      <p class="pagination_about">線上快速打卡</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>行事曆</h4>
+                      <p class="pagination_about">班表一目瞭然</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>巡邏簽到</h4>
+                      <p class="pagination_about">異常通報、線上簽到</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
 
-    </div>-->
-
-        <!--BIM-->
-        <div class="section wave_two_section_three parallax-window" id="section2">
-            <div class="t_first p_absoulte">
-                <div data-speed="-0.08">
-                    <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
-                </div>
-            </div>
-            <div class="t_two p_absoulte">
-                <div data-speed="0.08">
-                    <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
-                </div>
-            </div>
-
-            <div class="intro">
-                <div class="container custom_container">
-                    <div class="align-items-center home_section row">
-
-                        <div class="swiper-photo">
-                            <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-black">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div class="bim_photo swiper-container">
-                                <div class="swiper-wrapper">
-
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swipet-btn-group swiper-list">
-                            <h4>#BIM</h4>
-                            <p>為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div thumbsSlider="" class="swiper-container bim_list swiper-list-table">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-btn">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>後台管理</h4>
-                                            <p class="pagination_about">後台輕鬆管理人員</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>行動打卡</h4>
-                                            <p class="pagination_about">線上快速打卡</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>行事曆</h4>
-                                            <p class="pagination_about">班表一目瞭然</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>巡邏簽到</h4>
-                                            <p class="pagination_about">異常通報、線上簽到</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+    <!--IOT-->
+    <div class="section wave_two_section_one parallax-window" id="section4">
+      <div class="t_first p_absoulte">
+        <div data-speed="-0.08">
+          <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
         </div>
-
-        <!--CRM-->
-        <div class="section wave_two_section_two parallax-window" id="section3">
-            <div class="t_first p_absoulte">
-                <div data-speed="-0.08">
-                    <img class="layer layer2" src="img/home/bg/pijom.png" alt="">
-                </div>
-            </div>
-            <div class="t_two p_absoulte">
-                <div data-speed="0.08">
-                    <img class="layer layer2" src="img/home/bg/pijom_2.png" alt="">
-                </div>
-            </div>
-
-            <div class="intro">
-                <div class="container custom_container">
-                    <div class="align-items-center home_section row">
-
-                        <div class="swiper-photo">
-                            <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-black">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div class="crm_photo swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swipet-btn-group swiper-list">
-                            <h4>CRM</h4>
-                            <p>為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div thumbsSlider="" class="swiper-container crm_list swiper-list-table">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-btn">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>後台管理</h4>
-                                            <p class="pagination_about">後台輕鬆管理人員</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>行動打卡</h4>
-                                            <p class="pagination_about">線上快速打卡</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>行事曆</h4>
-                                            <p class="pagination_about">班表一目瞭然</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>巡邏簽到</h4>
-                                            <p class="pagination_about">異常通報、線上簽到</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="t_two p_absoulte">
+        <div data-speed="0.08">
+          <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
         </div>
-
-        <!--IOT-->
-        <div class="section wave_two_section_one parallax-window" id="section4">
-            <div class="t_first p_absoulte">
-                <div data-speed="-0.08">
-                    <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
-                </div>
-            </div>
-            <div class="t_two p_absoulte">
-                <div data-speed="0.08">
-                    <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
-                </div>
-            </div>
-            <div class="t_three p_absoulte">
-                <div data-speed="0.08">
-                    <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
-                </div>
-            </div>
-
-            <div class="intro">
-                <div class="container custom_container">
-                    <div class="align-items-center home_section row">
-
-                        <div class="swiper-photo">
-                            <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-primary">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div class="iot_photo swiper-container">
-                                <div class="swiper-wrapper">
-
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--                  <div class="swiper-slide">
-                                    <div class="w_img_one">
-                                      <img class="animate-animated animate-zoomIn" src="img/banner/考勤-2.svg" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="w_img_one">
-                                      <img class="animate-animated animate-zoomIn" src="img/banner/考勤-3.svg" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="w_img_one">
-                                      <img class="animate-animated animate-zoomIn" src="img/banner/考勤-4.svg" alt="">
-                                    </div>
-                                  </div>-->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swipet-btn-group swiper-list">
-                            <h4>IOT</h4>
-                            <p>為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div thumbsSlider="" class="swiper-container iot_list swiper-list-table">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-btn">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>後台管理</h4>
-                                            <p class="pagination_about">後台輕鬆管理人員</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>行動打卡</h4>
-                                            <p class="pagination_about">線上快速打卡</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>行事曆</h4>
-                                            <p class="pagination_about">班表一目瞭然</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>巡邏簽到</h4>
-                                            <p class="pagination_about">異常通報、線上簽到</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="t_three p_absoulte">
+        <div data-speed="0.08">
+          <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
         </div>
+      </div>
 
-        <!--ihome-->
-        <div class="section wave_two_section_three parallax-window" id="section5">
-            <div class="t_first p_absoulte">
-                <div data-speed="-0.08">
-                    <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
+      <div class="intro">
+        <div class="container custom_container">
+          <div class="align-items-center home_section row">
+
+            <div class="swiper-photo">
+              <div class="home-animation-circle">
+                <div class="gallery-circle gallery-circle-primary">
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
-            </div>
-            <div class="t_two p_absoulte">
-                <div data-speed="0.08">
-                    <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
-                </div>
-            </div>
+              </div>
+              <div class="iot_photo swiper-container">
+                <div class="swiper-wrapper">
 
-            <div class="intro">
-                <div class="container custom_container">
-                    <div class="align-items-center home_section row">
-
-                        <div class="swiper-photo">
-                            <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-black">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div class="ihome_photo swiper-container">
-                                <div class="swiper-wrapper">
-
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swipet-btn-group swiper-list">
-                            <h4>iHome</h4>
-                            <p>為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div thumbsSlider="" class="swiper-container ihome_list swiper-list-table">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-btn">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>後台管理</h4>
-                                            <p class="pagination_about">後台輕鬆管理人員</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>行動打卡</h4>
-                                            <p class="pagination_about">線上快速打卡</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>行事曆</h4>
-                                            <p class="pagination_about">班表一目瞭然</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
-                                            <h4>巡邏簽到</h4>
-                                            <p class="pagination_about">異常通報、線上簽到</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
+                      </div>
                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!--                  <div class="swiper-slide">
+                  <div class="w_img_one">
+                    <img class="animate-animated animate-zoomIn" src="img/banner/考勤-2.svg" alt="">
+                  </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="w_img_one">
+                    <img class="animate-animated animate-zoomIn" src="img/banner/考勤-3.svg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w_img_one">
+                    <img class="animate-animated animate-zoomIn" src="img/banner/考勤-4.svg" alt="">
+                  </div>
+                </div>-->
+                </div>
+              </div>
             </div>
+
+            <div class="swipet-btn-group swiper-list">
+              <h4>IOT</h4>
+              <p>為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
+              <div thumbsSlider="" class="swiper-container iot_list swiper-list-table">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-btn">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>後台管理</h4>
+                      <p class="pagination_about">後台輕鬆管理人員</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>行動打卡</h4>
+                      <p class="pagination_about">線上快速打卡</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>行事曆</h4>
+                      <p class="pagination_about">班表一目瞭然</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>巡邏簽到</h4>
+                      <p class="pagination_about">異常通報、線上簽到</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-
-        <!--footer-->
-        <div class="section fp-auto-height" id="section6">
-            <div class="section-footer">
-                <!--預約專人諮詢-->
-                <div class="container" id="contact_us">
-                    <div class="contact_us row">
-                        <div class="col-sm-6 contact_us_footer">
-                            <i class="ri-phone-line"></i>
-                            <h4>直接電話聯繫我們</h4>
-                            <p>電話客服時間：星期一～星期五 09:00~18:00</p>
-                            <button class="btn btn-circle btn_animation primary hover-left" onclick="window.location.href='tel:0423273199'">
-                                04-2327-3199
-                            </button>
-                        </div>
-                        <div class="col-sm-6 contact_us_footer">
-                            <i class="ri-mail-open-line"></i>
-                            <h4>填寫表單聯繫我們</h4>
-                            <p>歡迎填寫表單，我們會盡快回覆您！</p>
-                            <button class="btn btn-circle btn_animation primary hover-left" onclick="window.location.href='contact.html'">
-                                馬上預約
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!--footers-->
-                <footer class="footers">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="footer_content">
-                                    <h3>現在可以開始</h3>
-                                    <a href="https://apps.apple.com/tw/developer/ez-tech-ltd/id1068678728" target="_blank">
-                                        <img src="img/icon/btn1.png" alt="" />
-                                    </a>
-                                    <a href="https://play.google.com/store/apps/developer?id=億集科技有限公司" target="_blank">
-                                        <img src="img/icon/btn2.png" alt="" />
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col-md-12">
-                                <div class="copyright_con">
-                                    <div class="row">
-                                        <div class="col logo">
-                                            <img src="img/icon/企業形象-白色.png" alt="">
-                                        </div>
-                                        <div class="col my-auto text-right">
-                                            <p>2021 Copyright by <a href="#">EZ-plus</a> . All Rights Reserved</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="img/footer/footer_mock1.png" class="f-left" alt="" />
-                    <img src="img/footer/footer_mock2.png" class="f-right" alt="" />
-                </footer>
-            </div>
-        </div>
-
+      </div>
     </div>
+
+    <!--ihome-->
+    <div class="section wave_two_section_three parallax-window" id="section5">
+      <div class="t_first p_absoulte">
+        <div data-speed="-0.08">
+          <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
+        </div>
+      </div>
+      <div class="t_two p_absoulte">
+        <div data-speed="0.08">
+          <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
+        </div>
+      </div>
+
+      <div class="intro">
+        <div class="container custom_container">
+          <div class="align-items-center home_section row">
+
+            <div class="swiper-photo">
+              <div class="home-animation-circle">
+                <div class="gallery-circle gallery-circle-black">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="ihome_photo swiper-container">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w_img_one">
+                      <div class="c-gallery__media">
+                        <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swipet-btn-group swiper-list">
+              <h4>iHome</h4>
+              <p>為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
+              <div thumbsSlider="" class="swiper-container ihome_list swiper-list-table">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-btn">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>後台管理</h4>
+                      <p class="pagination_about">後台輕鬆管理人員</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>行動打卡</h4>
+                      <p class="pagination_about">線上快速打卡</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>行事曆</h4>
+                      <p class="pagination_about">班表一目瞭然</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dot"><span></span></div>
+                    <div style="width: 100%;padding-left: 15px;">
+                      <h4>巡邏簽到</h4>
+                      <p class="pagination_about">異常通報、線上簽到</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="section fp-auto-height" id="section6">
+      <div class="section-footer">
+        <!--預約專人諮詢-->
+        <div class="container" id="contact_us">
+          <div class="contact_us row">
+            <div class="col-sm-6 contact_us_footer">
+              <i class="ri-phone-line"></i>
+              <h4>直接電話聯繫我們</h4>
+              <p>電話客服時間：星期一～星期五 09:00~18:00</p>
+              <button class="btn btn-circle btn_animation primary hover-left" onclick="window.location.href='tel:0423273199'">
+                04-2327-3199
+              </button>
+            </div>
+            <div class="col-sm-6 contact_us_footer">
+              <i class="ri-mail-open-line"></i>
+              <h4>填寫表單聯繫我們</h4>
+              <p>歡迎填寫表單，我們會盡快回覆您！</p>
+              <button class="btn btn-circle btn_animation primary hover-left" onclick="window.location.href='contact.html'">
+                馬上預約
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--footers-->
+        <footer class="footers">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="footer_content">
+                  <h3>現在可以開始</h3>
+                  <a href="https://apps.apple.com/tw/developer/ez-tech-ltd/id1068678728" target="_blank">
+                    <img src="img/icon/btn1.png" alt="" />
+                  </a>
+                  <a href="https://play.google.com/store/apps/developer?id=億集科技有限公司" target="_blank">
+                    <img src="img/icon/btn2.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-100"></div>
+              <div class="col-md-12">
+                <div class="copyright_con">
+                  <div class="row">
+                    <div class="col logo">
+                      <img src="img/icon/企業形象-白色.png" alt="">
+                    </div>
+                    <div class="col my-auto text-right">
+                      <p>2021 Copyright by <a href="#">EZ-plus</a> . All Rights Reserved</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="img/footer/footer_mock1.png" class="f-left" alt="" />
+          <img src="img/footer/footer_mock2.png" class="f-right" alt="" />
+        </footer>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <footer class="full_footer p_absoulte f_footer_one" id="full_footer">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6 col-6">
-                <ul class="list-unstyled social_icon align-items-end">
-                    <li><a href="#"><i class="ri-line-fill"></i></a></li>
-                    <li><a href="#"><i class="ri-facebook-circle-fill"></i></a></li>
-                    <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
-                </ul>
-            </div>
-            <div class="col-sm-6 col-6">
-                <div class="pr_details_nav h_slider_nav align-items-end">
-                    <span class="prev" id="moveSectionUp"><i class="ri-arrow-up-line"></i></span>
-                    <span class="next moveUp" id="moveSectionDown"><i class="ri-arrow-down-line"></i></span>
-                </div>
-            </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-6">
+        <ul class="list-unstyled social_icon align-items-end">
+          <li><a href="#"><i class="ri-line-fill"></i></a></li>
+          <li><a href="#"><i class="ri-facebook-circle-fill"></i></a></li>
+          <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-6">
+        <div class="pr_details_nav h_slider_nav align-items-end">
+          <span class="prev" id="moveSectionUp"><i class="ri-arrow-up-line"></i></span>
+          <span class="next moveUp" id="moveSectionDown"><i class="ri-arrow-down-line"></i></span>
         </div>
+      </div>
     </div>
+  </div>
 </footer>
 
 
 
 <!-- fullpage -->
 <script type="text/javascript">
-    //using document ready...
-    $(document).ready(function() {
+  //using document ready...
+  $(document).ready(function() {
 
-        //initialising fullpage.js in the jQuery way
-        $('#fullpage').fullpage({
-            sectionsColor: ['#f4f4f4', '#c7e5f0', '#ffe5d4', '#d8f8d3', '#f4f4f4'],
-            anchors: ['1', '2', '3', '4', '5', '6'],
-            menu: '#menu',
-            dragAndMove: true,
-            scrollOverflow: true,
-            verticalCentered: true,
-            autoScrolling:false,
-        });
-
-        // calling fullpage.js methods using jQuery
-        $('#moveSectionUp').click(function(e) {
-            e.preventDefault();
-            $.fn.fullpage.moveSectionUp();
-        });
-
-        $('#moveSectionDown').click(function(e) {
-            e.preventDefault();
-            $.fn.fullpage.moveSectionDown();
-        });
-
-        $('.moveslideleft').click(function(e) {
-            e.preventDefault();
-            $.fn.fullpage.moveSlideLeft();
-        });
-        $('.moveslideright').click(function(e) {
-            e.preventDefault();
-            $.fn.fullpage.moveSlideRight();
-        });
-
-        $('.btn-next').on('click', function(e) {
-            $.scrollify.next();
-        });
-
+    //initialising fullpage.js in the jQuery way
+    $('#fullpage').fullpage({
+      sectionsColor: ['#f4f4f4', '#c7e5f0', '#ffe5d4', '#d8f8d3', '#f4f4f4'],
+      anchors: ['1', '2', '3', '4', '5', '6'],
+      menu: '#menu',
+      dragAndMove: true,
+      scrollOverflow: true,
+      verticalCentered: true,
+      autoScrolling:false,
     });
+
+    // calling fullpage.js methods using jQuery
+    $('#moveSectionUp').click(function(e) {
+      e.preventDefault();
+      $.fn.fullpage.moveSectionUp();
+    });
+
+    $('#moveSectionDown').click(function(e) {
+      e.preventDefault();
+      $.fn.fullpage.moveSectionDown();
+    });
+
+    $('.moveslideleft').click(function(e) {
+      e.preventDefault();
+      $.fn.fullpage.moveSlideLeft();
+    });
+    $('.moveslideright').click(function(e) {
+      e.preventDefault();
+      $.fn.fullpage.moveSlideRight();
+    });
+
+    $('.btn-next').on('click', function(e) {
+      $.scrollify.next();
+    });
+
+  });
 </script>
 
 <!-- swiper -->
 <script>
-    $(document).ready(function() {
-        var attence2 = new Swiper(".attence_list", {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-        });
-
-        var attence = new Swiper('.attence_photo', {
-            direction: 'vertical',
-            loop: true,
-            autoHeight: true,
-            /*        autoplay: {
-                      delay: 2500,
-                      disableOnInteraction: false,
-                    },*/
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-            thumbs: {
-                swiper: attence2,
-            },
-        });
-
-        var bim2 = new Swiper(".bim_list", {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-        });
-
-        var bim = new Swiper('.bim_photo', {
-            direction: 'vertical',
-            loop: true,
-            autoHeight: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-            thumbs: {
-                swiper: bim2,
-            },
-        });
-
-        var crm2 = new Swiper(".crm_list", {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-        });
-
-        var crm = new Swiper('.crm_photo', {
-            direction: 'vertical',
-            loop: true,
-            autoHeight: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-            thumbs: {
-                swiper: crm2,
-            },
-        });
-
-        var iot2 = new Swiper(".iot_list", {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-        });
-
-        var iot = new Swiper('.iot_photo', {
-            direction: 'vertical',
-            loop: true,
-            autoHeight: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-            thumbs: {
-                swiper: iot2,
-            },
-        });
-
-        var ihome2 = new Swiper(".ihome_list", {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-        });
-
-        var ihmoe = new Swiper('.ihome_photo', {
-            direction: 'vertical',
-            loop: true,
-            autoHeight: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-            thumbs: {
-                swiper: ihome2,
-            },
-        });
-
-
-        /*var ihome_title = ['修繕管理', 'cCash', '訪客管理', '群組通訊', '線上繳費', '郵件包裹'];
-        var ihome_about = ['線上提報修繕單', '社區貨幣代付服務', '線上添加訪客', '即時在線群聊', '社區相關費用', '社區包裹通知'];
-        var swiper5 = new Swiper('.ihome', {
-          direction: 'vertical',
-          loop: true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            renderBullet: function (index, className) {
-              return '<div class=" ' + className + '">' +
-                      '<div class="dot">' +
-                      '<span></span>' +
-                      '</div>' +
-                      '<div>' +
-                      '<h4>' + (ihome_title[index]) + '</h4>' +
-                      '<p class="pagination_about">' + (ihome_about[index]) + '</p>' +
-                      '</div>' +
-                      '</div>';
-            },
-          },
-
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-
-          scrollbar: {
-            el: '.swiper-scrollbar',
-          },
-        });*/
-
+  $(document).ready(function() {
+    var attence2 = new Swiper(".attence_list", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
     });
+
+    var attence = new Swiper('.attence_photo', {
+      direction: 'vertical',
+      loop: true,
+      autoHeight: true,
+      /*        autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },*/
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      thumbs: {
+        swiper: attence2,
+      },
+    });
+
+    var bim2 = new Swiper(".bim_list", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+
+    var bim = new Swiper('.bim_photo', {
+      direction: 'vertical',
+      loop: true,
+      autoHeight: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      thumbs: {
+        swiper: bim2,
+      },
+    });
+
+    var crm2 = new Swiper(".crm_list", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+
+    var crm = new Swiper('.crm_photo', {
+      direction: 'vertical',
+      loop: true,
+      autoHeight: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      thumbs: {
+        swiper: crm2,
+      },
+    });
+
+    var iot2 = new Swiper(".iot_list", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+
+    var iot = new Swiper('.iot_photo', {
+      direction: 'vertical',
+      loop: true,
+      autoHeight: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      thumbs: {
+        swiper: iot2,
+      },
+    });
+
+    var ihome2 = new Swiper(".ihome_list", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+
+    var ihmoe = new Swiper('.ihome_photo', {
+      direction: 'vertical',
+      loop: true,
+      autoHeight: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      thumbs: {
+        swiper: ihome2,
+      },
+    });
+
+
+    /*var ihome_title = ['修繕管理', 'cCash', '訪客管理', '群組通訊', '線上繳費', '郵件包裹'];
+    var ihome_about = ['線上提報修繕單', '社區貨幣代付服務', '線上添加訪客', '即時在線群聊', '社區相關費用', '社區包裹通知'];
+    var swiper5 = new Swiper('.ihome', {
+      direction: 'vertical',
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<div class=" ' + className + '">' +
+                  '<div class="dot">' +
+                  '<span></span>' +
+                  '</div>' +
+                  '<div>' +
+                  '<h4>' + (ihome_title[index]) + '</h4>' +
+                  '<p class="pagination_about">' + (ihome_about[index]) + '</p>' +
+                  '</div>' +
+                  '</div>';
+        },
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });*/
+
+  });
 </script>
 
 <!--swiper-->
@@ -1903,4 +1914,5 @@
 
 
 </body>
+
 </html>
