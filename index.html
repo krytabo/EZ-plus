@@ -48,11 +48,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!--modernizr-->
   <script src="js/vendor/modernizr.js"></script>
+
   <!-- swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <!--  fullpage-->
   <link rel="stylesheet" href="css/fullpage/fullpage.css">
   <link rel="stylesheet" href="css/fullpage/fullpage.min.css">
@@ -509,231 +509,6 @@ object-fit: cover; */
       background: #007bff;
     }
   </style>
-
-  <!-- fullpage -->
-  <script type="text/javascript">
-    //using document ready...
-    $(document).ready(function() {
-
-      //initialising fullpage.js in the jQuery way
-      $('#fullpage').fullpage({
-        sectionsColor: ['#f4f4f4', '#c7e5f0', '#ffe5d4', '#d8f8d3', '#f4f4f4'],
-        anchors: ['1', '2', '3', '4', '5', '6'],
-        menu: '#menu',
-        dragAndMove: true,
-        scrollOverflow: true,
-        verticalCentered: true,
-        autoScrolling:false,
-      });
-
-      // calling fullpage.js methods using jQuery
-      $('#moveSectionUp').click(function(e) {
-        e.preventDefault();
-        $.fn.fullpage.moveSectionUp();
-      });
-
-      $('#moveSectionDown').click(function(e) {
-        e.preventDefault();
-        $.fn.fullpage.moveSectionDown();
-      });
-
-      $('.moveslideleft').click(function(e) {
-        e.preventDefault();
-        $.fn.fullpage.moveSlideLeft();
-      });
-      $('.moveslideright').click(function(e) {
-        e.preventDefault();
-        $.fn.fullpage.moveSlideRight();
-      });
-
-      $('.btn-next').on('click', function(e) {
-        $.scrollify.next();
-      });
-
-    });
-  </script>
-
-  <!-- swiper -->
-  <script>
-    $(document).ready(function() {
-      var attence2 = new Swiper(".attence_list", {
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-      });
-
-      var attence = new Swiper('.attence_photo', {
-        direction: 'vertical',
-        loop: true,
-        autoHeight: true,
-/*        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },*/
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-        thumbs: {
-          swiper: attence2,
-        },
-      });
-
-      var bim2 = new Swiper(".bim_list", {
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-      });
-
-      var bim = new Swiper('.bim_photo', {
-        direction: 'vertical',
-        loop: true,
-        autoHeight: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-        thumbs: {
-          swiper: bim2,
-        },
-      });
-
-      var crm2 = new Swiper(".crm_list", {
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-      });
-
-      var crm = new Swiper('.crm_photo', {
-        direction: 'vertical',
-        loop: true,
-        autoHeight: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-        thumbs: {
-          swiper: crm2,
-        },
-      });
-
-      var iot2 = new Swiper(".iot_list", {
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-      });
-
-      var iot = new Swiper('.iot_photo', {
-        direction: 'vertical',
-        loop: true,
-        autoHeight: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-        thumbs: {
-          swiper: iot2,
-        },
-      });
-
-      var ihome2 = new Swiper(".ihome_list", {
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-      });
-
-      var ihmoe = new Swiper('.ihome_photo', {
-        direction: 'vertical',
-        loop: true,
-        autoHeight: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-        thumbs: {
-          swiper: ihome2,
-        },
-      });
-
-
-      /*var ihome_title = ['修繕管理', 'cCash', '訪客管理', '群組通訊', '線上繳費', '郵件包裹'];
-      var ihome_about = ['線上提報修繕單', '社區貨幣代付服務', '線上添加訪客', '即時在線群聊', '社區相關費用', '社區包裹通知'];
-      var swiper5 = new Swiper('.ihome', {
-        direction: 'vertical',
-        loop: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          renderBullet: function (index, className) {
-            return '<div class=" ' + className + '">' +
-                    '<div class="dot">' +
-                    '<span></span>' +
-                    '</div>' +
-                    '<div>' +
-                    '<h4>' + (ihome_title[index]) + '</h4>' +
-                    '<p class="pagination_about">' + (ihome_about[index]) + '</p>' +
-                    '</div>' +
-                    '</div>';
-          },
-        },
-
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });*/
-
-    });
-  </script>
 
   <style>
     .gallery-container {
@@ -1876,7 +1651,241 @@ object-fit: cover; */
   </div>
 </footer>
 
-<script type="text/javascript" src="js/home/examples.js"></script>
+
+
+<!-- fullpage -->
+<script type="text/javascript">
+  //using document ready...
+  $(document).ready(function() {
+
+    //initialising fullpage.js in the jQuery way
+    $('#fullpage').fullpage({
+      sectionsColor: ['#f4f4f4', '#c7e5f0', '#ffe5d4', '#d8f8d3', '#f4f4f4'],
+      anchors: ['1', '2', '3', '4', '5', '6'],
+      menu: '#menu',
+      dragAndMove: true,
+      scrollOverflow: true,
+      verticalCentered: true,
+      autoScrolling:false,
+    });
+
+    // calling fullpage.js methods using jQuery
+    $('#moveSectionUp').click(function(e) {
+      e.preventDefault();
+      $.fn.fullpage.moveSectionUp();
+    });
+
+    $('#moveSectionDown').click(function(e) {
+      e.preventDefault();
+      $.fn.fullpage.moveSectionDown();
+    });
+
+    $('.moveslideleft').click(function(e) {
+      e.preventDefault();
+      $.fn.fullpage.moveSlideLeft();
+    });
+    $('.moveslideright').click(function(e) {
+      e.preventDefault();
+      $.fn.fullpage.moveSlideRight();
+    });
+
+    $('.btn-next').on('click', function(e) {
+      $.scrollify.next();
+    });
+
+  });
+</script>
+
+<!-- swiper -->
+<script>
+  $(document).ready(function() {
+    var attence2 = new Swiper(".attence_list", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+
+    var attence = new Swiper('.attence_photo', {
+      direction: 'vertical',
+      loop: true,
+      autoHeight: true,
+      /*        autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },*/
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      thumbs: {
+        swiper: attence2,
+      },
+    });
+
+    var bim2 = new Swiper(".bim_list", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+
+    var bim = new Swiper('.bim_photo', {
+      direction: 'vertical',
+      loop: true,
+      autoHeight: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      thumbs: {
+        swiper: bim2,
+      },
+    });
+
+    var crm2 = new Swiper(".crm_list", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+
+    var crm = new Swiper('.crm_photo', {
+      direction: 'vertical',
+      loop: true,
+      autoHeight: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      thumbs: {
+        swiper: crm2,
+      },
+    });
+
+    var iot2 = new Swiper(".iot_list", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+
+    var iot = new Swiper('.iot_photo', {
+      direction: 'vertical',
+      loop: true,
+      autoHeight: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      thumbs: {
+        swiper: iot2,
+      },
+    });
+
+    var ihome2 = new Swiper(".ihome_list", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+
+    var ihmoe = new Swiper('.ihome_photo', {
+      direction: 'vertical',
+      loop: true,
+      autoHeight: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      thumbs: {
+        swiper: ihome2,
+      },
+    });
+
+
+    /*var ihome_title = ['修繕管理', 'cCash', '訪客管理', '群組通訊', '線上繳費', '郵件包裹'];
+    var ihome_about = ['線上提報修繕單', '社區貨幣代付服務', '線上添加訪客', '即時在線群聊', '社區相關費用', '社區包裹通知'];
+    var swiper5 = new Swiper('.ihome', {
+      direction: 'vertical',
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<div class=" ' + className + '">' +
+                  '<div class="dot">' +
+                  '<span></span>' +
+                  '</div>' +
+                  '<div>' +
+                  '<h4>' + (ihome_title[index]) + '</h4>' +
+                  '<p class="pagination_about">' + (ihome_about[index]) + '</p>' +
+                  '</div>' +
+                  '</div>';
+        },
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });*/
+
+  });
+</script>
+
+<!--swiper-->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!--fullpage-->
+<script src="js/fullpage/fullpage.js"></script>
+<script src="js/fullpage/fullpage.min.js"></script>
+
 <!--jquery-->
 <!-- <script src="js/jquery-1.12.4.min.js"></script> -->
 <!--bootstrap v4 js-->
@@ -1902,9 +1911,7 @@ object-fit: cover; */
 <script src="js/main.js"></script>
 <!--parallax-->
 <script src="js/home/parallax.js"></script>
-<!--fullpage-->
-<script src="js/fullpage/fullpage.js"></script>
-<script src="js/fullpage/fullpage.min.js"></script>
+
 
 </body>
 
