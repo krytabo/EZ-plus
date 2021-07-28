@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>綜合感知定位</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard" transform="translate(-545.000000, -2634.000000)" stroke-width="2">
+            <g id="綜合感知定位" transform="translate(546.000000, 2635.000000)">
+                <path d="M42.4796721,27.1764286 C43.7908628,28.5716667 43.7908628,30.8335714 42.4796721,32.2264286 L31.4039139,44.0121429 C30.0927231,45.407381 27.9693101,45.407381 26.6581193,44.0121429 L4.50660294,20.4430952 C3.19541217,19.0478571 3.19541217,16.7859524 4.50660294,15.3930952 L15.5845987,3.60738095 C16.8913144,2.21214286 19.0192025,2.21214286 20.3303932,3.60738095 L42.4796721,27.1764286 Z" id="Stroke-1" stroke="#000000"></path>
+                <line x1="8.46210301" y1="24.6511905" x2="24.2836558" y2="7.81547619" id="Stroke-3" stroke="#000000"></line>
+                <line x1="24.284327" y1="41.487619" x2="40.1058798" y2="24.6519048" id="Stroke-5" stroke="#000000"></line>
+                <line x1="10.0442583" y1="16.2342857" x2="16.3742219" y2="9.49857143" id="Stroke-7" stroke="#000000"></line>
+                <polyline id="Stroke-9" stroke="#00A0F1" points="36.363616 0 30.5482836 4.7547619 36.363616 9.52380952"></polyline>
+                <path d="M30.6319671,4.84333333 C38.3782852,3.28619048 45.9993019,7.51 50,14.2814286" id="Stroke-11" stroke="#00A0F1"></path>
+                <polyline id="Stroke-13" stroke="#00A0F1" points="13.6343702 50 19.4519402 45.2452381 13.6343702 40.4761905"></polyline>
+                <path d="M19.3680329,45.1566667 C11.6217148,46.7138095 4.00069811,42.49 0,35.7185714" id="Stroke-15" stroke="#00A0F1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

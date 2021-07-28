@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>builder</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Desktop-HD" transform="translate(-424.000000, -229.000000)" stroke-width="2">
+            <g id="Group-8" transform="translate(325.000000, 110.000000)">
+                <g id="Group-2" transform="translate(0.000000, 70.000000)">
+                    <g id="builder" transform="translate(100.000000, 50.000000)">
+                        <polyline id="Stroke-1" stroke="#000000" stroke-linecap="round" points="19.5652174 36.3636364 19.5652174 50 43.4782609 50 43.4782609 36.3636364"></polyline>
+                        <polyline id="Stroke-3" stroke="#000000" stroke-linecap="round" points="13.0434783 35.2272727 31.5217391 15.9090909 50 35.2272727"></polyline>
+                        <polyline id="Stroke-5" stroke="#000000" stroke-linecap="round" points="40.2173913 18.1818182 47.826087 18.1818182 47.826087 26.1363636"></polyline>
+                        <polygon id="Stroke-8" stroke="#000000" stroke-linecap="round" points="28.2608696 34.0909091 34.7826087 34.0909091 34.7826087 27.2727273 28.2608696 27.2727273"></polygon>
+                        <line x1="15.2173913" y1="9.09090909" x2="15.2173913" y2="3.40909091" id="Stroke-14" stroke="#00A0F1"></line>
+                        <line x1="23.9130435" y1="9.09090909" x2="23.9130435" y2="3.40909091" id="Stroke-15" stroke="#00A0F1"></line>
+                        <line x1="32.6086957" y1="9.09090909" x2="32.6086957" y2="3.40909091" id="Stroke-16" stroke="#00A0F1"></line>
+                        <line x1="41.3043478" y1="9.09090909" x2="41.3043478" y2="3.40909091" id="Stroke-17" stroke="#00A0F1"></line>
+                        <line x1="8.69565217" y1="43.1818182" x2="3.26086957" y2="43.1818182" id="Stroke-18" stroke="#00A0F1"></line>
+                        <line x1="8.69565217" y1="34.0909091" x2="3.26086957" y2="34.0909091" id="Stroke-19" stroke="#00A0F1"></line>
+                        <line x1="8.69565217" y1="25" x2="3.26086957" y2="25" id="Stroke-20" stroke="#00A0F1"></line>
+                        <line x1="8.69565217" y1="15.9090909" x2="3.26086957" y2="15.9090909" id="Stroke-21" stroke="#00A0F1"></line>
+                        <polygon id="Stroke-9" stroke="#000000" points="0 50 8.69565217 50 8.69565217 9.09090909 0 9.09090909"></polygon>
+                        <polygon id="Stroke-11" stroke="#000000" points="8.69565217 9.09090909 47.826087 9.09090909 47.826087 0 8.69565217 0"></polygon>
+                        <polygon id="Stroke-12" stroke="#000000" points="0 9.09090909 8.69565217 9.09090909 8.69565217 0 0 0"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>輕量化壓縮</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard" transform="translate(-697.000000, -2634.000000)" stroke-width="2">
+            <g id="輕量化壓縮" transform="translate(698.000000, 2635.000000)">
+                <polyline id="Stroke-1" stroke="#000000" points="32.8590909 17.3913043 43.1818182 17.3913043 43.1818182 39.1304348 26.1363636 39.1304348 6.81818182 39.1304348 6.81818182 17.3913043 17.0454545 17.3913043"></polyline>
+                <path d="M32.9545455,13.0434783 L44.3181818,13.0434783 C46.2,13.0434783 47.7272727,14.5021739 47.7272727,16.3043478 L47.7272727,43.4782609" id="Stroke-2" stroke="#000000"></path>
+                <path d="M2.27272727,43.4782609 L2.27272727,16.3043478 C2.27272727,14.5021739 3.8,13.0434783 5.68181818,13.0434783 L17.0454545,13.0434783" id="Stroke-4" stroke="#000000"></path>
+                <path d="M29.5454545,43.4782609 L29.5454545,45.6521739 L20.4545455,45.6521739 L20.4545455,43.4782609 L0,43.4782609 L0,47.826087 C0,49.026087 1.01818182,50 2.27272727,50 L47.7272727,50 C48.9840909,50 50,49.026087 50,47.826087 L50,43.4782609 L29.5454545,43.4782609 Z" id="Stroke-6" stroke="#000000"></path>
+                <line x1="25" y1="31.5217391" x2="25" y2="0" id="Stroke-8" stroke="#00A0F1"></line>
+                <polyline id="Stroke-10" stroke="#00A0F1" points="34.0909091 22.826087 25 31.5217391 15.9090909 22.826087"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>圖書租借</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-972.000000, -2732.000000)">
+            <g id="圖書租借" transform="translate(973.000000, 2733.000000)">
+                <path d="M25.0913043,42.6118205 L4.34782609,42.6118205 C1.95,42.6118205 0,40.4930661 0,37.8771738 L0,4.73464672 C0,2.11875441 1.95,0 4.34782609,0 L45.6521739,0 C48.0565217,0 50,2.11875441 50,4.73464672 L50,22.5937342" id="Stroke-27" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <line x1="0" y1="11.8366168" x2="50" y2="11.8366168" id="Stroke-29" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <path d="M8.69565217,5.91830841 C8.69565217,6.57168965 8.20869565,7.10197009 7.60869565,7.10197009 C7.00869565,7.10197009 6.52173913,6.57168965 6.52173913,5.91830841 C6.52173913,5.26492716 7.00869565,4.73464672 7.60869565,4.73464672 C8.20869565,4.73464672 8.69565217,5.26492716 8.69565217,5.91830841" id="Fill-31" fill="#000000"></path>
+                <path d="M15.2173913,5.91830841 C15.2173913,6.57168965 14.7304348,7.10197009 14.1304348,7.10197009 C13.5304348,7.10197009 13.0434783,6.57168965 13.0434783,5.91830841 C13.0434783,5.26492716 13.5304348,4.73464672 14.1304348,4.73464672 C14.7304348,4.73464672 15.2173913,5.26492716 15.2173913,5.91830841" id="Fill-33" fill="#000000"></path>
+                <path d="M21.7391304,5.91830841 C21.7391304,6.57168965 21.2521739,7.10197009 20.6521739,7.10197009 C20.0521739,7.10197009 19.5652174,6.57168965 19.5652174,5.91830841 C19.5652174,5.26492716 20.0521739,4.73464672 20.6521739,4.73464672 C21.2521739,4.73464672 21.7391304,5.26492716 21.7391304,5.91830841" id="Fill-35" fill="#000000"></path>
+                <line x1="39.1304348" y1="18.9385869" x2="17.3913043" y2="18.9385869" id="Stroke-37" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="8.69565217" y1="18.9385869" x2="10.8695652" y2="18.9385869" id="Stroke-39" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="26.0869565" y1="26.040557" x2="17.3913043" y2="26.040557" id="Stroke-41" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="8.69565217" y1="26.040557" x2="10.8695652" y2="26.040557" id="Stroke-43" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="26.0869565" y1="33.1425271" x2="17.3913043" y2="33.1425271" id="Stroke-45" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="8.69565217" y1="33.1425271" x2="10.8695652" y2="33.1425271" id="Stroke-47" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <path d="M32.1541304,32.8771501 L32.1541304,46.6857473 C32.1541304,50 35.1976087,50 35.1976087,50 L47.3715217,48.3428736 L47.3715217,29.0113111 L34.1823913,30.6684374 C33.0628261,30.6684374 32.1541304,29.6788963 32.1541304,28.4573574 C32.1541304,25.9314234 33.5345652,26.8286389 45.3432609,24.5915184" id="Stroke-49" stroke="#00A0F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <line x1="34.6904348" y1="28.4592513" x2="46.3578261" y2="26.8021249" id="Stroke-51" stroke="#00A0F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

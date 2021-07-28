@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>company</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop-HD" transform="translate(-964.000000, -229.000000)" stroke-width="2">
+            <g id="Group-8" transform="translate(325.000000, 110.000000)">
+                <g id="Group-2" transform="translate(540.000000, 70.000000)">
+                    <g id="company" transform="translate(100.000000, 50.000000)">
+                        <polygon id="Stroke-4" stroke="#00A0F1" points="36.1111111 50 44.4444444 50 44.4444444 43.4782609 36.1111111 43.4782609"></polygon>
+                        <polygon id="Stroke-5" stroke="#00A0F1" points="5.55555556 50 13.8888889 50 13.8888889 43.4782609 5.55555556 43.4782609"></polygon>
+                        <line x1="0" y1="21.7391304" x2="11.1111111" y2="21.7391304" id="Stroke-6" stroke="#000000"></line>
+                        <line x1="0" y1="26.0869565" x2="8.33333333" y2="26.0869565" id="Stroke-7" stroke="#000000"></line>
+                        <line x1="22.2222222" y1="8.69565217" x2="33.3333333" y2="8.69565217" id="Stroke-9" stroke="#000000"></line>
+                        <line x1="22.2222222" y1="4.34782609" x2="38.8888889" y2="4.34782609" id="Stroke-10" stroke="#000000"></line>
+                        <line x1="22.2222222" y1="13.0434783" x2="30.5555556" y2="13.0434783" id="Stroke-11" stroke="#000000"></line>
+                        <line x1="0" y1="30.4347826" x2="5.55555556" y2="30.4347826" id="Stroke-12" stroke="#000000"></line>
+                        <polygon id="Stroke-1" stroke="#000000" points="0 50 27.7777778 50 27.7777778 17.3913043 0 17.3913043"></polygon>
+                        <polygon id="Stroke-3" stroke="#000000" points="50 50 27.7777778 50 27.7777778 17.3913043 22.2222222 17.3913043 22.2222222 0 50 0"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

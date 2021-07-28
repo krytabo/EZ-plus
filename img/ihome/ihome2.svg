@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600px" height="1600px" viewBox="0 0 1600 1600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ihome2</title>
+    <defs>
+        <linearGradient x1="95.9516277%" y1="3.07953026%" x2="4.55647198%" y2="96.8988839%" id="linearGradient-1">
+            <stop stop-color="#42E695" offset="0%"></stop>
+            <stop stop-color="#3BB2B8" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 96.5354961 96.541678 96.5354961 96.541678 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ihome2">
+            <rect id="Rectangle" x="0" y="0" width="1600" height="1600"></rect>
+            <g id="ihome-1" transform="translate(147.000000, 193.000000)">
+                <path d="M607.054071,1213.9696 C942.320777,1213.9696 1214.10814,942.21325 1214.10814,606.984801 C1214.10814,271.756352 942.320777,0 607.054071,0 C271.787365,0 0,271.756352 0,606.984801 C0,942.21325 271.787365,1213.9696 607.054071,1213.9696 Z" id="Oval" stroke="#F2F2F2" stroke-width="6.73513685" stroke-linecap="round" stroke-dasharray="20.20540990488986"></path>
+                <path d="M607.054071,1109.23497 C884.470836,1109.23497 1109.36156,884.369909 1109.36156,606.984801 C1109.36156,329.599692 884.470836,104.734632 607.054071,104.734632 C329.637307,104.734632 104.746585,329.599692 104.746585,606.984801 C104.746585,884.369909 329.637307,1109.23497 607.054071,1109.23497 Z" id="Oval" stroke="#F2F2F2" stroke-width="6.73513685" stroke-linecap="round" stroke-dasharray="20.20540990488986"></path>
+                <path d="M607.054071,1002.12 C825.306123,1002.12 1002.23437,825.211948 1002.23437,606.984801 C1002.23437,388.757654 825.306123,211.849597 607.054071,211.849597 C388.80202,211.849597 211.873774,388.757654 211.873774,606.984801 C211.873774,825.211948 388.80202,1002.12 607.054071,1002.12 Z" id="Oval" stroke="#F2F2F2" stroke-width="6.73513685" stroke-linecap="round" stroke-dasharray="20.20540990488986"></path>
+                <g id="Group-27" transform="translate(730.649389, 78.742566)">
+                    <g id="Group-30">
+                        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="154.466685" height="154.456794" rx="77.2283968"></rect>
+                        <g id="Group-25" transform="translate(28.962503, 28.960649)">
+                            <rect id="Rectangle" x="0" y="0" width="96.541678" height="96.5354961"></rect>
+                            <g id="Group-29" transform="translate(5.081141, 2.540408)" stroke="#FFFFFF" stroke-width="3.08913587">
+                                <path d="M43.382642,19.3226344 L43.382642,19.3226344 C55.7113899,19.3226344 65.7051477,29.240559 65.7051477,41.4757557 L65.7051477,41.4757557 C65.7051477,53.7158309 55.7113899,63.6337555 43.382642,63.6337555 L43.382642,63.6337555 C31.0538941,63.6337555 21.0601363,53.7158309 21.0601363,41.4757557 L21.0601363,41.4757557 C21.0601363,29.240559 31.0538941,19.3226344 43.382642,19.3226344 Z" id="Stroke-1"></path>
+                                <path d="M54.8078716,60.2617587 L54.8078716,80.1171218 C54.8078716,86.3761957 49.6905564,91.4546805 43.3836251,91.4546805 L43.3836251,91.4546805 C37.0717781,91.4546805 31.9544629,86.3761957 31.9544629,80.1171218 L31.9544629,60.2617587" id="Stroke-3"></path>
+                                <path d="M43.382642,27.5169964 L43.382642,27.5169964 C51.1544723,27.5169964 57.451572,33.7663134 57.451572,41.4791707 L57.451572,41.4791707" id="Stroke-5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <line x1="43.2862929" y1="0" x2="43.2862929" y2="12.947453" id="Stroke-7" stroke-linecap="round" stroke-linejoin="round"></line>
+                                <line x1="73.9169393" y1="12.9494044" x2="64.6900414" y2="22.106288" id="Stroke-9" stroke-linecap="round" stroke-linejoin="round"></line>
+                                <line x1="86.3793961" y1="41.478195" x2="73.332946" y2="41.478195" id="Stroke-11" stroke-linecap="round" stroke-linejoin="round"></line>
+                                <line x1="74.9340118" y1="72.3569434" x2="65.707114" y2="63.2000597" id="Stroke-13" stroke-linecap="round" stroke-linejoin="round"></line>
+                                <line x1="12.4624568" y1="12.9494044" x2="21.6893547" y2="22.106288" id="Stroke-15" stroke-linecap="round" stroke-linejoin="round"></line>
+                                <line x1="0" y1="41.478195" x2="13.0464501" y2="41.478195" id="Stroke-17" stroke-linecap="round" stroke-linejoin="round"></line>
+                                <line x1="11.4453843" y1="72.3569434" x2="20.6722821" y2="63.2000597" id="Stroke-19" stroke-linecap="round" stroke-linejoin="round"></line>
+                                <line x1="31.9569208" y1="73.0418803" x2="54.8103295" y2="73.0418803" id="Stroke-21" stroke-linecap="round" stroke-linejoin="round"></line>
+                                <line x1="31.9569208" y1="82.04558" x2="54.8103295" y2="82.04558" id="Stroke-23" stroke-linejoin="round"></line>
+                            </g>
+                        </g>
+                    </g>
+                    <text id="生活管家" font-family="NotoSansTC-Regular, Noto Sans TC" font-size="54.0598778" font-weight="normal" fill="#000000">
+                        <tspan x="185.360022" y="104.703334">生活管家</tspan>
+                    </text>
+                </g>
+                <g id="Group-27" transform="translate(954.626082, 393.834425)">
+                    <g id="Group-31">
+                        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="154.466685" height="154.456794" rx="77.2283968"></rect>
+                        <g id="Group-20" transform="translate(29.348670, 29.346791)">
+                            <line x1="22.8841104" y1="28.4985067" x2="48.0551317" y2="28.4985067" id="Stroke-1" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="15.2365893" y1="39.7863094" x2="48.0582354" y2="39.7863094" id="Stroke-2" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="15.2365893" y1="51.0741121" x2="48.0582354" y2="51.0741121" id="Stroke-3" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="15.2365893" y1="62.3598367" x2="35.8296505" y2="62.3598367" id="Stroke-4" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <path d="M15.3431497,30.9237788 L15.3431497,30.9237788 C13.9361382,30.9237788 12.7981142,29.7807628 12.7981142,28.3675794 L12.7981142,28.3675794 C12.7981142,26.9543959 13.9361382,25.8113799 15.3431497,25.8113799 L15.3431497,25.8113799 C16.7501611,25.8113799 17.8881851,26.9543959 17.8881851,28.3675794 L17.8881851,28.3675794 C17.8881851,29.7807628 16.7501611,30.9237788 15.3431497,30.9237788" id="Fill-5" fill="#FFFFFF"></path>
+                            <path d="M39.5882333,13.5551309 L29.6305235,13.5551309 C25.9060814,13.5551309 22.885145,10.5209429 22.885145,6.77496767 L22.885145,6.77496767 C22.885145,3.03418798 25.9060814,0 29.6305235,0 L39.5882333,0 C43.3178483,0 46.3387847,3.03418798 46.3387847,6.77496767 L46.3387847,6.77496767 C46.3387847,10.5209429 43.3178483,13.5551309 39.5882333,13.5551309 Z" id="Stroke-7" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <polyline id="Stroke-9" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round" points="42.3355267 71.2504231 69.49809 48.4784267 96.541678 71.2504231"></polyline>
+                            <path d="M69.4660184,78.3251727 L69.4660184,78.3251727 C65.3536135,78.3251727 62.022307,81.6710923 62.022307,85.8015365 L62.022307,96.5354961 L76.9097298,96.5354961 L76.9097298,85.8015365 C76.9097298,81.6710923 73.5784232,78.3251727 69.4660184,78.3251727 Z" id="Stroke-11" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <polyline id="Stroke-13" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round" points="48.247044 66.29389 48.247044 96.5318592 87.6381922 96.5318592 87.6381922 64.116964"></polyline>
+                            <path d="M41.1912953,96.5334178 L7.44888424,96.5334178 C3.3364794,96.5334178 0,93.1823027 0,89.0518585 L0,14.1739182 C0,10.0382784 3.3364794,6.68716326 7.44888424,6.68716326 L15.3426324,6.68716326" id="Stroke-15" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M46.317576,6.68872192 L64.2052439,6.68872192 C68.3228215,6.68872192 71.6541281,10.0398371 71.6541281,14.1702813 L71.6541281,38.9997066" id="Stroke-17" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                    <text id="社區資訊" font-family="NotoSansTC-Regular, Noto Sans TC" font-size="54.0598778" font-weight="normal" fill="#000000">
+                        <tspan x="185.360022" y="104.703334">社區資訊</tspan>
+                    </text>
+                </g>
+                <g id="Group-27" transform="translate(954.626082, 744.451347)">
+                    <g id="Group-31">
+                        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="154.466685" height="154.456794" rx="77.2283968"></rect>
+                        <g id="Mail-icon" transform="translate(29.348670, 29.346791)">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <g id="Mask"></g>
+                            <path d="M83.0416408,78.4392568 L13.5000372,78.4392568 C10.0104944,78.4392568 7.18182319,75.5735498 7.18182319,72.0383183 L7.18182319,22.0845016 C7.18182319,18.5492702 10.0104944,15.6835632 13.5000372,15.6835632 L83.0416408,15.6835632 C86.5311836,15.6835632 89.3598548,18.5492702 89.3598548,22.0845016 L89.3598548,72.0383183 C89.3598548,75.5735498 86.5311836,78.4392568 83.0416408,78.4392568 Z" id="Stroke-6" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)"></path>
+                            <polyline id="Stroke-7" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)" points="7.61354002 19.7719303 48.2707512 54.4831732 82.1068541 25.3833101"></polyline>
+                            <line x1="9.23737105" y1="76.7537089" x2="30.1719951" y2="60.5090713" id="Stroke-8" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)"></line>
+                            <line x1="87.3037804" y1="76.7537089" x2="66.7289935" y2="60.5090713" id="Stroke-9" stroke="#FFFFFF" stroke-width="3.08913587" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)"></line>
+                        </g>
+                    </g>
+                    <text id="郵件包裹" font-family="NotoSansTC-Regular, Noto Sans TC" font-size="54.0598778" font-weight="normal" fill="#000000">
+                        <tspan x="185.360022" y="104.703334">郵件包裹</tspan>
+                    </text>
+                </g>
+                <g id="Group-27" transform="translate(730.649389, 1059.543206)">
+                    <g id="Group-31">
+                        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="154.466685" height="154.456794" rx="77.2283968"></rect>
+                        <g id="專案調查icon" transform="translate(30.218511, 31.763557)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.08913587">
+                            <path d="M43.7739276,14.8085451 C43.7739276,22.9899284 37.1415144,29.621917 28.9644342,29.621917 C20.7776999,29.621917 14.1452867,22.9899284 14.1452867,14.8085451 C14.1452867,6.63198858 20.7776999,0 28.9644342,0 C37.1415144,0 43.7739276,6.63198858 43.7739276,14.8085451 Z" id="Stroke-1"></path>
+                            <path d="M25.3566717,35.4970673 L13.7330537,35.4970673 C6.14970489,35.4970673 0,41.6415516 0,49.2292416 L0,62.937282 C0,67.8268049 3.96786297,71.7992405 8.86252604,71.7992405 L22.5569631,71.7992405" id="Stroke-3"></path>
+                            <path d="M11.6110676,79.8430608 L11.6110676,86.3157658 C11.6110676,89.3566339 14.0728804,91.8134623 17.1139433,91.8134623 L41.6355295,91.8134623 C43.9235672,91.8134623 45.7771675,89.9648075 45.7771675,87.6720895" id="Stroke-5"></path>
+                            <path d="M63.70013,60.4461835 L61.571386,69.8439141 C61.3203776,70.9492455 60.2632462,71.6732617 59.1433628,71.5091514 C55.2044623,70.939592 52.5350849,67.1988415 53.2832829,63.2939807 C54.0025184,59.5097892 57.6469668,57.0240002 61.4314005,57.7335361 L61.9865152,57.8348984 C63.1932862,58.0617568 63.9704467,59.2491434 63.70013,60.4461835 Z" id="Stroke-7"></path>
+                            <polyline id="Stroke-9" points="11.6110676 50.943712 11.6110676 58.251449 26.0295672 58.251449 19.5854102 51.3443343"></polyline>
+                            <path d="M68.7014716,27.1583311 C71.0619156,28.2636625 73.8181805,28.8863165 76.7530476,28.8863165 C85.5431673,28.8863165 92.6727703,23.2438167 92.6727703,16.2787807 C92.6727703,9.31374466 85.5431673,3.66641814 76.7530476,3.66641814 C67.9677549,3.66641814 60.8381519,9.31374466 60.8381519,16.2787807 C60.8381519,17.9922858 61.2677624,19.6189089 62.0449229,21.1055555 C62.3345479,21.6558078 60.7705728,27.6892763 59.5686289,28.4229461 C58.366685,29.1566159 67.9146569,26.7914962 68.7014716,27.1583311 Z" id="Stroke-11"></path>
+                            <polyline id="Stroke-13" points="70.9171031 14.8085451 74.7160182 19.0126659 81.1939647 12.5399609"></polyline>
+                            <polyline id="Stroke-15" points="56.5488052 70.5853067 54.410407 81.0063135 21.1759344 81.0063135 30.7866584 35.4946539 63.7508144 35.4946539 59.1988742 57.6881644"></polyline>
+                        </g>
+                    </g>
+                    <text id="活動報名" font-family="NotoSansTC-Regular, Noto Sans TC" font-size="54.0598778" font-weight="normal" fill="#000000">
+                        <tspan x="185.360022" y="104.703334">活動報名</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
