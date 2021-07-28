@@ -42,9 +42,12 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<!--    <link rel="stylesheet" href="css/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">-->
 
     <!--  fullpage-->
-    <link href="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.css" rel="stylesheet"/>
+<!--    <link href="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.css" rel="stylesheet"/>-->
+    <link rel="stylesheet" href="css/fullpage/fullpage.css">
 
     <style type="text/css">
         .logo{
@@ -119,10 +122,6 @@
             background:rgba(199, 229, 240,0.8);
         }
 
-        /*    .section {
-              padding: 0 0 0 150px;
-            }*/
-
         .fp-tableCell{
             padding: 0 0 0 150px;
         }
@@ -142,10 +141,6 @@
                 padding: 0;
             }
         }
-
-        /*    .section-footer {
-              height: 2000px;
-            }*/
 
         .full_footer {
             bottom: 0;
@@ -199,18 +194,6 @@
             position: absolute;
         }
 
-        .w_content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .w_content .circle_line {
-            animation: zoomIn 0.9s both 0.5s;
-            position: absolute;
-            transform: translateY(-45%);
-            z-index: -1;
-        }
-
         .w_img_one {
             position: relative;
         }
@@ -220,129 +203,15 @@
             z-index: 1;
         }
 
-        /* .w_img_one {
-       position: absolute;
-       z-index: 1;
-       width: 100%;
-       height: 100%;
-       display: grid;
-       align-content: center;
-       justify-content: center;
-     }
-     .w_img_one:before {
-       content: "";
-       width: 100%;
-       height: 100%;
-       background: url("img/banner/round_animation.svg") no-repeat scroll center center;
-       position: absolute;
-       animation: rotate 10s both 5s infinite;
-     }
-
-     @keyframes rotate {
-       0% {
-         transform: rotate(0deg);
-       }
-       100% {
-         transform: rotate(360deg);
-       }
-     }
-     .rotate {
-       animation-name: rotate;
-     }*/
-
-
-        @media (max-width: 576px) {
-            .w_content h4 {
-                font-size: 40px;
-                line-height: 80px;
-                text-align: center;
-            }
-        }
-
         @media (max-width: 991px) {
             #menu {
                 display: none;
             }
-
-            .w_content .circle_line {
-                width: 290px;
-                top: 30px;
-            }
-
-            .w_content {
-                text-align: center;
-            }
         }
-
         @media (max-width: 1400px) {
-            .w_content .circle_line {
-                left: 0px;
-            }
-
             .w_img_one img {
                 max-width: 100%;
             }
-
-        }
-
-        .w_content h4 {
-            line-height: 1.05;
-            font-size: 50px;
-            font-weight: bold;
-        }
-
-        .w_content p {
-            margin-bottom: 0;
-            margin-top: 20px;
-        }
-
-        .w_content a {
-            margin-top: 30px;
-        }
-
-        .slider-control {
-            width: 44px;
-            height: 44px;
-            display: inline-block;
-            text-align: center;
-            border-radius: 50%;
-            margin: 7px;
-            border: 1px solid #333;
-            line-height: 44px;
-            color: #333;
-            font-size: 1.5em;
-            font-family: "courier new";
-            position: relative;
-        }
-
-        .slider-control span,
-        .slider-control:not(.disabled):after {
-            transition: transform .25s cubic-bezier(.4, 0, .2, 1);
-        }
-
-        .slider-control span {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-            top: 0;
-            left: 0;
-        }
-
-        .slider-control:not(.disabled):after {
-            display: block;
-            content: '';
-            background-color: #fff;
-            height: 1px;
-            width: 14px;
-            position: absolute;
-            top: 50%;
-            left: auto;
-            right: 14px;
-            transform: scaleX(0) translateX(0);
-        }
-
-        .fp-controlArrow {
-            display: none;
         }
 
         .social_icon a {
@@ -421,8 +290,6 @@
 
         .swiper-slide img {
             display: block;
-            /* width: 100%;
-      object-fit: cover; */
             max-height: 500px;
         }
 
@@ -497,11 +364,6 @@
     </style>
 
     <style>
-        .gallery-container {
-            width: 730px;
-            display: flex;
-            justify-content: space-between;
-        }
         .gallery-main {
             width: 600px;
             height: 300px;
@@ -560,22 +422,7 @@
         .gallery-thumbs .swiper-slide-thumb-active img {
             margin-left: -15px;
         }
-        /** * Optionnal */
-        html, body {
-            width: 100%;
-            height: 100%;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        @keyframes slide-in {
-            from {
-                opacity: 0;
-                right: -50%;
-            }
-        }
+
 
         .gallery-circle {
             position: absolute;
@@ -1025,21 +872,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--                  <div class="swiper-slide">
-                                    <div class="w_img_one">
-                                      <img class="animate-animated animate-zoomIn" src="img/banner/考勤-2.svg" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="w_img_one">
-                                      <img class="animate-animated animate-zoomIn" src="img/banner/考勤-3.svg" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="w_img_one">
-                                      <img class="animate-animated animate-zoomIn" src="img/banner/考勤-4.svg" alt="">
-                                    </div>
-                                  </div>-->
                                 </div>
                             </div>
                         </div>
@@ -1085,46 +917,6 @@
                 </div>
             </div>
         </div>
-
-        <!--<div class="section" id="section2">
-    <div class="slide" id="slide2-1">
-    <div class="intro">
-      <div class="container custom_container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="w_content">
-              <img class="circle_line" src="img/home/dot.png" alt="">
-              <h4 class="animate-animated animate__fadeInUp">考勤系統</h4>
-              <p style="font-size: 30px;">跟傳統打卡說掰掰</p>
-
-              <div class="slider-controls">
-                <a class="slider-control slider-control-prev moveslideleft" href="#">
-                  <span> <i class="ri-arrow-left-s-line"></i> </span>
-                </a>
-                <a class="slider-control slider-control-next moveslideright" href="#">
-                  <span> <i class="ri-arrow-right-s-line"></i> </span>
-                </a>
-              </div>
-
-              <a href="product/attence.html" class="btn btn-style2 animate-animated animate__fadeInUp">瞭解更多</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="w_img_one">
-              <img class="animate-animated animate-zoomIn" src="img/home/slider_dashboard.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    </div>
-
-    <div class="slide" id="slide2-2">
-    <h1>Slide 2</h1>
-    </div>
-
-    </div>-->
 
         <!--BIM-->
         <div class="section wave_two_section_three parallax-window" id="section2">
@@ -1648,16 +1440,60 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!--fullpage-->
-<!--<script src="js/fullpage/fullpage.js"></script>
-<script src="js/fullpage/fullpage.min.js"></script>-->
-<script src="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.js"></script>
+<script src="js/fullpage/fullpage.js"></script>
+<script src="js/fullpage/fullpage.min.js"></script>
+<!--<script src="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.js"></script>-->
 
 <!-- fullpage -->
 <script type="text/javascript">
-  //using document ready...
-  $(document).ready(function() {
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#f4f4f4', '#c7e5f0', '#ffe5d4', '#d8f8d3', '#f4f4f4'],
+        anchors: ['1', '2', '3', '4', '5', '6'],
+        menu: '#menu',
+        dragAndMove: true,
+        scrollOverflow: true,
+        verticalCentered: true,
+        autoScrolling:false,
+    });
+</script>
+<!--<script type="text/javascript">
 
-    //initialising fullpage.js in the jQuery way
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#f4f4f4', '#c7e5f0', '#ffe5d4', '#d8f8d3', '#f4f4f4'],
+        anchors: ['1', '2', '3', '4', '5', '6'],
+        menu: '#menu',
+        dragAndMove: true,
+        scrollOverflow: true,
+        verticalCentered: true,
+        autoScrolling:false,
+    });
+
+    // calling fullpage.js methods using jQuery
+    $('#moveSectionUp').click(function(e) {
+        e.preventDefault();
+        $.fn.fullpage.moveSectionUp();
+    });
+
+    $('#moveSectionDown').click(function(e) {
+        e.preventDefault();
+        $.fn.fullpage.moveSectionDown();
+    });
+
+    $('.moveslideleft').click(function(e) {
+        e.preventDefault();
+        $.fn.fullpage.moveSlideLeft();
+    });
+    $('.moveslideright').click(function(e) {
+        e.preventDefault();
+        $.fn.fullpage.moveSlideRight();
+    });
+
+    $('.btn-next').on('click', function(e) {
+        $.scrollify.next();
+    });
+
+  //using document ready...
+  /*$(document).ready(function() {
     $('#fullpage').fullpage({
       sectionsColor: ['#f4f4f4', '#c7e5f0', '#ffe5d4', '#d8f8d3', '#f4f4f4'],
       anchors: ['1', '2', '3', '4', '5', '6'],
@@ -1692,11 +1528,152 @@
       $.scrollify.next();
     });
 
-  });
-</script>
+  });*/
+</script>-->
 
 <!-- swiper -->
-<script>
+<script type="text/javascript">
+    var attence2 = new Swiper(".attence_list", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+
+    var attence = new Swiper('.attence_photo', {
+        direction: 'vertical',
+        loop: true,
+        autoHeight: true,
+        /*        autoplay: {
+                  delay: 2500,
+                  disableOnInteraction: false,
+                },*/
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        thumbs: {
+            swiper: attence2,
+        },
+    });
+
+    var bim2 = new Swiper(".bim_list", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+
+    var bim = new Swiper('.bim_photo', {
+        direction: 'vertical',
+        loop: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        thumbs: {
+            swiper: bim2,
+        },
+    });
+
+    var crm2 = new Swiper(".crm_list", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+
+    var crm = new Swiper('.crm_photo', {
+        direction: 'vertical',
+        loop: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        thumbs: {
+            swiper: crm2,
+        },
+    });
+
+    var iot2 = new Swiper(".iot_list", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+
+    var iot = new Swiper('.iot_photo', {
+        direction: 'vertical',
+        loop: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        thumbs: {
+            swiper: iot2,
+        },
+    });
+
+    var ihome2 = new Swiper(".ihome_list", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+
+    var ihmoe = new Swiper('.ihome_photo', {
+        direction: 'vertical',
+        loop: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        thumbs: {
+            swiper: ihome2,
+        },
+    });
+</script>
+<!--<script>
   $(document).ready(function() {
     var attence2 = new Swiper(".attence_list", {
       spaceBetween: 10,
@@ -1875,7 +1852,7 @@
     });*/
 
   });
-</script>
+</script>-->
 
 <!--bootstrap v4 js-->
 <script src="js/vendor/bootstrap.min.js"></script>
