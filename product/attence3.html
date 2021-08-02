@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>億集創見</title>
+    <!-- Standard Favicon -->
+    <link rel="icon" href="../img/fav/favicon-96x96.png">
+
+    <!-- Touch Icons - iOS and Android 2.1+ -->
+    <link rel="apple-touch-icon" href="../img/fav/android-icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/fav/android-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/fav/apple-icon-114x114.png" />
+
+    <!--bootstrap v4.0.0-->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <!--animate-->
+    <link rel="stylesheet" type="text/css" href="../css/aos.css">
+    <!--reset css-->
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <!--menu css-->
+    <link rel="stylesheet" type="text/css" href="../css/menu-maker.css">
+
+    <!--owl-carousel-->
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/owl.theme.default.min.css">
+    <!--pop up css-->
+    <link rel="stylesheet" type="text/css" href="../css/magnific-popup.css">
+    <!--fontawesome cdn-->
+    <link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+    <!--animation-->
+    <link rel="stylesheet" type="text/css" href="../css/animation-spin.css">
+    <!--main style-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800,800i&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+    <!--modernizr-->
+    <script src="../js/vendor/modernizr.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        .overview_contents {
+            text-align: center;
+        }
+
+
+
+        @media (min-width: 75em) {
+
+            .container {
+                padding-right: 35px;
+                padding-left: 35px;
+            }
+
+            .p-service-section--bevel-1 {
+                -webkit-clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
+                clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
+            }
+
+            .p-service-section--bevel-2 {
+                -webkit-clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
+                clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
+            }
+
+            .l-section {
+                position: relative;
+            }
+
+            .p-service-section {
+                min-height: 800px;
+                overflow: hidden;
+            }
+
+            .u-text-5xl {
+                font-size: 2.8125rem;
+            }
+
+            h2 {
+                font-size: 2.8125rem;
+            }
+
+        }
+
+        @media (min-width: 48em) {
+
+            .container {
+                padding-right: 35px;
+                padding-left: 35px;
+            }
+
+            .p-service-section--bevel-1 {
+                -webkit-clip-path: polygon(0 0, 100% 70px, 100% calc(100% - 70px), 0 100%);
+                clip-path: polygon(0 0, 100% 70px, 100% calc(100% - 70px), 0 100%);
+            }
+
+            .p-service-section--bevel-2 {
+                -webkit-clip-path: polygon(0 70px, 100% 0, 100% 100%, 0 calc(100% - 70px));
+                clip-path: polygon(0 70px, 100% 0, 100% 100%, 0 calc(100% - 70px));
+            }
+
+            .p-service-section__main {
+                padding: 7.5rem 0;
+            }
+
+            .p-service-section__inner {
+                display: flex;
+                justify-content: center;
+                padding: 0 20px;
+            }
+
+            .p-service-section__text {
+                max-width: 530px;
+            }
+
+            .u-text-5xl {
+                font-size: 2.25rem;
+            }
+
+            h2 {
+                font-size: 2.25rem;
+            }
+        }
+
+        .p-service-section__content {
+            flex: 1;
+        }
+
+        .p-service-section__gallery {
+            flex: 0 0 350px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .p-service-section--bevel-1 {
+            -webkit-clip-path: polygon(0 0, 100% 40px, 100% calc(100% - 40px), 0 100%);
+            clip-path: polygon(0 0, 100% 40px, 100% calc(100% - 40px), 0 100%);
+        }
+
+        .p-service-section--bevel-2 {
+            -webkit-clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 calc(100% - 40px));
+            clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 calc(100% - 40px));
+        }
+
+        @media (max-width:575px) {
+            .warp {
+                flex-wrap: wrap-reverse !important;
+            }
+        }
+
+        @media (min-width: 62em) {
+
+            .container {
+                padding-right: 35px;
+                padding-left: 35px;
+            }
+
+            .p-service-section {
+                display: flex;
+                align-items: center;
+                min-height: 600px;
+            }
+
+            .p-service-section__content {
+                flex: 1;
+            }
+
+            .p-service-section__gallery {
+                flex: 0 0 700px;
+                max-width: 700px;
+            }
+
+
+        }
+
+        .p-service-section__radius {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-top-left-radius: 1000px;
+            border-bottom-left-radius: 1000px;
+            background-image: url(../img/service-pattern.svg);
+        }
+
+        .p-service-section__mask {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .p-service-section__background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url(../img/ihome/bg.png);
+            filter: blur(5px);
+        }
+
+        .l-wrapper-large {
+            width: 100%;
+            max-width: 1560px;
+            padding: 0 2.875rem;
+            margin: 0 auto;
+        }
+
+        .p-service-section__main {
+            position: relative;
+            width: 100%;
+            padding: 6.25rem 0;
+        }
+
+        .u-gap-40 {
+            /* margin-left: -2.5rem; */
+            margin-bottom: -2.5rem;
+        }
+
+        .u-items-center {
+            align-items: center;
+        }
+
+        .col-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-md-3 {
+            max-width: 50%
+        }
+
+        .p-service-section__content {
+            width: 100%;
+            /* padding-left: 2.5rem; */
+        }
+
+        .u-color-white {
+            color: #fff;
+        }
+
+
+        .p-service-section__text {
+            width: 100%;
+        }
+
+        .p-service-section__icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 108px;
+            height: 108px;
+            border-radius: 50%;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+            text-align: center;
+        }
+
+        .u-mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        .u-bg-stayfun {
+            background-color: #0a4a1999;
+        }
+
+        .u-bg-white {
+            background-color: #fff;
+        }
+
+        .p-service-section__icon img {
+            width: 50px;
+            margin-top: 15px;
+        }
+
+        .u-text-sm {
+            font-size: .875rem;
+            margin: 0px;
+        }
+
+        .u-font-medium {
+            font-weight: 500;
+        }
+
+        .u-text-5xl {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .u-color-stayfun {
+            color: #fabf13;
+        }
+
+        .c-dots {
+            position: relative;
+            list-style: none;
+            padding: 0;
+            font-size: 18px;
+        }
+
+        .c-dots__item:not(:last-child) {
+            margin: 0 0 .625rem;
+        }
+
+        .c-dots__item {
+            position: relative;
+            font-size: 18px;
+        }
+
+        .p-service-section__gallery {
+            width: 100%;
+        }
+
+
+        .c-gallery {
+            position: relative;
+        }
+
+        .c-gallery__media {
+            position: relative;
+        }
+
+        .c-gallery__bg {
+            position: relative;
+            display: block;
+            width: 100%;
+        }
+
+        .z-10 {
+            z-index: 10;
+        }
+
+        .z-11 {
+            z-index: 11;
+        }
+
+        .c-gallery__bg:not(:first-child) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .single_fact_in {
+            padding: 15px;
+        }
+
+        .single_fact_in p {
+            margin-bottom: 0;
+        }
+
+        .single_fact_in i {
+            display: block;
+            font-size: 52px;
+            line-height: 52px;
+        }
+
+        /* html:not(.no-js) [data-aos^="fade"][data-aos^="fade"].aos-animate {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+
+            [data-aos][data-aos][data-aos-delay="250"].aos-animate,
+            body[data-aos-delay="250"] [data-aos].aos-animate {
+                transition-delay: .25s;
+            }
+
+            [data-aos][data-aos][data-aos-easing="ease"],
+            body[data-aos-easing="ease"] [data-aos] {
+                transition-timing-function: ease;
+            }
+
+            [data-aos][data-aos][data-aos-duration="1000"],
+            body[data-aos-duration="1000"] [data-aos] {
+                transition-duration: 1s;
+            } */
+    </style>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>
+
+</head>
+
+<body>
+<!-- <div class="se-pre-con"></div> -->
+
+<!-- Menu -->
+<div class="header-logo-menu bg_cover">
+    <div class="container">
+        <div class="navigatin" id="main_nav_id">
+            <div class="row no-gutters">
+                <div class="col-lg-3 logo">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../img/icon/企業形象-彩色.png" alt="menu" />
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <nav id="mobile-menu" class="main-menu">
+                        <ul>
+                            <li>
+                                <a href="../index.html">首頁</a>
+                            </li>
+                            <li>
+                                <a href="../news.html">最新消息</a>
+                            </li>
+                            <li class="current">
+                                <a href="#">產品介紹</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">#BIM (暫無)</a></li>
+                                    <li><a href="#">CRM (暫無)</a></li>
+                                    <li><a href="#">IOT (暫無)</a></li>
+                                    <li><a href="../product/ihome.html">iHome</a></li>
+                                    <li><a href="../product/attence.html">考勤系統</a></li>
+                                    <!-- <li><a href="#">建築前期資產管理 (暫無)</a></li> -->
+                                    <!-- <li><a href="#">產權管理 (暫無)</a></li> -->
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">優惠方案 (暫無)</a>
+                            </li>
+                            <li>
+                                <a href="../clients.html">應用案例</a>
+                            </li>
+                            <li>
+                                <a href="#">關於我們</a>
+                                <ul class="sub-menu">
+                                    <li><a href="../about/company.html">公司簡介</a></li>
+                                    <li><a href="../about/technology.html">技術核心</a></li>
+                                    <li><a href="../about/joinus.html">加入我們</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li>
+                            <a href="#news_id">News</a>
+                        </li>
+                        <li>
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="single.html">Single</a></li>
+                                <li><a href="contact.html">Conatct</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="btn btn-style1" href="#">Download</a>
+                        </li> -->
+                        </ul>
+                    </nav>
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 150px;">
+
+    <div class="services_titles">
+        <h2>考勤系統</h2>
+    </div>
+
+    <!-- 產品介紹簡介 -->
+    <div class="services_sec">
+        <div class="container">
+            <div class="services_titles">
+                <h2 style="color: #333;font-weight: 200;">豐富的服務</h2>
+                <!-- <p class="link">查看更多→</p> -->
+            </div>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="single_fact_in wow animated fadeIn">
+                        <i class="ri-time-line"></i>
+                        <h4>考勤打卡</h4>
+                        <p>即時在線打卡</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single_fact_in wow animated fadeIn">
+                        <i class="ri-time-line"></i>
+                        <h4>加班打卡</h4>
+                        <p>加班考勤系統</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single_fact_in wow animated fadeIn">
+                        <i class="ri-time-line"></i>
+                        <h4>臨時加班</h4>
+                        <p>臨時加班也能打卡</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single_fact_in wow animated fadeIn">
+                        <i class="ri-todo-line"></i>
+                        <h4>考勤紀錄</h4>
+                        <p>即時查看每天記錄</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single_fact_in wow animated fadeIn">
+                        <i class="ri-calendar-check-line"></i>
+                        <h4>班表查詢</h4>
+                        <p>線上即時查看班表</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single_fact_in wow animated fadeIn">
+                        <i class="ri-calendar-line"></i>
+                        <h4>行事曆</h4>
+                        <p>每月公告一覽</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single_fact_in wow animated fadeIn">
+                        <i class="ri-file-list-3-line"></i>
+                        <h4>教育訓練</h4>
+                        <p>線上查看訓練手冊</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single_fact_in wow animated fadeIn">
+                        <i class="ri-wechat-line"></i>
+                        <h4>群組訊息</h4>
+                        <p>即時在線群聊</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="services_sec l-section p-service-section--bevel-1" style="margin-top: -25px;">
+        <div class="p-service-section__mask">
+            <div class="p-service-section__radius" style="background-color: #007bff;"></div>
+        </div>
+        <div class="l-wrapper-large">
+            <div class="p-service-section__main">
+                <div class="col-row u-items-center u-gap-40 warp">
+
+                    <div class="p-service-section__gallery">
+                        <div class="c-gallery">
+                            <div class="c-gallery__media" uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 500">
+                                <img src="../img/attence/考勤系統.svg" class="c-gallery__bg z-10"
+                                     uk-scrollspy-class="uk-animation-slide-bottom">
+                                <img src="../img/attence/考勤系統2.svg" class="c-gallery__bg"
+                                     uk-scrollspy-class="uk-animation-slide-bottom">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-service-section__content">
+                        <div class="p-service-section__inner">
+                            <div class="p-service-section__text">
+                                <div class="p-service-section__icon u-bg-stayfun u-mb-6 u-bg-white">
+                                    <!-- <img src="https://www.mayohr.com/assets/img/icon/icon-stayfun-section-1.svg"> -->
+                                    <i class="ri-open-arm-line" style="color: #007bff;font-size: 45px;padding: 15px 0;"></i>
+                                    <p class="u-text-sm" style="color:#007bff">考勤打卡</p>
+
+                                </div>
+
+                                <div style="background: #00000099;;border-radius: 10px;padding: 20px;text-align: center;">
+                                    <h2 class="u-text-5xl u-font-medium u-mb-6 u-color-white">
+                                        跟傳統打卡說掰掰
+                                    </h2>
+                                    <p class="c-dots u-color-white"> 使用手機打卡上下班，出勤紀錄一把罩！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="l-section p-service-section--bevel-2" style="margin-top: -140px;">
+        <div class="p-service-section__mask">
+            <div class="p-service-section__background"
+                 style="background-image:url('https://images.unsplash.com/photo-1498049860654-af1a5c566876?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');">
+            </div>
+        </div>
+        <div class="l-wrapper-large">
+            <div class="p-service-section__main">
+                <div class="col-row u-items-center u-gap-40">
+                    <div class="p-service-section__content">
+                        <div class="p-service-section__inner">
+                            <div class="p-service-section__text">
+                                <div class="p-service-section__icon u-bg-stayfun u-mb-6">
+                                    <i class="ri-open-arm-line" style="color: #fff;font-size: 45px;padding: 15px 0;"></i>
+                                    <p class="u-text-sm u-color-white">考勤打卡</p>
+
+                                </div>
+
+                                <div style="background: #00000099;;border-radius: 10px;padding: 20px;text-align: center;">
+                                    <h2 class="u-text-5xl u-font-medium u-mb-6 u-color-white">
+                                        精準定位，時間偵測
+                                    </h2>
+                                    <p class="c-dots u-color-white">打卡地點、時間精準偵測</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="p-service-section__gallery">
+                        <div class="c-gallery">
+                            <div class="c-gallery__media" uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 500">
+                                <img src="../img/attence/考勤系統3.svg" class="c-gallery__bg z-10"
+                                     uk-scrollspy-class="uk-animation-slide-bottom">
+                                <img src="../img/attence/考勤系統4.svg" class="c-gallery__bg"
+                                     uk-scrollspy-class="uk-animation-slide-bottom">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services_sec l-section p-service-section--bevel-1" style="margin-top: -40px;">
+        <div class="p-service-section__mask">
+            <div class="p-service-section__radius" style="background-color: #007bff;"></div>
+        </div>
+        <div class="l-wrapper-large">
+            <div class="p-service-section__main">
+                <div class="col-row u-items-center u-gap-40 warp">
+
+                    <div class="p-service-section__gallery">
+                        <div class="c-gallery">
+                            <div class="c-gallery__media" uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 500">
+                                <img src="../img/attence/考勤系統5.svg" class="c-gallery__bg z-10"
+                                     uk-scrollspy-class="uk-animation-slide-bottom">
+                                <img src="../img/attence/考勤系統6.svg" class="c-gallery__bg"
+                                     uk-scrollspy-class="uk-animation-slide-bottom">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-service-section__content">
+                        <div class="p-service-section__inner">
+                            <div class="p-service-section__text">
+                                <div class="p-service-section__icon u-bg-stayfun u-mb-6 u-bg-white">
+                                    <!-- <img src="https://www.mayohr.com/assets/img/icon/icon-stayfun-section-1.svg"> -->
+                                    <i class="ri-open-arm-line" style="color: #007bff;font-size: 45px;padding: 15px 0;"></i>
+                                    <p class="u-text-sm" style="color:#007bff">巡邏巡檢</p>
+                                </div>
+
+                                <div style="background: #00000099;;border-radius: 10px;padding: 20px;text-align: center;">
+                                    <h2 class="u-text-5xl u-font-medium u-mb-6 u-color-white">
+                                        智慧巡邏系統
+                                    </h2>
+                                    <p class="c-dots u-color-white"> 設定班表、排定路線、匯出資訊以及異常通報</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="inside_screenshot">
+                        <img src="../img/attence/attence.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="screenshot_s">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="inside_screenshot">
+                        <img src="../img/attence/middle_img.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w-100 pt-120"></div>
+
+    <!--預約專人諮詢-->
+    <div class="container" id="contact_us">
+        <div class="contact_us row">
+            <div class="col-sm-6 contact_us_footer">
+                <i class="ri-phone-line"></i>
+                <h4>直接電話聯繫我們</h4>
+                <p>電話客服時間：星期一～星期五 09:00~18:00</p>
+                <button class="btn btn-circle btn_animation primary hover-left"
+                        onclick="window.location.href='tel:0423273199'">
+                    04-2327-3199
+                </button>
+            </div>
+            <div class="col-sm-6 contact_us_footer">
+                <i class="ri-mail-open-line"></i>
+                <h4>填寫表單聯繫我們</h4>
+                <p>歡迎填寫表單，我們會盡快回覆您！</p>
+                <button class="btn btn-circle btn_animation primary hover-left"
+                        onclick="window.location.href='../contact.html'">
+                    馬上預約
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--footers-->
+<footer class="footers">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer_content">
+                    <h3>現在可以開始</h3>
+                    <a href="https://apps.apple.com/tw/developer/ez-tech-ltd/id1068678728" target="_blank">
+                        <img src="../img/icon/btn1.png" alt="" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/developer?id=億集科技有限公司" target="_blank">
+                        <img src="../img/icon/btn2.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-md-12">
+                <div class="copyright_con">
+                    <div class="row">
+                        <div class="col logo">
+                            <img src="../img/icon/企業形象-白色.png" alt="">
+                        </div>
+                        <div class="col my-auto text-right">
+                            <p>2021 Copyright by <a href="#">EZ-plus</a> . All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="../img/footer/footer_mock1.png" class="f-left" alt="" />
+    <img src="../img/footer/footer_mock2.png" class="f-right" alt="" />
+</footer>
+
+
+<!--jquery-->
+<script src="../js/jquery-1.12.4.min.js"></script>
+<!--bootstrap v4 js-->
+<script src="../js/vendor/bootstrap.min.js"></script>
+<!--popper js-->
+<script src="../js/vendor/popper.min.js"></script>
+<!--menu js-->
+<script src="../js/vendor/menu.js"></script>
+<script src="../js/vendor/one-page.js"></script>
+<!--aos js-->
+<script src="../js/vendor/aos.js"></script>
+<!--counter js-->
+<script src="../js/vendor/counter.js"></script>
+<!--owl carousel -->
+<script src="../js/vendor/owl-carousel.js"></script>
+<!--iso top-->
+<script src="../js/vendor/isotop.js"></script>
+<!--magnifice popup-->
+<script src="../js/vendor/magnifice-js.js"></script>
+<!--easing js-->
+<script src="../js/vendor/easing.js"></script>
+<!--main script-->
+<script src="../js/main.js"></script>
+
+</body>
+
+</html>
