@@ -64,3 +64,14 @@
     </div>
   </div>
 </div>
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".pcNav li a").each(function() {
+      if($(this)[0].href == String(window.location)) {
+        $(this).parent("li").addClass("current");
+      }
+    });
+  })
+</script>

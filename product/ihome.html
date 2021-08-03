@@ -43,12 +43,819 @@
     <!--  fullpage-->
     <link rel="stylesheet" href="../css/fullpage/fullpage.css">
 
-    <style type="text/css">
-        /*        body{
-                    color: #639f63 !important;
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <style>
+        /*＝＝＝＝＝＝＝＝＝＝＝ 綠色主題 ＝＝＝＝＝＝＝＝＝＝＝*/
+
+        .bg-green .services_titles h2 {
+            color: #28a745 !important;
+        }
+
+        .bg-green .single_fact_in:hover {
+            color: #28a745 !important;
+        }
+
+        .bg-green .scroll-dots span {
+            background: #28a745;
+        }
+
+        /*基數*/
+        .bg-green .section:nth-child(odd) .gallery-circle div {
+            border-color: #28a745;
+        }
+
+        .bg-green .section:nth-child(odd) .fp-tableCell {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .bg-green .section:nth-child(odd) .swiper-list-table .swiper-slide-thumb-active .dot {
+            background: #28a745 !important;
+        }
+
+        .bg-green .section:nth-child(odd) .swiper-list-table .swiper-slide-thumb-active h4,
+        .bg-green .section:nth-child(odd) .swiper-slide .flow-list:hover h4 {
+            color: #ffffff;
+        }
+
+        .bg-green .section:nth-child(odd) .list-title {
+            font-size: 34px;
+            font-weight: 500;
+            color: #212529;
+        }
+
+        .bg-green .section:nth-child(odd) .list-content {
+            font-size: 24px !important;
+            font-weight: 400;
+            line-height: 1.75;
+            margin: 0;
+            color: #212529;
+        }
+
+        .bg-green .section:nth-child(odd) .swiper-list-table h4 {
+            color: #212529;
+        }
+
+        .bg-green .section:nth-child(odd) .swiper-list-table .swiper-slide .dot {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #dadada;
+            margin-right: 15px;
+        }
+
+        .bg-green .section:nth-child(odd) .line {
+            width: 2px;
+            top: 0;
+            bottom: 0;
+            left: 9px;
+            position: absolute;
+            border-color: inherit;
+            background-color: #dadada;
+        }
+
+        .bg-green .section:nth-child(odd) .swiper-slide .flow-list {
+            padding: 10px;
+            background-size: 200% auto;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .bg-green .section:nth-child(odd) .swiper-slide-thumb-active .flow-list,
+        .bg-green .section:nth-child(odd) .swiper-slide .flow-list:hover {
+            background: #28a745 !important;
+            border-radius: 10px;
+        }
+
+        /*偶數*/
+        .bg-green .section:nth-child(even) .gallery-circle div {
+            border-color: #ffffff;
+        }
+
+        .bg-green .section:nth-child(even) .fp-tableCell {
+            background: rgba(41, 168, 71, 0.9);
+        }
+
+        .bg-green .section:nth-child(even) .swiper-list-table .swiper-slide-thumb-active .dot {
+            background: #28a745 !important;
+            border: 3px #fff solid;
+        }
+
+        .bg-green .section:nth-child(even) .swiper-list-table .swiper-slide-thumb-active h4,
+        .bg-green .section:nth-child(even) .swiper-slide .flow-list:hover h4 {
+            color: #28a745;
+        }
+
+        .bg-green .section:nth-child(even) .list-title {
+            font-size: 34px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .bg-green .section:nth-child(even) .list-content {
+            font-size: 24px !important;
+            font-weight: 400;
+            line-height: 1.75;
+            margin: 0;
+            color: #fff;
+        }
+
+        .bg-green .section:nth-child(even) .swiper-list-table h4 {
+            color: #ffffff;
+        }
+
+        .bg-green .section:nth-child(even) .swiper-list-table .swiper-slide .dot {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #fff;
+            margin-right: 15px;
+        }
+
+        .bg-green .section:nth-child(even) .line {
+            width: 2px;
+            top: 0;
+            bottom: 0;
+            left: 9px;
+            position: absolute;
+            border-color: inherit;
+            background-color: #ffffff;
+        }
+
+        .bg-green .section:nth-child(even) .swiper-slide .flow-list {
+            padding: 10px;
+            background-size: 200% auto;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .bg-green .section:nth-child(even) .swiper-slide-thumb-active .flow-list,
+        .bg-green .section:nth-child(even) .swiper-slide .flow-list:hover {
+            background: #fff !important;
+            border-radius: 10px;
+        }
+
+        /*＝＝＝＝＝＝＝＝＝＝＝ 綠色主題結束 ＝＝＝＝＝＝＝＝＝＝＝*/
+    </style>
+    <style>
+        .gallery-main .swiper-button-next, .gallery-main .swiper-button-prev {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            top: auto;
+            left: auto;
+            height: 75px;
+            width: 40px;
+            color: #e9e9e9;
+            background: #1e1e1e;
+        }
+
+        .gallery-main {
+            width: 600px;
+            height: 300px;
+            box-shadow: 0 50px 75px 50px rgba(30, 30, 30, 0.18);
+            border: 1px solid #e9e9e9;
+        }
+
+        .gallery-main .swiper-button-prev {
+            right: 40px;
+            border-right: 1px solid #e9e9e9;
+        }
+
+        .gallery-main .swiper-button-prev::after {
+            font-size: 12px;
+        }
+
+        .gallery-main .swiper-button-next::after {
+            font-size: 12px;
+        }
+
+        .gallery-title {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-family: Epilogue, sans-serif;
+            font-size: 50px;
+            font-weight: 700;
+            text-align: right;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
+
+        .gallery-thumbs {
+            order: -1;
+            width: 100px;
+            margin-right: 15px;
+            padding-left: 15px;
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .gallery-thumbs .swiper-slide {
+            width: 20%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .gallery-thumbs .swiper-slide img {
+            transition: 0.3s;
+        }
+
+        .gallery-thumbs .swiper-slide-active {
+            opacity: 1;
+        }
+
+        .gallery-thumbs .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .gallery-thumbs .swiper-slide-thumb-active img {
+            margin-left: -15px;
+        }
+
+        .gallery-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 100%;
+            padding-top: 100%;
+        }
+
+        .gallery-circle div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            -webkit-animation: circle 2s infinite;
+            animation: circle 2s infinite;
+        }
+
+        .gallery-circle div:nth-child(1) {
+            -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
+        }
+
+        .gallery-circle div:nth-child(2) {
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+        }
+
+        .gallery-circle div:nth-child(3) {
+            -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
+        }
+
+        .gallery-circle div:nth-child(4) {
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+
+        .gallery-circle div:nth-child(5) {
+            -webkit-animation-delay: 1.25s;
+            animation-delay: 1.25s;
+        }
+
+        .gallery-circle div:nth-child(6) {
+            -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+        }
+
+        @-webkit-keyframes circle {
+            0% {
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes circle {
+            0% {
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+        }
+
+        .home-animation-circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-list-table {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+            margin: 15px 0 0 0 !important;
+        }
+
+        .swiper-list-table .swiper-slide {
+            width: 100% !important;
+            text-align: start;
+            vertical-align: middle;
+            opacity: 1;
+            background: center;
+            position: relative;
+            display: flex !important;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .swiper-list-table .swiper-slide .pagination_about {
+            display: none;
+        }
+
+        .swiper-list-table .swiper-slide:first-child {
+            border-radius: 10px 10px 0 0;
+        }
+
+        .swiper-list-table .swiper-slide:last-child {
+            border-radius: 0 0 10px 10px;
+        }
+
+        .swiper-list-table h4 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            margin-bottom: 5px;
+        }
+
+        .swiper-list-table p {
+            font-size: 18px !important;
+            line-height: 20px !important;
+        }
+
+        .swiper-list-table .swiper-slide-thumb-active .pagination_about {
+            display: block;
+        }
+
+        .swiper-slide {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            margin-top: 0;
+        }
+
+        .swiper-slide img {
+            display: block;
+            max-height: 500px;
+        }
+
+        .bg--white .fp-tableCell {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .bg--white .swiper-list-table .swiper-slide-thumb-active h4 {
+            color: #ffffff;
+        }
+
+        .bg--white .swiper-list-table .swiper-slide-thumb-active .dot {
+            background: #9a9a9a !important;
+        }
+
+        .bg--white .swiper-slide .flow-list:hover h4 {
+            color: #ffffff;
+        }
+
+        .bg-red .fp-tableCell {
+            background: rgba(220, 53, 69, 0.9);
+        }
+
+        .bg-red .swiper-list-table .swiper-slide-thumb-active h4 {
+            color: #dc3545;
+        }
+
+        .bg-red .swiper-list-table .swiper-slide-thumb-active .dot {
+            background: #dc3545 !important;
+            border: 3px #fff solid;
+        }
+
+        .bg-yellow .swiper-slide .flow-list:hover h4 {
+            color: #dc3545;
+        }
+
+        .bg-yellow .fp-tableCell {
+            background: rgba(255, 193, 7, 0.9);
+        }
+
+        .bg-yellow .swiper-list-table .swiper-slide-thumb-active h4 {
+            color: #ffc107;
+        }
+
+        .bg-yellow .swiper-list-table .swiper-slide-thumb-active .dot {
+            background: #ffc107 !important;
+            border: 3px #fff solid;
+        }
+
+        .bg-yellow .swiper-slide .flow-list:hover h4 {
+            color: #ffc107;
+        }
+
+
+        /*        .bg-green .fp-tableCell{
+                    background: rgba(41, 168, 71, 0.9);
+                }
+                .bg-green .swiper-list-table .swiper-slide-thumb-active h4{
+                    color: #28a745;
+                }
+                .bg-green .swiper-list-table .swiper-slide-thumb-active .dot {
+                    background: #28a745 !important;
+                    border: 3px #fff solid;
+                }
+                .bg-green .swiper-slide .flow-list:hover h4 {
+                    color: #28a745;
                 }*/
-        button:focus {
-            outline: none;
+
+        .bg-blue .fp-tableCell {
+            background: rgba(0, 125, 255, 0.9);
+        }
+
+        .bg-blue .swiper-list-table .swiper-slide-thumb-active h4 {
+            color: #007bff;
+        }
+
+        .bg-blue .swiper-list-table .swiper-slide-thumb-active .dot {
+            background: #007bff !important;
+            border: 3px #fff solid;
+        }
+
+        .bg-blue .swiper-slide .flow-list:hover h4 {
+            color: #007bff;
+        }
+
+        .light .list-title {
+            font-size: 34px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .light .list-content {
+            font-size: 24px !important;
+            font-weight: 400;
+            line-height: 1.75;
+            margin: 0;
+            color: #fff;
+        }
+
+        .light .swiper-list-table h4 {
+            color: #ffffff;
+        }
+
+        .light .swiper-list-table .swiper-slide .dot {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #fff;
+            margin-right: 15px;
+        }
+
+        .light .line {
+            width: 2px;
+            top: 0;
+            bottom: 0;
+            left: 9px;
+            position: absolute;
+            border-color: inherit;
+            background-color: #ffffff;
+        }
+
+        .light .swiper-slide .flow-list {
+            padding: 10px;
+            background-size: 200% auto;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .light .swiper-slide-thumb-active .flow-list,
+        .light .swiper-slide .flow-list:hover {
+            background: #fff !important;
+            border-radius: 10px;
+        }
+
+        .dark .list-title {
+            font-size: 34px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .dark .list-content {
+            font-size: 24px !important;
+            font-weight: 400;
+            line-height: 1.75;
+            margin: 0;
+            color: #212529;
+        }
+
+        .dark .swiper-list-table h4 {
+            color: #212529;
+        }
+
+        .dark .swiper-list-table .swiper-slide .dot {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #fff;
+            margin-right: 15px;
+        }
+
+        .dark .line {
+            width: 2px;
+            top: 0;
+            bottom: 0;
+            left: 9px;
+            position: absolute;
+            border-color: inherit;
+            background-color: #ffffff;
+        }
+
+        .dark .swiper-slide .flow-list {
+            padding: 10px;
+            background-size: 200% auto;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .dark .swiper-slide-thumb-active .flow-list,
+        .dark .swiper-slide .flow-list:hover {
+            background: #9a9a9a !important;
+            border-radius: 10px;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet-active {
+            opacity: 1;
+            transition: background 3s ease;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet-active h4 {
+            color: #333;
+            color: #333;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet-active p {
+            color: #333;
+            color: #333;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet-active .pagination_about {
+            display: block;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet-active .dot {
+            background: #007bff;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet {
+            width: 100%;
+            height: 50px;
+            text-align: start;
+            vertical-align: middle;
+            opacity: 1;
+            background: center;
+            padding: 0 20px;
+            position: relative;
+            display: flex !important;
+            align-items: center;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet h4 {
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 25px;
+            margin-bottom: 5px;
+            color: #c3c3c3;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet p {
+            font-size: 18px;
+            line-height: 20px;
+            color: #c3c3c3;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet .pagination_about {
+            display: none;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet .dot {
+            position: relative;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #e6e6e6;
+            margin-right: 20px;
+        }
+
+        @media (max-width: 991px) {
+            .swiper-list-table {
+                margin: 0;
+                text-align: center;
+            }
+
+            .swiper-list-table .swiper-slide {
+                height: auto !important;
+            }
+
+            .swipet-btn-group {
+                align-content: center;
+            }
+
+            .home_section {
+                flex-direction: row-reverse;
+            }
+
+            .swiper-list {
+                padding: 0 50px;
+            }
+
+            .swiper-list h4 {
+                margin-bottom: 0;
+            }
+
+            #section0 h3 {
+                font-size: 20px;
+                letter-spacing: 10px;
+            }
+
+            #section0 p {
+                font-size: 20px;
+                letter-spacing: 5px;
+            }
+
+            .wave_two_section_index .t_first {
+                bottom: 36%;
+                right: 10px;
+                width: 50%;
+            }
+
+            .wave_two_section_index .t_two {
+                right: 15px;
+                left: auto;
+                top: 100px;
+            }
+
+            .wave_two_section_index .t_three {
+                left: 10%;
+                top: 20%;
+                bottom: 370px;
+            }
+
+            .fp-tableCell {
+                padding: 0;
+            }
+
+            #menu {
+                display: none !important;
+            }
+
+            .swiper-photo {
+                width: 100%;
+            }
+
+            .swiper-slide-thumb-active .flow-list {
+                margin-left: -2px;
+            }
+        }
+
+        .wave_two_section_index {
+            position: relative;
+        }
+
+        .wave_two_section_index .t_first {
+            bottom: 250px;
+            right: 250px;
+        }
+
+        .wave_two_section_index .t_two {
+            right: 150px;
+            top: 100px;
+        }
+
+        .wave_two_section_index .t_three {
+            left: 10%;
+            bottom: 170px;
+        }
+
+        .wave_two_section_index .t_four {
+            left: 20%;
+            top: 120px;
+        }
+
+        .wave_two_section_index .t_five {
+            left: 10%;
+            top: 30%;
+        }
+
+        .wave_two_section_one {
+            position: relative;
+        }
+
+        .wave_two_section_one .t_two {
+            bottom: 100px;
+            right: 600px;
+        }
+
+        .wave_two_section_one .t_three {
+            right: 150px;
+            left: auto;
+            top: 250px;
+        }
+
+        .wave_two_section_two {
+            position: relative;
+            z-index: 1;
+        }
+
+        .wave_two_section_two .t_first {
+            left: 10%;
+            top: auto;
+            bottom: 370px;
+        }
+
+        .wave_two_section_two .t_two {
+            right: 220px;
+            bottom: 185px;
+        }
+
+        .wave_two_section_two .t_three {
+            right: 150px;
+            left: auto;
+            top: 250px;
+        }
+
+        .wave_two_section_three .t_first {
+            left: 4%;
+            bottom: 50px;
+            top: auto;
+        }
+
+        .wave_two_section_three .t_first img {
+            position: relative !important;
+        }
+
+        .wave_two_section_three .t_two {
+            top: 200px;
+            right: 8%;
+        }
+
+        .wave_two_section_three .t_two img {
+            position: relative !important;
+        }
+
+        .wave_two_section_three .t_three {
+            right: 150px;
+            left: auto;
+            top: 250px;
+        }
+
+        .p_absoulte {
+            position: absolute;
+        }
+
+        .c-gallery__media {
+            position: relative;
+        }
+
+        .c-gallery__bg {
+            position: relative;
+            display: block;
+            width: 100%;
+        }
+
+        .c-gallery__bg:not(:first-child) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
         .logo {
@@ -56,41 +863,10 @@
             align-items: center;
         }
 
-        .main-menu ul li a {
-            color: #fff;
-        }
-
-        .header-logo-menu.active_sc {
-            background-color: #000000b0;
-            border-bottom: 0;
-            padding: 10px 0;
-        }
-
-        .main-menu ul .current > a,
-        .main-menu ul li a:hover {
-            color: #1e87f0;
-        }
-
-        .mean-container a.meanmenu-reveal {
-            padding: 17px 15px;
-        }
-
-        .mean-container a.meanmenu-reveal span {
-            background: #fff;
-        }
-
         .scroll-down {
             position: relative;
             bottom: -70px;
             left: 50%;
-        }
-
-        .scroll-down span:nth-child(2) {
-            animation-delay: -0.2s;
-        }
-
-        .scroll-down span:nth-child(3) {
-            animation-delay: -0.4s;
         }
 
         .scroll-down span {
@@ -104,60 +880,47 @@
             animation: animate 2s infinite;
         }
 
+        .scroll-down span:nth-child(2) {
+            animation-delay: -0.2s;
+        }
+
+        .scroll-down span:nth-child(3) {
+            animation-delay: -0.4s;
+        }
+
         @keyframes animate {
             0% {
                 opacity: 0;
                 transform: rotate(45deg) translate(-20px, -20px);
             }
-
             50% {
                 opacity: 1;
             }
-
             100% {
                 opacity: 0;
                 transform: rotate(45deg) translate(20px, 20px);
             }
         }
 
-        /*#menu {
-            !*position: absolute;*!
-            position: fixed;
-            left: 0px;
-            top: 50%;
-            !*-webkit-transform: translateY(-50%);
-            transform: translateY(-50%);*!
-            z-index: 99;
-            width: 120px;
-            text-align: start;
-            background: #3333338c;
-            padding: 10px 20px;
-            border-radius: 0 10px 10px 0;
-            -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%)
-        }*/
-
         .sidemenu {
             position: fixed;
-            left: 0px;
+            right: 0px;
             top: 45%;
             z-index: 99;
             width: auto;
             text-align: start;
             background: #3333338c;
             padding: 10px 20px;
-            border-radius: 0 10px 10px 0;
+            border-radius: 10px 0px 0px 10px;
             margin: 0;
             opacity: 0;
-            /* also add a translate effect */
-            transform: translateX(-100px);
-            /* and a transition */
-            transition: all .5s ease
+            transform: translateX(100px);
+            transition: all .5s ease;
         }
 
         .showsidemenu {
             opacity: 1;
-            transform: translateX(0)
+            transform: translateX(0);
         }
 
         #menu li {
@@ -185,7 +948,16 @@
             width: 140px;
         }
 
-        #menu li span:before,
+        #menu li span:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            background: #fff;
+            width: 16%;
+            height: 1px;
+            left: 0;
+        }
+
         #menu li span:after {
             content: "";
             position: absolute;
@@ -193,37 +965,37 @@
             background: #fff;
             width: 16%;
             height: 1px;
-        }
-
-        #menu li span:before {
-            left: 0%;
-        }
-
-        #menu li span:after {
-            right: 0%;
+            right: 0;
         }
 
         #menu li a {
             background: transparent;
             border: none;
             position: relative;
-            /*color: inherit;
-            line-height: 30px;
-            padding: 3px 0;*/
             color: #f4f4f4;
-            font-size: 14px;
+            font-size: 16px;
         }
 
-        #menu li.active a,
-        #menu li:hover a {
+        #menu li.active a {
             color: #fff;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 400;
         }
 
-        #menu .sidemenu-list {
-            display: flex;
-            align-items: center;
+        #menu li.active .dot {
+            background: #007bff;
+            border: #fff 2px solid;
+        }
+
+        #menu li:hover a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        #menu li:hover .dot {
+            background: #007bff;
+            border: #fff 2px solid;
         }
 
         #menu li .dot {
@@ -235,28 +1007,11 @@
             margin-right: 5px;
         }
 
-        #menu li.active .dot,
-        #menu li:hover .dot {
-            background: #007bff;
-            border: #fff 2px solid;
+        #menu .sidemenu-list {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
         }
-
-        /*#menu li a::after {
-            right: 0;
-            bottom: 0;
-            content: "";
-            height: 2px;
-            width: 2px;
-            background: #3333338c;
-            position: absolute;
-            -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-        }
-
-        #menu li.active a::after {
-            width: 100%;
-            background: #fff;
-        }*/
 
         .img-bg {
             position: fixed !important;
@@ -270,13 +1025,6 @@
             background-position: center bottom;
             background-image: url(../img/ihome/bg.jpeg);
         }
-
-        /*#section0{
-            background-image: url(https://images.unsplash.com/photo-1515975325863-a4ceb4b7d6c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80);
-            background-repeat:no-repeat;
-            background-size:cover;
-        }*/
-
 
         #section0 {
             margin-bottom: 0;
@@ -321,98 +1069,24 @@
             background: #ffffff;
         }
 
-
-        #section3 .fp-tableCell,
-        #section5 .fp-tableCell {
-            background: #f4f4f4e6;
-            clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
-            -webkit-clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
-            padding: 7.5rem 0;
-        }
-
-        #section2 .fp-tableCell,
-        #section4 .fp-tableCell {
-            background: #007dffe6;
-            /*background: #639f63e6;*/
+        #section2 .fp-tableCell {
             -webkit-clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
             clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
             padding: 7.5rem 0;
         }
 
-        #section2 h4,
-        #section2 p,
-        #section4 h4,
-        #section4 p {
-            color: #fff !important;
+        #section4 .fp-tableCell {
+            -webkit-clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
+            clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
+            padding: 7.5rem 0;
         }
-
-        /*       #section1 .fp-tableCell{
-            background:#f4f4f4;
-            opacity: 0.90;
-        }
-
-        #section2{
-            background-image: url(https://images.unsplash.com/photo-1591955506264-3f5a6834570a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
-            background-repeat:no-repeat;
-            background-size:cover;
-        }
-
-        #section2 .fp-tableCell{
-            !*background:rgba(199, 229, 240,0.8);*!
-            background: #c0dfffe3;
-            opacity: 0.90;
-        }
-
-        #section2 .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background:rgba(199, 229, 240,0.8);
-        }
-
-        #section3 .fp-tableCell{
-            background:#f4f4f4;
-            opacity: 0.90;
-        }
-
-        #section4{
-            background-image: url(https://www.mo-ss.com/web-design-work/live-forever/guansen/images/pattern1.jpg);
-            background-repeat:no-repeat;
-            background-size:cover;
-        }
-
-        #section4 .fp-tableCell{
-            !*background:rgba(244, 244, 244,0.8);*!
-            background: #c0dfffe3;
-            opacity: 0.90;
-        }
-
-        #section5 .fp-tableCell{
-            background:#f4f4f4;
-            !*background: #c0dfffe3;*!
-            opacity: 0.90;
-        }*/
-
-        #section6 .fp-tableCell {
-            background: #fff;
-        }
-
-        /*.fp-tableCell{
-            padding: 0 0 0 150px;
-        }
-        .section:nth-child(1){
-            margin-bottom: 0;
-        }
-        */
 
         .section {
             margin-bottom: -5.5rem;
         }
 
-        .section:nth-child(odd) .fp-tableCell .container .row {
-            flex-direction: row-reverse
+        .section:last-child {
+            margin-top: -6.5rem;
         }
 
         .section:last-child .fp-tableCell {
@@ -420,13 +1094,13 @@
             padding-top: 100px;
         }
 
-        .section:last-child {
-            margin-top: -6.5rem;
-        }
-
         .section:last-child #menu {
             -webkit-transform: translate(-120%);
             transform: translate(-120%);
+        }
+
+        .section:nth-child(odd) .fp-tableCell .container .row {
+            flex-direction: row-reverse;
         }
 
         .p-service-hero__mask {
@@ -444,12 +1118,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-        }
-
-        @media (max-width: 991px) {
-            .fp-tableCell {
-                padding: 0;
-            }
         }
 
         .full_footer {
@@ -485,25 +1153,6 @@
             align-items: flex-end !important;
         }
 
-        .pr_details_nav span {
-            line-height: 12px;
-        }
-
-        .pr_details_nav span.next {
-            margin-left: 50px;
-            position: relative;
-        }
-
-        .pr_details_nav span.next:before {
-            content: "";
-            width: 1px;
-            height: 12px;
-            background: #777;
-            display: inline-block;
-            left: -25px;
-            position: absolute;
-        }
-
         .w_img_one {
             position: relative;
         }
@@ -513,21 +1162,10 @@
             z-index: 1;
         }
 
-        @media (max-width: 991px) {
-            #menu {
-                display: none !important;
-            }
-        }
-
         @media (max-width: 1400px) {
             .w_img_one img {
                 max-width: 100%;
             }
-        }
-
-        .social_icon a {
-            font-size: 22px;
-            color: #333;
         }
 
         .swiper-photo {
@@ -551,218 +1189,7 @@
             z-index: 1;
         }
 
-        .swiper-list h4 {
-            font-weight: 500;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .swiper-list p {
-            /*font-size: 1.4rem;*/
-            font-size: 24px !important;
-            font-weight: 400;
-            line-height: 1.75;
-            margin: 0;
-            font-family: 'Noto Sans TC';
-        }
-
-        @media (max-width: 991px) {
-            .swiper-photo {
-                width: 100%;
-            }
-
-            .swiper-list {
-                padding: 0 50px;
-            }
-        }
-
         @media (min-width: 48em) {
-            .swiper-list h4 {
-                /*font-size: 2.25rem;*/
-                font-size: 38px;
-                font-weight: 700;
-            }
-        }
-
-        @media (min-width: 62em) {
-            .swiper-photo {
-                width: 50%;
-                margin: 0;
-            }
-
-            .swiper-list {
-                width: 50%;
-                padding: 0 0 0 3rem;
-            }
-        }
-
-        .swiper-slide {
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            position: relative;
-        }
-
-        .swiper-slide img {
-            display: block;
-            max-height: 500px;
-        }
-
-        .swiper-pagination-bullet {
-            border-radius: 0%;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet {
-            width: 100%;
-            height: 50px;
-            text-align: start;
-            vertical-align: middle;
-            opacity: 1;
-            background: center;
-            padding: 0 20px;
-            position: relative;
-            display: flex !important;
-            align-items: center;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet h4 {
-            font-size: 22px;
-            font-weight: bold;
-            line-height: 25px;
-            margin-bottom: 5px;
-            color: #c3c3c3;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet p {
-            font-size: 18px;
-            line-height: 20px;
-            color: #c3c3c3;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active h4,
-        .swiper-pagination .swiper-pagination-bullet-active p {
-            color: #333;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active {
-            opacity: 1;
-            transition: background 3s ease;
-        }
-
-        @media only screen and (max-width: 480px) {
-            .swiper-pagination .swiper-pagination-bullet {
-                font-size: 1.4em;;
-            }
-        }
-
-        .swiper-pagination .swiper-pagination-bullet .pagination_about {
-            display: none;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active .pagination_about {
-            display: block;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet .dot {
-            position: relative;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: #e6e6e6;
-            margin-right: 20px;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active .dot {
-            background: #007bff;
-        }
-
-        .single_fact_in {
-            padding: 15px;
-        }
-
-        .single_fact_in i {
-            display: block;
-            font-size: 52px;
-            line-height: 52px;
-        }
-
-        .single_fact_in p {
-            margin-bottom: 0;
-        }
-
-        .single_fact_in:hover {
-            color: #007bff;
-        }
-
-        @media (max-width: 575px) {
-            .warp {
-                flex-wrap: wrap-reverse !important;
-            }
-        }
-
-        @media (min-width: 75em) {
-
-            .container {
-                padding-right: 35px;
-                padding-left: 35px;
-            }
-
-            .p-service-section--bevel-1 {
-                -webkit-clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
-                clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
-            }
-
-            .p-service-section--bevel-2 {
-                -webkit-clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
-                clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
-            }
-
-            .l-section {
-                position: relative;
-            }
-
-            .p-service-section {
-                min-height: 800px;
-                overflow: hidden;
-            }
-
-            .u-text-5xl {
-                font-size: 2.8125rem;
-            }
-
-            h2 {
-                font-size: 2.8125rem;
-            }
-
-        }
-
-        @media (min-width: 62em) {
-
-            .container {
-                padding-right: 35px;
-                padding-left: 35px;
-            }
-
-            .p-service-section {
-                display: flex;
-                align-items: center;
-                min-height: 600px;
-            }
-
-            .p-service-section__content {
-                flex: 1;
-            }
-
-            .p-service-section__gallery {
-                flex: 0 0 700px;
-                max-width: 700px;
-            }
-
-
-        }
-
-        @media (min-width: 48em) {
-
             .container {
                 padding-right: 35px;
                 padding-left: 35px;
@@ -801,492 +1228,210 @@
             }
         }
 
-        .flow {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
+        @media (min-width: 62em) {
+            .swiper-photo {
+                width: 50%;
+                margin: 0;
+            }
+
+            .swiper-list {
+                width: 50%;
+                padding: 0 0 0 3rem;
+            }
+
+            .container {
+                padding-right: 35px;
+                padding-left: 35px;
+            }
+
+            .p-service-section {
+                display: flex;
+                align-items: center;
+                min-height: 600px;
+            }
+
+            .p-service-section__content {
+                flex: 1;
+            }
+
+            .p-service-section__gallery {
+                flex: 0 0 700px;
+                max-width: 700px;
+            }
         }
 
-        .flow .flow-list {
-            background: #fff;
-            padding: 5px 10px;
-            border-radius: 50%;
-            max-width: 95px;
-            min-width: 95px;
-            max-height: 95px;
-            min-height: 95px;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            border: 5px solid #dee2e6;
-            display: flex;
-            align-content: center;
-            margin: 10px;
+        .swiper-pagination-bullet {
+            border-radius: 0;
         }
 
-        .flow .flow-list:active {
-            border: 5px solid #ffc107;
+        @media only screen and (max-width: 480px) {
+            .swiper-pagination .swiper-pagination-bullet {
+                font-size: 1.4em;
+            }
         }
 
-        .flow .flow-list p {
-            font-size: 16px !important;
-            /*color: #fff;*/
+        .single_fact_in {
+            padding: 15px;
         }
 
-    </style>
-    <style>
-        .gallery-main {
-            width: 600px;
-            height: 300px;
-            box-shadow: 0 50px 75px 50px rgba(30, 30, 30, 0.18);
-            border: 1px solid #e9e9e9;
+        .single_fact_in i {
+            display: block;
+            font-size: 52px;
+            line-height: 52px;
         }
 
-        .gallery-main .swiper-button-prev, .gallery-main .swiper-button-next {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            top: auto;
-            left: auto;
-            height: 75px;
-            width: 40px;
-            color: #e9e9e9;
-            background: #1e1e1e;
+        .single_fact_in p {
+            margin-bottom: 0;
         }
 
-        .gallery-main .swiper-button-prev::after, .gallery-main .swiper-button-next::after {
-            font-size: 12px;
+        @media (max-width: 575px) {
+            .warp {
+                flex-wrap: wrap-reverse !important;
+            }
         }
 
-        .gallery-main .swiper-button-prev {
-            right: 40px;
-            border-right: 1px solid #e9e9e9;
-        }
+        @media (min-width: 75em) {
+            .container {
+                padding-right: 35px;
+                padding-left: 35px;
+            }
 
-        .gallery-title {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            font-family: "Epilogue", sans-serif;
-            font-size: 50px;
-            font-weight: 700;
-            text-align: right;
-            text-transform: uppercase;
-            text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-            color: #fff;
+            .p-service-section--bevel-1 {
+                -webkit-clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
+                clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
+            }
+
+            .p-service-section--bevel-2 {
+                -webkit-clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
+                clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
+            }
+
+            .l-section {
+                position: relative;
+            }
+
+            .p-service-section {
+                min-height: 800px;
+                overflow: hidden;
+            }
+
+            .u-text-5xl {
+                font-size: 2.8125rem;
+            }
+
+            h2 {
+                font-size: 2.8125rem;
+            }
         }
 
         .swiper-slide-active .gallery-title {
             animation: slide-in 0.3s ease-in both;
         }
 
-        .gallery-thumbs {
-            order: -1;
-            width: 100px;
-            height: 300px;
-            margin-right: 15px;
-            padding-left: 15px;
-        }
-
-        .gallery-thumbs .swiper-slide img {
-            transition: 0.3s;
-        }
-
-        .gallery-thumbs .swiper-slide-active {
-            opacity: 0.9;
-        }
-
-        .gallery-thumbs .swiper-slide-thumb-active {
-            opacity: 1;
-        }
-
-        .gallery-thumbs .swiper-slide-thumb-active img {
-            margin-left: -15px;
-        }
-
-
-        .gallery-circle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            width: 100%;
-            padding-top: 100%;
-        }
-
-        .gallery-circle div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            width: 0;
-            height: 0;
-            border: 1px solid #fff;
-            border-radius: 50%;
-            -webkit-animation: circle 2s infinite;
-            animation: circle 2s infinite
-        }
-
-        .gallery-circle div:nth-child(1) {
-            -webkit-animation-delay: .25s;
-            animation-delay: .25s
-        }
-
-        .gallery-circle div:nth-child(2) {
-            -webkit-animation-delay: .5s;
-            animation-delay: .5s
-        }
-
-        .gallery-circle div:nth-child(3) {
-            -webkit-animation-delay: .75s;
-            animation-delay: .75s
-        }
-
-        .gallery-circle div:nth-child(4) {
-            -webkit-animation-delay: 1s;
-            animation-delay: 1s
-        }
-
-        .gallery-circle div:nth-child(5) {
-            -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s
-        }
-
-        .gallery-circle div:nth-child(6) {
-            -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s
-        }
-
-        @-webkit-keyframes circle {
-            0% {
-                width: 0;
-                height: 0;
-                opacity: 0
-            }
-
-            50% {
-                opacity: 1
-            }
-
-            100% {
-                width: 100%;
-                height: 100%;
-                opacity: 0
-            }
-        }
-
-        @keyframes circle {
-            0% {
-                width: 0;
-                height: 0;
-                opacity: 0
-            }
-
-            50% {
-                opacity: 1
-            }
-
-            100% {
-                width: 100%;
-                height: 100%;
-                opacity: 0
-            }
-        }
-
         .gallery-circle-primary div {
-            border-color: #007bff
+            border-color: #007bff;
         }
 
         .gallery-circle-white div {
-            border-color: #ffffff
+            border-color: #ffffff;
         }
 
         .gallery-circle-black div {
-            border-color: #333333
+            border-color: #333333;
         }
 
         .gallery-circle-red div {
-            border-color: #dc3545
+            border-color: #dc3545;
         }
 
         .gallery-circle-yellow div {
-            border-color: #fabf13
+            border-color: #fabf13;
         }
 
-        .gallery-circle-gree div {
-            border-color: #28a745
+        .gallery-circle-green div {
+            border-color: #28a745;
         }
 
         .gallery-circle-purple div {
-            border-color: #8731e8
-        }
-
-        .home-animation-circle {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .gallery-thumbs {
-            height: 20%;
-            box-sizing: border-box;
-            padding: 10px 0;
-        }
-
-        .gallery-thumbs .swiper-slide {
-            width: 20%;
-            height: 100%;
-            opacity: 0.4;
-        }
-
-        .gallery-thumbs .swiper-slide-active {
-            opacity: 1;
-        }
-
-
-        .swiper-list-table {
-            height: 20%;
-            box-sizing: border-box;
-            padding: 10px 0;
-            margin: 3rem 0;
-        }
-
-        .swiper-list-table .swiper-slide {
-            width: 100% !important;
-            height: 60px !important;
-            text-align: start;
-            vertical-align: middle;
-            opacity: 1;
-            background: center;
-            /*padding: 0 20px;*/
-            position: relative;
-            display: flex !important;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .swiper-list-table .swiper-slide .pagination_about {
-            display: none;
-        }
-
-        .swiper-list-table .swiper-slide-thumb-active .pagination_about {
-            display: block;
-        }
-
-        .swiper-list-table .swiper-slide .dot {
-            position: relative;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: #fff;
-        }
-
-        .swiper-list-table .swiper-slide-thumb-active .dot {
-            background: #007bff;
+            border-color: #8731e8;
         }
 
         .swipet-btn-group .swiper-wrapper {
             flex-wrap: wrap;
         }
 
-        .swiper-list-table h4 {
-            font-size: 1.4rem;
-            font-weight: 400;
-            line-height: 25px;
-            margin-bottom: 5px;
-            color: #6c757d;
-        }
-
-        .swiper-list-table .swiper-slide-thumb-active h4 {
-            color: #333;
-            font-weight: bold;
-        }
-
-        .swiper-list-table p {
-            font-size: 18px;
-            line-height: 20px;
-        }
-
         .home_section:nth-child(even) {
             flex-direction: row-reverse;
         }
 
-        @media (max-width: 991px) {
-            .swiper-list-table {
-                margin: 0;
-                text-align: center;
-            }
-
-            .swiper-list-table .swiper-slide {
-                height: auto !important;
-                margin-bottom: 10px;
-            }
-
-            .swipet-btn-group {
-                align-content: center;
-            }
-
-            .home_section {
-                flex-direction: row-reverse;
-            }
-
-            .swiper-list h4 {
-                margin-bottom: 0;
-            }
+        button:focus {
+            outline: none;
         }
 
-        /*============= wave_two_section_index css ==========*/
-        .wave_two_section_index {
+        .main-menu ul li a {
+            color: #fff;
+        }
+
+        .main-menu ul li a:hover {
+            color: #1e87f0;
+        }
+
+        .main-menu ul .current > a {
+            color: #1e87f0;
+        }
+
+        .header-logo-menu.active_sc {
+            background-color: #000000b0;
+            border-bottom: 0;
+            padding: 10px 0;
+        }
+
+        .mean-container a.meanmenu-reveal {
+            padding: 17px 15px;
+        }
+
+        .mean-container a.meanmenu-reveal span {
+            background: #fff;
+        }
+
+        #section3 .fp-tableCell {
+            clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
+            -webkit-clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
+            padding: 7.5rem 0;
+        }
+
+        #section5 .fp-tableCell {
+            clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
+            -webkit-clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
+            padding: 7.5rem 0;
+        }
+
+        #section6 .fp-tableCell {
+            background: #fff;
+        }
+
+        .pr_details_nav span {
+            line-height: 12px;
+        }
+
+        .pr_details_nav span.next {
+            margin-left: 50px;
             position: relative;
         }
 
-        .wave_two_section_index .t_first {
-            bottom: 250px;
-            right: 250px;
-        }
-
-        .wave_two_section_index .t_two {
-            right: 150px;
-            top: 100px;
-        }
-
-        .wave_two_section_index .t_three {
-            left: 10%;
-            bottom: 170px;
-        }
-
-        .wave_two_section_index .t_four {
-            left: 20%;
-            top: 120px;
-        }
-
-        .wave_two_section_index .t_five {
-            left: 10%;
-            top: 30%;
-        }
-
-        @media (max-width: 991px) {
-            #section0 h3 {
-                font-size: 20px;
-                letter-spacing: 10px;
-            }
-
-            #section0 p {
-                font-size: 20px;
-                letter-spacing: 5px;
-            }
-
-            .wave_two_section_index .t_first {
-                bottom: 36%;
-                right: 10px;
-                width: 50%;
-            }
-
-            .wave_two_section_index .t_two {
-                right: 15px;
-                left: auto;
-                top: 100px;
-            }
-
-            .wave_two_section_index .t_three {
-                left: 10%;
-                top: 20%;
-                bottom: 370px;
-            }
-        }
-
-        /*============= wave_two_section_one css ==========*/
-        .wave_two_section_one {
-            position: relative;
-        }
-
-        .wave_two_section_one .t_two {
-            bottom: 100px;
-            right: 600px;
-        }
-
-        .wave_two_section_one .t_three {
-            right: 150px;
-            left: auto;
-            top: 250px;
-        }
-
-        /*============= wave_two_section_two css ==========*/
-
-        .wave_two_section_two {
-            position: relative;
-            z-index: 1;
-        }
-
-        .wave_two_section_two .t_first {
-            left: 10%;
-            top: auto;
-            bottom: 370px;
-        }
-
-        .wave_two_section_two .t_two {
-            right: 220px;
-            bottom: 185px;
-        }
-
-        .wave_two_section_two .t_three {
-            right: 150px;
-            left: auto;
-            top: 250px;
-        }
-
-        /*============= wave_two_section_three css ==========*/
-        .wave_two_section_three .t_first {
-            left: 4%;
-            bottom: 50px;
-            top: auto;
-        }
-
-        .wave_two_section_three .t_first img {
-            position: relative !important;
-        }
-
-        .wave_two_section_three .t_two {
-            top: 200px;
-            right: 8%;
-        }
-
-        .wave_two_section_three .t_two img {
-            position: relative !important;
-        }
-
-        .wave_two_section_three .t_three {
-            right: 150px;
-            left: auto;
-            top: 250px;
-        }
-
-
-        .p_absoulte {
+        .pr_details_nav span.next:before {
+            content: "";
+            width: 1px;
+            height: 12px;
+            background: #777;
+            display: inline-block;
+            left: -25px;
             position: absolute;
         }
 
-
-        .c-gallery__media {
-            position: relative
-        }
-
-        .c-gallery__bg {
-            position: relative;
-            display: block;
-            width: 100%
-        }
-
-        .c-gallery__bg:not(:first-child) {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%
+        .social_icon a {
+            font-size: 22px;
+            color: #333;
         }
     </style>
     <!-- UIkit CSS -->
@@ -1370,7 +1515,7 @@
     </li>
     <li class="sidemenu-list" data-menuanchor="2">
         <div class="dot"></div>
-        <a href="#2">訪客預約</a>
+        <a href="#2">修繕管理</a>
     </li>
     <li class="sidemenu-list" data-menuanchor="3">
         <div class="dot"></div>
@@ -1382,7 +1527,7 @@
     </li>
     <li class="sidemenu-list" data-menuanchor="5">
         <div class="dot"></div>
-        <a href="#5">修繕管理</a>
+        <a href="#5">訪客預約</a>
     </li>
     <hr>
     <li class="sidemenu-list" data-menuanchor="6">
@@ -1392,7 +1537,7 @@
 </ul>
 <!--內容-->
 <div id="fullpage">
-    <div id="wrapper">
+    <div id="wrapper" class="bg-green">
         <!--背景-->
         <div class="img-bg wave_two_section_index">
             <div class="t_first p_absoulte">
@@ -1565,43 +1710,146 @@
                 </div>
             </div>
         </div>
-        <!--訪客預約-->
+
+        <!--修繕管理-->
         <div class="section wave_two_section_three parallax-window" id="section2">
             <div class="intro">
                 <div class="container custom_container">
                     <div class="align-items-center home_section row">
-
+                        <!--照片-->
                         <div class="swiper-photo">
                             <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-black">
+                                <div class="gallery-circle gallery-circle">
                                     <div></div>
                                     <div></div>
                                     <div></div>
                                 </div>
                             </div>
-                            <div class="p-service-section__gallery">
-                                <div class="c-gallery">
-                                    <div class="c-gallery__media"
-                                         uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 500">
-                                        <img src="../img/ihome/訪客預約2.svg" class="c-gallery__bg"
-                                             uk-scrollspy-class="uk-animation-slide-bottom">
-                                        <img src="../img/ihome/訪客預約.svg" class="c-gallery__bg z-11"
-                                             uk-scrollspy-class="uk-animation-slide-bottom">
-                                        <img src="../img/ihome/ihome.svg" class="c-gallery__bg z-10"
-                                             uk-scrollspy-class="uk-animation-slide-bottom">
+
+                            <div class="repair_photo swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/ihome/修繕管理-1.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-2.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-3.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+                        <!--介紹內容-->
                         <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false">訪客預約</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false">
-                                數位化的訪客預約管理， 記錄社區訪客人數及停滯時間，保障住戶安全。</p>
+                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                class="list-title">修繕管理</h4>
+                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                               class="list-content">
+                                預約線上報修 並即時查看進度。</p>
 
+                            <div class="swiper-container repair_list swiper-list-table" thumbsSlider="">
+                                <div class="swiper-wrapper">
 
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>線上提報</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>指派廠商</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>建立派工單</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>執行修繕</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>填寫派工日誌</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>修繕驗收</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>修繕結案</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -1611,36 +1859,138 @@
             <div class="intro">
                 <div class="container custom_container">
                     <div class="align-items-center home_section row">
-
+                        <!--照片-->
                         <div class="swiper-photo">
                             <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-primary">
+                                <div class="gallery-circle gallery-circle">
                                     <div></div>
                                     <div></div>
                                     <div></div>
                                 </div>
                             </div>
-                            <div class="p-service-section__gallery">
-                                <div class="c-gallery">
-                                    <div class="c-gallery__media"
-                                         uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 500">
-                                        <img src="../img/ihome/郵件包裹3.svg" class="c-gallery__bg z-11"
-                                             uk-scrollspy-class="uk-animation-slide-bottom">
-                                        <img src="../img/ihome/郵件包裹2.svg" class="c-gallery__bg z-10"
-                                             uk-scrollspy-class="uk-animation-slide-bottom">
-                                        <img src="../img/ihome/郵件包裹.svg" class="c-gallery__bg"
-                                             uk-scrollspy-class="uk-animation-slide-bottom">
+                            <div class="mail_photo swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/ihome/修繕管理-1.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-2.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-3.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false">郵件包裹</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false">
+                        <!--介紹內容-->
+                        <div class="swipet-btn-group swiper-list dark">
+                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                class="list-title">郵件包裹</h4>
+                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                               class="list-content">
                                 記錄掛號信、包裹並 即時發送通知給住戶。</p>
-                        </div>
+                            <div class="swiper-container mail_list swiper-list-table" thumbsSlider="">
+                                <div class="swiper-wrapper">
 
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>線上提報</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>指派廠商</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>建立派工單</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>執行修繕</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>填寫派工日誌</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>修繕驗收</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>修繕結案</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1650,112 +2000,277 @@
             <div class="intro">
                 <div class="container custom_container">
                     <div class="align-items-center home_section row">
-
+                        <!--照片-->
                         <div class="swiper-photo">
                             <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-black">
+                                <div class="gallery-circle gallery-circle">
                                     <div></div>
                                     <div></div>
                                     <div></div>
                                 </div>
                             </div>
-                            <div class="p-service-section__gallery">
-                                <div class="c-gallery">
-                                    <div class="c-gallery__media"
-                                         uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 500">
-                                        <img src="../img/ihome/公設預約3.svg" class="c-gallery__bg z-11"
-                                             uk-scrollspy-class="uk-animation-slide-bottom">
-                                        <img src="../img/ihome/公設預約2.svg" class="c-gallery__bg z-10"
-                                             uk-scrollspy-class="uk-animation-slide-bottom">
-                                        <img src="../img/ihome/公設預約.svg" class="c-gallery__bg"
-                                             uk-scrollspy-class="uk-animation-slide-bottom">
+                            <div class="service_photo swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/ihome/修繕管理-1.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-2.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-3.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--介紹內容-->
+                        <div class="swipet-btn-group swiper-list dark">
+                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                class="list-title">公設預約</h4>
+                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                               class="list-content">手機預約 掌握公共設施狀況，充分利用社區資源。</p>
+                            <div class="swiper-container service_list swiper-list-table" thumbsSlider="">
+                                <div class="swiper-wrapper">
 
-                        <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false">公設預約</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false">
-                                手機預約 掌握公共設施狀況，充分利用社區資源。</p>
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>線上提報</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>指派廠商</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>建立派工單</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>執行修繕</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>填寫派工日誌</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>修繕驗收</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>修繕結案</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-        <!--修繕管理-->
+        <!--訪客預約-->
         <div class="section wave_two_section_three parallax-window" id="section5">
             <div class="intro">
                 <div class="container custom_container">
                     <div class="align-items-center home_section row">
-
+                        <!--照片-->
                         <div class="swiper-photo">
                             <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-primary">
+                                <div class="gallery-circle gallery-circle">
                                     <div></div>
                                     <div></div>
                                     <div></div>
                                 </div>
                             </div>
-                            <div class="p-service-section__gallery">
-                                <div class="c-gallery">
-                                    <div class="c-gallery__media"
-                                         uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 500">
-                                        <img src="../img/ihome/修繕管理3.svg" class="c-gallery__bg z-11"
-                                             uk-scrollspy-class="uk-animation-slide-bottom">
-                                        <img src="../img/ihome/修繕管理2.svg" class="c-gallery__bg z-10"
-                                             uk-scrollspy-class="uk-animation-slide-bottom">
-                                        <img src="../img/ihome/修繕管理.svg" class="c-gallery__bg"
-                                             uk-scrollspy-class="uk-animation-slide-bottom">
+                            <div class="visitor_photo swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/ihome/修繕管理-1.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-2.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-3.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w_img_one">
+                                            <div class="c-gallery__media">
+                                                <img class="c-gallery__bg" src="../img/banner/考勤-4.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--介紹內容-->
+                        <div class="swipet-btn-group swiper-list dark">
+                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                class="list-title">訪客預約</h4>
+                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                               class="list-content">數位化的訪客預約管理， 記錄社區訪客人數及停滯時間，保障住戶安全。</p>
+                            <div class="swiper-container visitor_list swiper-list-table" thumbsSlider="">
+                                <div class="swiper-wrapper">
 
-                        <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false">修繕管理</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false">
-                                預約線上報修 並即時查看進度。</p>
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>線上提報</h4>
+                                        </div>
+                                    </div>
 
-                            <div class="flow row">
-                                <div class="flow-list">
-                                    <p>線上提報</p>
-                                </div>
-                                <i class="ri-arrow-right-line"></i>
-                                <div class="flow-list">
-                                    <p>線上提報</p>
-                                </div>
-                                <i class="ri-arrow-right-line"></i>
-                                <div class="flow-list">
-                                    <p>線上提報</p>
-                                </div>
-                                <i class="ri-arrow-right-line"></i>
-                                <div class="flow-list">
-                                    <p>線上提報</p>
-                                </div>
-                                <i class="ri-arrow-right-line"></i>
-                                <div class="flow-list">
-                                    <p>線上提報</p>
-                                </div>
-                                <i class="ri-arrow-right-line"></i>
-                                <div class="flow-list">
-                                    <p>線上提報</p>
-                                </div>
-                                <i class="ri-arrow-right-line"></i>
-                                <div class="flow-list">
-                                    <p>線上提報</p>
-                                </div>
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>指派廠商</h4>
+                                        </div>
+                                    </div>
 
-                                <!--<p>指派廠商</p><i class="ri-arrow-right-line"></i>
-                                <p>建立派工單</p><i class="ri-arrow-right-line"></i>
-                                <p>執行修繕</p><i class="ri-arrow-right-line"></i>
-                                <p>填寫派工日誌</p><i class="ri-arrow-right-line"></i>
-                                <p>修繕驗收</p><i class="ri-arrow-right-line"></i>
-                                <p>修繕結案</p>-->
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>建立派工單</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>執行修繕</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>填寫派工日誌</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>修繕驗收</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div style="width: 100%;padding-left: 15px;" class="flow-list">
+                                            <h4>修繕結案</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -1906,6 +2421,97 @@
         autoScrolling: false,
         scrollBar: false,
     });
+</script>
+
+<!--swiper-->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- swiper -->
+<script type="text/javascript">
+    // 修繕管理
+    var repair2 = new Swiper(".repair_list", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var repair = new Swiper('.repair_photo', {
+        direction: 'vertical',
+        loop: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        thumbs: {
+            swiper: repair2,
+        },
+    });
+
+    // 郵件包裹
+    var mail2 = new Swiper(".mail_list", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var mail = new Swiper('.mail_photo', {
+        direction: 'vertical',
+        loop: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        thumbs: {
+            swiper: mail2,
+        },
+    });
+
+    // 公設預約
+    var service2 = new Swiper(".service_list", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var service = new Swiper('.service_photo', {
+        direction: 'vertical',
+        loop: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        thumbs: {
+            swiper: service2,
+        },
+    });
+
+    // 訪客預約
+    var visitor2 = new Swiper(".visitor_list", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var visitor = new Swiper('.visitor_photo', {
+        direction: 'vertical',
+        loop: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        thumbs: {
+            swiper: visitor2,
+        },
+    });
+
 </script>
 
 <!--bootstrap v4 js-->

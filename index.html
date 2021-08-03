@@ -3,17 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>億集創見</title>
-
-    <link rel="icon" href="img/fav/favicon-96x96.png">
-
-    <!-- Touch Icons - iOS and Android 2.1+ -->
-    <link rel="apple-touch-icon" href="img/fav/android-icon-48x48.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/fav/android-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-icon-114x114.png" />
-
     <!--bootstrap v4.0.0-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!--reset css-->
@@ -32,19 +25,330 @@
     <!--main style-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800,800i&display=swap"
+          rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--modernizr-->
     <script src="js/vendor/modernizr.js"></script>
 
     <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
     <!--  fullpage-->
     <link rel="stylesheet" href="css/fullpage/fullpage.css">
+
+
+    <style>
+
+        /*＝＝＝＝＝＝＝＝＝＝＝ 綠色主題 ＝＝＝＝＝＝＝＝＝＝＝*/
+
+        .bg-green .services_titles h2 {
+            color: #28a745 !important;
+        }
+
+        .bg-green .single_fact_in:hover {
+            color: #28a745 !important;
+        }
+
+        .bg-green .scroll-dots span {
+            background: #28a745;
+        }
+
+        /*基數*/
+        .bg-green .section:nth-child(odd) .gallery-circle div {
+            border-color: #28a745;
+        }
+
+        .bg-green .section:nth-child(odd) .fp-tableCell {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .bg-green .section:nth-child(odd) .swiper-list-table .swiper-slide-thumb-active .dot {
+            background: #28a745 !important;
+        }
+
+        .bg-green .section:nth-child(odd) .swiper-list-table .swiper-slide-thumb-active h4,
+        .bg-green .section:nth-child(odd) .swiper-slide .flow-list:hover h4 {
+            color: #ffffff;
+        }
+
+        .bg-green .section:nth-child(odd) .list-title {
+            font-size: 34px;
+            font-weight: 500;
+            color: #212529;
+        }
+
+        .bg-green .section:nth-child(odd) .list-content {
+            font-size: 24px !important;
+            font-weight: 400;
+            line-height: 1.75;
+            margin: 0;
+            color: #212529;
+        }
+
+        .bg-green .section:nth-child(odd) .swiper-list-table h4 {
+            color: #212529;
+        }
+
+        .bg-green .section:nth-child(odd) .swiper-list-table .swiper-slide .dot {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #dadada;
+            margin-right: 15px;
+        }
+
+        .bg-green .section:nth-child(odd) .line {
+            width: 2px;
+            top: 0;
+            bottom: 0;
+            left: 9px;
+            position: absolute;
+            border-color: inherit;
+            background-color: #dadada;
+        }
+
+        .bg-green .section:nth-child(odd) .swiper-slide .flow-list {
+            padding: 10px;
+            background-size: 200% auto;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .bg-green .section:nth-child(odd) .swiper-slide-thumb-active .flow-list,
+        .bg-green .section:nth-child(odd) .swiper-slide .flow-list:hover {
+            background: #28a745 !important;
+            border-radius: 10px;
+        }
+
+        /*偶數*/
+        .bg-green .section:nth-child(even) .gallery-circle div {
+            border-color: #ffffff;
+        }
+
+        .bg-green .section:nth-child(even) .fp-tableCell {
+            background: rgba(41, 168, 71, 0.9);
+        }
+
+        .bg-green .section:nth-child(even) .swiper-list-table .swiper-slide-thumb-active .dot {
+            background: #28a745 !important;
+            border: 3px #fff solid;
+        }
+
+        .bg-green .section:nth-child(even) .swiper-list-table .swiper-slide-thumb-active h4,
+        .bg-green .section:nth-child(even) .swiper-slide .flow-list:hover h4 {
+            color: #28a745;
+        }
+
+        .bg-green .section:nth-child(even) .list-title {
+            font-size: 34px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .bg-green .section:nth-child(even) .list-content {
+            font-size: 24px !important;
+            font-weight: 400;
+            line-height: 1.75;
+            margin: 0;
+            color: #fff;
+        }
+
+        .bg-green .section:nth-child(even) .swiper-list-table h4 {
+            color: #ffffff;
+        }
+
+        .bg-green .section:nth-child(even) .swiper-list-table .swiper-slide .dot {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #fff;
+            margin-right: 15px;
+        }
+
+        .bg-green .section:nth-child(even) .line {
+            width: 2px;
+            top: 0;
+            bottom: 0;
+            left: 9px;
+            position: absolute;
+            border-color: inherit;
+            background-color: #ffffff;
+        }
+
+        .bg-green .section:nth-child(even) .swiper-slide .flow-list {
+            padding: 10px;
+            background-size: 200% auto;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .bg-green .section:nth-child(even) .swiper-slide-thumb-active .flow-list,
+        .bg-green .section:nth-child(even) .swiper-slide .flow-list:hover {
+            background: #fff !important;
+            border-radius: 10px;
+        }
+
+        /*＝＝＝＝＝＝＝＝＝＝＝ 綠色主題結束 ＝＝＝＝＝＝＝＝＝＝＝*/
+
+        /*＝＝＝＝＝＝＝＝＝＝＝ 藍色主題 ＝＝＝＝＝＝＝＝＝＝＝*/
+
+        .bg-blue .services_titles h2 {
+            color: #28a745 !important;
+        }
+
+        .bg-blue .single_fact_in:hover {
+            color: #28a745 !important;
+        }
+
+        .bg-blue .scroll-dots span {
+            background: #28a745;
+        }
+
+        /*基數*/
+        .bg-blue .section:nth-child(odd) .gallery-circle div {
+            border-color: #007bff;
+        }
+
+        .bg-blue .section:nth-child(odd) .fp-tableCell {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .bg-blue .section:nth-child(odd) .swiper-list-table .swiper-slide-thumb-active .dot {
+            background: #007bff !important;
+        }
+
+        .bg-blue .section:nth-child(odd) .swiper-list-table .swiper-slide-thumb-active h4,
+        .bg-blue .section:nth-child(odd) .swiper-slide .flow-list:hover h4,
+        .bg-blue .section:nth-child(odd) .pagination_about,
+        .bg-blue .section:nth-child(odd) .swiper-slide .flow-list:hover .pagination_about {
+            color: #ffffff;
+        }
+
+        .bg-blue .section:nth-child(odd) .list-title {
+            font-size: 34px;
+            font-weight: 500;
+            color: #212529;
+        }
+
+        .bg-blue .section:nth-child(odd) .list-content {
+            font-size: 24px !important;
+            font-weight: 400;
+            line-height: 1.75;
+            margin: 0;
+            color: #212529;
+        }
+
+        .bg-blue .section:nth-child(odd) .swiper-list-table h4 {
+            color: #212529;
+        }
+
+        .bg-blue .section:nth-child(odd) .swiper-list-table .swiper-slide .dot {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #dadada;
+            margin-right: 15px;
+        }
+
+        .bg-blue .section:nth-child(odd) .line {
+            width: 2px;
+            top: 0;
+            bottom: 0;
+            left: 9px;
+            position: absolute;
+            border-color: inherit;
+            background-color: #dadada;
+        }
+
+        .bg-blue .section:nth-child(odd) .swiper-slide .flow-list {
+            padding: 10px;
+            background-size: 200% auto;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            width: 100%;
+        }
+
+        .bg-blue .section:nth-child(odd) .swiper-slide-thumb-active .flow-list,
+        .bg-blue .section:nth-child(odd) .swiper-slide .flow-list:hover {
+            background: #007bff !important;
+            border-radius: 10px;
+        }
+
+        /*偶數*/
+        .bg-blue .section:nth-child(even) .gallery-circle div {
+            border-color: #ffffff;
+        }
+
+        .bg-blue .section:nth-child(even) .fp-tableCell {
+            background: #007bff;
+        }
+
+        .bg-blue .section:nth-child(even) .swiper-list-table .swiper-slide-thumb-active .dot {
+            background: #007bff !important;
+            border: 3px #fff solid;
+        }
+
+        .bg-blue .section:nth-child(even) .swiper-list-table .swiper-slide-thumb-active h4,
+        .bg-blue .section:nth-child(even) .swiper-slide .flow-list:hover h4 {
+            color: #007bff;
+        }
+
+        .bg-blue .section:nth-child(even) .list-title {
+            font-size: 34px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .bg-blue .section:nth-child(even) .list-content {
+            font-size: 24px !important;
+            font-weight: 400;
+            line-height: 1.75;
+            margin: 0;
+            color: #fff;
+        }
+
+        .bg-blue .section:nth-child(even) .swiper-list-table h4 {
+            color: #ffffff;
+        }
+
+        .bg-blue .section:nth-child(even) .swiper-list-table .swiper-slide .dot {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #fff;
+            margin-right: 15px;
+        }
+
+        .bg-blue .section:nth-child(even) .line {
+            width: 2px;
+            top: 0;
+            bottom: 0;
+            left: 9px;
+            position: absolute;
+            border-color: inherit;
+            background-color: #ffffff;
+        }
+
+        .bg-blue .section:nth-child(even) .swiper-slide .flow-list {
+            padding: 10px;
+            background-size: 200% auto;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            width: 100%;
+        }
+
+        .bg-blue .section:nth-child(even) .swiper-slide-thumb-active .flow-list,
+        .bg-blue .section:nth-child(even) .swiper-slide .flow-list:hover {
+            background: #fff !important;
+            border-radius: 10px;
+        }
+
+        /*＝＝＝＝＝＝＝＝＝＝＝ 藍色主題結束 ＝＝＝＝＝＝＝＝＝＝＝*/
+    </style>
 
     <style>
         @keyframes animate {
@@ -60,6 +364,7 @@
                 transform: rotate(45deg) translate(20px, 20px);
             }
         }
+
         @-webkit-keyframes circle {
             0% {
                 width: 0;
@@ -75,6 +380,7 @@
                 opacity: 0;
             }
         }
+
         @keyframes circle {
             0% {
                 width: 0;
@@ -94,38 +400,48 @@
         button:focus {
             outline: none;
         }
+
         .logo {
             display: flex;
             align-items: center;
         }
+
         .main-menu ul li a {
             color: #fff;
         }
+
         .main-menu ul li a:hover {
             color: #1e87f0;
         }
+
         .main-menu ul .current > a {
             color: #1e87f0;
         }
+
         .color-white {
             color: #fff !important;
         }
+
         .header-logo-menu.active_sc {
             background-color: #000000b0;
             border-bottom: 0;
             padding: 10px 0;
         }
+
         .mean-container a.meanmenu-reveal {
             padding: 17px 15px;
         }
+
         .mean-container a.meanmenu-reveal span {
             background: #fff;
         }
+
         .scroll-down {
             position: relative;
             bottom: -70px;
             left: 50%;
         }
+
         .scroll-down span {
             display: block;
             width: 20px;
@@ -136,12 +452,15 @@
             margin: -10px;
             animation: animate 2s infinite;
         }
+
         .scroll-down span:nth-child(2) {
             animation-delay: -0.2s;
         }
+
         .scroll-down span:nth-child(3) {
             animation-delay: -0.4s;
         }
+
         .sidemenu {
             position: fixed;
             right: 0px;
@@ -157,20 +476,24 @@
             transform: translateX(100px);
             transition: all 0.5s ease;
         }
+
         .showsidemenu {
             opacity: 1;
             transform: translateX(0);
         }
+
         #menu li {
-            margin: 15px 0;
+            margin: 10px 0;
             font-size: 16px;
             font-weight: 300;
         }
+
         #menu li:first-child {
             margin: 10px 0;
             font-size: 20px;
             font-weight: 400;
         }
+
         #menu li span {
             display: block;
             position: relative;
@@ -180,6 +503,7 @@
             text-align: center;
             width: 140px;
         }
+
         #menu li span:before {
             content: "";
             position: absolute;
@@ -189,6 +513,7 @@
             height: 1px;
             left: 0%;
         }
+
         #menu li span:after {
             content: "";
             position: absolute;
@@ -198,21 +523,25 @@
             height: 1px;
             right: 0%;
         }
+
         #menu li a {
             background: transparent;
             border: none;
             position: relative;
             color: #f4f4f4;
-            font-size: 14px;
+            font-size: 16px;
         }
+
         #menu li:hover a {
             font-size: 16px;
             font-weight: 400;
         }
+
         #menu li:hover .dot {
             background: #007bff;
             border: #fff 2px solid;
         }
+
         #menu li .dot {
             position: relative;
             width: 10px;
@@ -221,18 +550,22 @@
             background: #e6e6e6;
             margin-right: 5px;
         }
+
         #menu li.active a {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 400;
         }
+
         #menu li.active .dot {
             background: #007bff;
             border: #fff 2px solid;
         }
+
         #menu .sidemenu-list {
             display: flex;
             align-items: center;
         }
+
         .img-bg {
             position: fixed !important;
             top: 0;
@@ -245,13 +578,16 @@
             background-position: center bottom;
             background-image: url(https://images.unsplash.com/photo-1515975325863-a4ceb4b7d6c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80);
         }
+
         #section0 {
             margin-bottom: -100px !important;
             height: 115vh !important;
         }
+
         #section0 .fp-tableCell {
             background: rgba(27, 27, 27, 0.8);
         }
+
         #section0 h3 {
             font-size: 26px;
             line-height: 26px;
@@ -259,62 +595,55 @@
             color: #fff;
             font-weight: bold;
         }
+
         #section0 p {
             font-size: 16px;
             color: #fff;
             letter-spacing: 10px;
             font-weight: bold;
         }
-        #section1 .fp-tableCell {
-            background: #f4f4f4e6;
-            clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
-            -webkit-clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
-            padding: 7.5rem 0;
-        }
-        #section3 .fp-tableCell {
-            background: #f4f4f4e6;
-            clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
-            -webkit-clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
-            padding: 7.5rem 0;
-        }
+
+        #section1 .fp-tableCell,
+        #section3 .fp-tableCell,
         #section5 .fp-tableCell {
-            background: #f4f4f4e6;
             clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
             -webkit-clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
             padding: 7.5rem 0;
         }
-        #section2 .fp-tableCell {
-            background: #c0dfffe6;
-            -webkit-clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
-            clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
-            padding: 7.5rem 0;
-        }
+
+        #section2 .fp-tableCell,
         #section4 .fp-tableCell {
-            background: #c0dfffe6;
             -webkit-clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
             clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
             padding: 7.5rem 0;
         }
+
         #section6 .fp-tableCell {
             background: #fff;
         }
+
         .section {
             margin-bottom: -5.5rem;
         }
+
         .section:nth-child(odd) .fp-tableCell .container .row {
             flex-direction: row-reverse;
         }
+
         .section:last-child {
             margin-top: -6.5rem;
         }
+
         .section:last-child .fp-tableCell {
             padding: 0;
             padding-top: 150px;
         }
+
         .section:last-child #menu {
             -webkit-transform: translate(-120%);
             transform: translate(-120%);
         }
+
         .p-service-hero__mask {
             position: absolute;
             bottom: 0;
@@ -323,6 +652,7 @@
             padding-top: 10.4166667%;
             pointer-events: none;
         }
+
         .p-service-hero__mask svg {
             position: absolute;
             top: 0;
@@ -330,6 +660,7 @@
             width: 100%;
             height: 100%;
         }
+
         .full_footer {
             bottom: 0;
             width: 100%;
@@ -338,9 +669,11 @@
             z-index: 1;
             position: fixed !important;
         }
+
         .list-unstyled {
             display: flex;
         }
+
         .container-fluid {
             width: 100%;
             padding-right: 15px;
@@ -348,23 +681,28 @@
             margin-right: auto;
             margin-left: auto;
         }
+
         .h_slider_nav {
             height: 100%;
             display: flex;
             justify-content: flex-end;
             font-size: 20px;
         }
+
         .align-items-end {
             -ms-flex-align: end !important;
             align-items: flex-end !important;
         }
+
         .pr_details_nav span {
             line-height: 12px;
         }
+
         .pr_details_nav span.next {
             margin-left: 50px;
             position: relative;
         }
+
         .pr_details_nav span.next:before {
             content: "";
             width: 1px;
@@ -374,58 +712,71 @@
             left: -25px;
             position: absolute;
         }
+
         .w_img_one {
             position: relative;
         }
+
         .w_img_one img {
             position: relative;
             z-index: 1;
         }
+
         .social_icon a {
             font-size: 22px;
             color: #333;
         }
+
         .swiper-photo {
             position: relative;
             height: 50%;
         }
+
         .swiper-photo .swiper-container {
             max-height: 50vh;
             width: 100%;
         }
+
         .swiper-photo .swiper-container img {
             max-height: 50vh;
             width: 100%;
             object-fit: contain;
         }
+
         .swiper-list {
             height: 50%;
             z-index: 1;
         }
+
         .swiper-list h4 {
             font-weight: 500;
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
         }
+
         .swiper-list p {
             font-size: 1.4rem;
             font-weight: 400;
             line-height: 1.75;
             margin: 0;
         }
+
         .swiper-slide {
             align-items: center;
             justify-content: center;
             display: flex;
             position: relative;
         }
+
         .swiper-slide img {
             display: block;
             max-height: 500px;
         }
+
         .swiper-pagination-bullet {
             border-radius: 0%;
         }
+
         .swiper-pagination .swiper-pagination-bullet {
             width: 100%;
             height: 50px;
@@ -438,6 +789,7 @@
             display: flex !important;
             align-items: center;
         }
+
         .swiper-pagination .swiper-pagination-bullet h4 {
             font-size: 22px;
             font-weight: bold;
@@ -445,14 +797,17 @@
             margin-bottom: 5px;
             color: #c3c3c3;
         }
+
         .swiper-pagination .swiper-pagination-bullet p {
             font-size: 18px;
             line-height: 20px;
             color: #c3c3c3;
         }
+
         .swiper-pagination .swiper-pagination-bullet .pagination_about {
             display: none;
         }
+
         .swiper-pagination .swiper-pagination-bullet .dot {
             position: relative;
             width: 15px;
@@ -461,28 +816,35 @@
             background: #e6e6e6;
             margin-right: 20px;
         }
+
         .swiper-pagination .swiper-pagination-bullet-active {
             opacity: 1;
             transition: background 3s ease;
         }
+
         .swiper-pagination .swiper-pagination-bullet-active h4 {
             color: #333;
         }
+
         .swiper-pagination .swiper-pagination-bullet-active p {
             color: #333;
         }
+
         .swiper-pagination .swiper-pagination-bullet-active .pagination_about {
             display: block;
         }
+
         .swiper-pagination .swiper-pagination-bullet-active .dot {
             background: #007bff;
         }
+
         .gallery-main {
             width: 600px;
             height: 300px;
             box-shadow: 0 50px 75px 50px rgba(30, 30, 30, 0.18);
             border: 1px solid #e9e9e9;
         }
+
         .gallery-main .swiper-button-prev {
             position: absolute;
             bottom: 0;
@@ -496,9 +858,11 @@
             right: 40px;
             border-right: 1px solid #e9e9e9;
         }
+
         .gallery-main .swiper-button-prev::after {
             font-size: 12px;
         }
+
         .gallery-main .swiper-button-next {
             position: absolute;
             bottom: 0;
@@ -510,9 +874,11 @@
             color: #e9e9e9;
             background: #1e1e1e;
         }
+
         .gallery-main .swiper-button-next::after {
             font-size: 12px;
         }
+
         .gallery-title {
             position: absolute;
             top: 15px;
@@ -525,9 +891,11 @@
             text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
             color: #fff;
         }
+
         .swiper-slide-active .gallery-title {
             animation: slide-in 0.3s ease-in both;
         }
+
         .gallery-thumbs {
             order: -1;
             width: 100px;
@@ -538,24 +906,30 @@
             box-sizing: border-box;
             padding: 10px 0;
         }
+
         .gallery-thumbs .swiper-slide {
             width: 20%;
             height: 100%;
             opacity: 0.4;
         }
+
         .gallery-thumbs .swiper-slide img {
             transition: 0.3s;
         }
+
         .gallery-thumbs .swiper-slide-active {
             opacity: 0.9;
             opacity: 1;
         }
+
         .gallery-thumbs .swiper-slide-thumb-active {
             opacity: 1;
         }
+
         .gallery-thumbs .swiper-slide-thumb-active img {
             margin-left: -15px;
         }
+
         .gallery-circle {
             position: absolute;
             top: 50%;
@@ -565,6 +939,7 @@
             width: 100%;
             padding-top: 100%;
         }
+
         .gallery-circle div {
             position: absolute;
             top: 50%;
@@ -578,51 +953,65 @@
             -webkit-animation: circle 2s infinite;
             animation: circle 2s infinite;
         }
+
         .gallery-circle div:nth-child(1) {
             -webkit-animation-delay: 0.25s;
             animation-delay: 0.25s;
         }
+
         .gallery-circle div:nth-child(2) {
             -webkit-animation-delay: 0.5s;
             animation-delay: 0.5s;
         }
+
         .gallery-circle div:nth-child(3) {
             -webkit-animation-delay: 0.75s;
             animation-delay: 0.75s;
         }
+
         .gallery-circle div:nth-child(4) {
             -webkit-animation-delay: 1s;
             animation-delay: 1s;
         }
+
         .gallery-circle div:nth-child(5) {
             -webkit-animation-delay: 1.25s;
             animation-delay: 1.25s;
         }
+
         .gallery-circle div:nth-child(6) {
             -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s;
         }
+
         .gallery-circle-primary div {
             border-color: #007bff;
         }
+
         .gallery-circle-white div {
             border-color: #fff;
         }
+
         .gallery-circle-black div {
             border-color: #333;
         }
+
         .gallery-circle-red div {
             border-color: #dc3545;
         }
+
         .gallery-circle-yellow div {
             border-color: #fabf13;
         }
+
         .gallery-circle-gree div {
             border-color: #28a745;
         }
+
         .gallery-circle-purple div {
             border-color: #8731e8;
         }
+
         .home-animation-circle {
             position: absolute;
             top: 0;
@@ -630,12 +1019,14 @@
             width: 100%;
             height: 100%;
         }
+
         .swiper-list-table {
             height: 20%;
             box-sizing: border-box;
             padding: 10px 0;
             margin: 3rem 0;
         }
+
         .swiper-list-table .swiper-slide {
             width: 100% !important;
             height: 60px !important;
@@ -648,9 +1039,11 @@
             align-items: center;
             cursor: pointer;
         }
+
         .swiper-list-table .swiper-slide .pagination_about {
             display: none;
         }
+
         .swiper-list-table .swiper-slide .dot {
             position: relative;
             width: 15px;
@@ -658,117 +1051,146 @@
             border-radius: 50%;
             background: #fff;
         }
+
         .swiper-list-table .swiper-slide-thumb-active .pagination_about {
             display: block;
         }
+
         .swiper-list-table .swiper-slide-thumb-active .dot {
             background: #007bff;
         }
+
         .swiper-list-table .swiper-slide-thumb-active h4 {
             color: #333;
             font-weight: bold;
         }
+
         .swiper-list-table h4 {
-            font-size: 1.4rem;
+            font-size: 18px;
             font-weight: 400;
             line-height: 25px;
             margin-bottom: 5px;
-            color: #6c757d;
         }
+
         .swiper-list-table p {
-            font-size: 18px;
-            line-height: 20px;
+            font-size: 18px !important;
+            line-height: 20px !important;
         }
+
         .swipet-btn-group .swiper-wrapper {
             flex-wrap: wrap;
+            margin-bottom: 30px;
         }
+
         .home_section:nth-child(even) {
             flex-direction: row-reverse;
         }
+
         .wave_two_section_index {
             position: relative;
         }
+
         .wave_two_section_index .t_first {
             bottom: 250px;
             right: 250px;
         }
+
         .wave_two_section_index .t_two {
             right: 150px;
             top: 100px;
         }
+
         .wave_two_section_index .t_three {
             left: 10%;
             bottom: 170px;
         }
+
         .wave_two_section_index .t_four {
             left: 20%;
             top: 120px;
         }
+
         .wave_two_section_index .t_five {
             left: 10%;
             top: 30%;
         }
+
         .wave_two_section_one {
             position: relative;
         }
+
         .wave_two_section_one .t_two {
             bottom: 100px;
             right: 600px;
         }
+
         .wave_two_section_one .t_three {
             right: 150px;
             left: auto;
             top: 250px;
         }
+
         .wave_two_section_two {
             position: relative;
             z-index: 1;
         }
+
         .wave_two_section_two .t_first {
             left: 10%;
             top: auto;
             bottom: 370px;
         }
+
         .wave_two_section_two .t_two {
             right: 220px;
             bottom: 185px;
         }
+
         .wave_two_section_two .t_three {
             right: 150px;
             left: auto;
             top: 250px;
         }
+
         .wave_two_section_three .t_first {
             left: 4%;
             bottom: 50px;
             top: auto;
         }
+
         .wave_two_section_three .t_first img {
             position: relative !important;
         }
+
         .wave_two_section_three .t_two {
             top: 200px;
             right: 8%;
         }
+
         .wave_two_section_three .t_two img {
             position: relative !important;
         }
+
         .wave_two_section_three .t_three {
             right: 150px;
             left: auto;
             top: 250px;
         }
+
         .p_absoulte {
             position: absolute;
         }
+
         .c-gallery__media {
             position: relative;
         }
+
         .c-gallery__bg {
             position: relative;
             display: block;
             width: 100%;
         }
+
         .c-gallery__bg:not(:first-child) {
             position: absolute;
             top: 0;
@@ -776,75 +1198,93 @@
             width: 100%;
             height: 100%;
         }
+
         @media (max-width: 991px) {
             .fp-tableCell {
                 padding: 0;
             }
+
             #menu {
                 display: none !important;
             }
+
             .swiper-photo {
                 width: 100%;
             }
+
             .swiper-list {
                 padding: 0 50px;
             }
+
             .swiper-list h4 {
                 margin-bottom: 0;
             }
+
             .swiper-list-table {
                 margin: 0;
                 text-align: center;
             }
+
             .swiper-list-table .swiper-slide {
                 height: auto !important;
                 margin-bottom: 10px;
             }
+
             .swipet-btn-group {
                 align-content: center;
             }
+
             .home_section {
                 flex-direction: row-reverse;
             }
+
             #section0 h3 {
                 font-size: 20px;
                 letter-spacing: 10px;
             }
+
             #section0 p {
                 font-size: 20px;
                 letter-spacing: 5px;
             }
+
             .wave_two_section_index .t_first {
                 bottom: 36%;
                 right: 10px;
                 width: 50%;
             }
+
             .wave_two_section_index .t_two {
                 right: 15px;
                 left: auto;
                 top: 100px;
             }
+
             .wave_two_section_index .t_three {
                 left: 10%;
                 top: 20%;
                 bottom: 370px;
             }
         }
+
         @media (max-width: 1400px) {
             .w_img_one img {
                 max-width: 100%;
             }
         }
+
         @media (min-width: 62em) {
             .swiper-photo {
                 width: 50%;
                 margin: 0;
             }
+
             .swiper-list {
                 width: 50%;
                 padding: 0 0 0 3rem;
             }
         }
+
         @media only screen and (max-width: 480px) {
             .swiper-pagination .swiper-pagination-bullet {
                 font-size: 1.4em;
@@ -852,7 +1292,6 @@
         }
 
     </style>
-
     <style>
         .contact-wrapper {
             position: fixed;
@@ -872,19 +1311,20 @@
             background-color: #fff;
             border-radius: 15px;
             position: relative;
-            padding: 32px 24px;
+            /*padding: 32px 24px;*/
             width: 350px;
-            box-shadow:0 4px 12px 0 rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
         }
 
-        .contact-panel .title{
+        .contact-panel .title {
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 40px;
-            margin-bottom: 15px;
+            height: 70px;
+            margin: 0 20px;
         }
+
 
         .contact-panel__header {
             position: relative;
@@ -937,7 +1377,7 @@
             height: 80px;
             border-radius: 50%;
             z-index: 99;
-            box-shadow: 0 0 0 0 #1e87f0;
+            box-shadow: 0 0 0 0 #0347b4;
             -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
             -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
             -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -949,23 +1389,30 @@
                 box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
             }
         }
+
         @-moz-keyframes pulse {
             to {
                 box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
             }
         }
+
         @-ms-keyframes pulse {
             to {
                 box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
             }
         }
+
         @keyframes pulse {
             to {
                 box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
             }
         }
 
-        .send .btn{
+        .button-list {
+            padding: 0 25px 30px;
+        }
+
+        .button-list .btn {
             background: #ececec;
             color: #333;
             width: 100%;
@@ -973,1266 +1420,64 @@
             height: 52px;
         }
 
-        .send .btn:hover{
+        .button-list .btn:hover {
             background: #1e87f0;
             color: #fff;
         }
 
         @media (max-width: 991px) {
-            .contact-panel{
+            .contact-panel {
                 width: 90%;
             }
         }
     </style>
-    <!--<style type="text/css">
-
-        button:focus {
-            outline: none;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .main-menu ul li a {
-            color: #fff;
-        }
-
-        .color-white{
-            color: #fff !important;
-        }
-
-        .header-logo-menu.active_sc {
-            background-color: #000000b0;
-            border-bottom: 0;
-            padding: 10px 0;
-        }
-
-        .main-menu ul .current>a,
-        .main-menu ul li a:hover {
-            color: #1e87f0;
-        }
-
-        .mean-container a.meanmenu-reveal {
-            padding: 17px 15px;
-        }
-
-        .mean-container a.meanmenu-reveal span {
-            background: #fff;
-        }
-
-        .scroll-down {
-            position: relative;
-            bottom: -70px;
-            left: 50%;
-        }
-
-        .scroll-down span:nth-child(2) {
-            animation-delay: -0.2s;
-        }
-
-        .scroll-down span:nth-child(3) {
-            animation-delay: -0.4s;
-        }
-
-        .scroll-down span {
-            display: block;
-            width: 20px;
-            height: 20px;
-            border-bottom: 2.5px solid #fff;
-            border-right: 2.5px solid #fff;
-            transform: rotate(45deg);
-            margin: -10px;
-            animation: animate 2s infinite;
-        }
-
-        @keyframes animate {
-            0% {
-                opacity: 0;
-                transform: rotate(45deg) translate(-20px, -20px);
-            }
-
-            50% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0;
-                transform: rotate(45deg) translate(20px, 20px);
-            }
-        }
-
-        /*#menu {
-            !*position: absolute;*!
-            position: fixed;
-            left: 0px;
-            top: 50%;
-            !*-webkit-transform: translateY(-50%);
-            transform: translateY(-50%);*!
-            z-index: 99;
-            width: 120px;
-            text-align: start;
-            background: #3333338c;
-            padding: 10px 20px;
-            border-radius: 0 10px 10px 0;
-            -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%)
-        }*/
-
-        .sidemenu {
-            position: fixed;
-            left: 0px;
-            top: 45%;
-            z-index: 99;
-            width: auto;
-            text-align: start;
-            background: #3333338c;
-            padding: 10px 20px;
-            border-radius: 0 10px 10px 0;
-            margin: 0;
-            opacity: 0;
-            /* also add a translate effect */
-            transform: translateX(-100px);
-            /* and a transition */
-            transition: all .5s ease
-        }
-
-        .showsidemenu {
-            opacity: 1;
-            transform: translateX(0)
-        }
-
-        .contactmenu {
-            position: fixed;
-            right: 0px;
-            top: 45%;
-            z-index: 99;
-            width: auto;
-            text-align: start;
-            background: #3333338c;
-            padding: 10px 20px;
-            border-radius: 10px 0 0 10px;
-            margin: 0;
-            transform: translateX(165px);
-            /* and a transition */
-            transition: all .5s ease
-        }
-
-        .contactmenu:hover {
-            transform: translateX(0)
-        }
-
-        .menu .title{
-            -webkit-writing-mode: vertical-lr;
-            writing-mode: vertical-lr;
-            background: #ffc107;
-            padding: 10px;
-            border-radius: 10px 0 0 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-
-
-        #menu li,
-        .menu li{
-            margin: 10px 0;
-            font-size: 16px;
-            font-weight: 300;
-        }
-
-        #menu li:first-child,
-        .menu li:first-child{
-            margin: 10px 0;
-            font-size: 20px;
-            font-weight: 400;
-        }
-
-        #menu li span,
-        .menu li span{
-            display: block;
-            position: relative;
-            margin: 10px 0;
-            font-size: 20px;
-            font-weight: 400;
-            text-align: center;
-            width: 140px;
-        }
-
-        #menu li span:before,
-        #menu li span:after,
-        .menu li span:before,
-        .menu li span:after{
-            content: "";
-            position: absolute;
-            top: 50%;
-            background: #fff;
-            width: 16%;
-            height: 1px;
-        }
-
-        #menu li span:before,
-        .menu li span:before {
-            left: 0%;
-        }
-
-        #menu li span:after,
-        .menu li span:after{
-            right: 0%;
-        }
-
-        #menu li a,
-        .menu li a{
-            background: transparent;
-            border: none;
-            position: relative;
-            /*color: inherit;
-            line-height: 30px;
-            padding: 3px 0;*/
-            color: #f4f4f4;
-            font-size: 14px;
-        }
-
-        #menu li.active a,
-        #menu li:hover a {
-            font-size: 16px;
-            font-weight: 400;
-        }
-
-        #menu .sidemenu-list {
-            display: flex;
-            align-items: center;
-        }
-
-        #menu li .dot {
-            position: relative;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: #e6e6e6;
-            margin-right: 5px;
-        }
-
-        #menu li.active .dot,
-        #menu li:hover .dot {
-            background: #007bff;
-            border: #fff 2px solid;
-        }
-
-        /*#menu li a::after {
-            right: 0;
-            bottom: 0;
-            content: "";
-            height: 2px;
-            width: 2px;
-            background: #3333338c;
-            position: absolute;
-            -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-        }
-
-        #menu li.active a::after {
-            width: 100%;
-            background: #fff;
-        }*/
-
-        .img-bg {
-            position: fixed !important;
-            top: 0;
-            left: 0;
-            height: 100% !important;
-            width: 100%;
-            z-index: 0;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            background-image: url(https://images.unsplash.com/photo-1515975325863-a4ceb4b7d6c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80);
-        }
-
-        /*#section0{
-            background-image: url(https://images.unsplash.com/photo-1515975325863-a4ceb4b7d6c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80);
-            background-repeat:no-repeat;
-            background-size:cover;
-        }*/
-
-        #section0 {
-            margin-bottom: -100px !important;
-            height: 115vh !important;
-        }
-
-        #section0 .fp-tableCell {
-            background: rgba(27, 27, 27, 0.8);
-        }
-
-        #section0 h3 {
-            font-size: 26px;
-            line-height: 26px;
-            letter-spacing: 20px;
-            color: #fff;
-            font-weight: bold;
-        }
-
-        #section0 p {
-            font-size: 16px;
-            color: #fff;
-            letter-spacing: 10px;
-            font-weight: bold;
-        }
-
-        #section1 .fp-tableCell,
-        #section3 .fp-tableCell,
-        #section5 .fp-tableCell {
-            background: #f4f4f4e6;
-            clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
-            -webkit-clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
-            padding: 7.5rem 0;
-        }
-
-        #section2 .fp-tableCell,
-        #section4 .fp-tableCell {
-            background: #c0dfffe6;
-            -webkit-clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
-            clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
-            padding: 7.5rem 0;
-        }
-
-        /*       #section1 .fp-tableCell{
-            background:#f4f4f4;
-            opacity: 0.90;
-        }
-
-        #section2{
-            background-image: url(https://images.unsplash.com/photo-1591955506264-3f5a6834570a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
-            background-repeat:no-repeat;
-            background-size:cover;
-        }
-
-        #section2 .fp-tableCell{
-            !*background:rgba(199, 229, 240,0.8);*!
-            background: #c0dfffe3;
-            opacity: 0.90;
-        }
-
-        #section2 .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background:rgba(199, 229, 240,0.8);
-        }
-
-        #section3 .fp-tableCell{
-            background:#f4f4f4;
-            opacity: 0.90;
-        }
-
-        #section4{
-            background-image: url(https://www.mo-ss.com/web-design-work/live-forever/guansen/images/pattern1.jpg);
-            background-repeat:no-repeat;
-            background-size:cover;
-        }
-
-        #section4 .fp-tableCell{
-            !*background:rgba(244, 244, 244,0.8);*!
-            background: #c0dfffe3;
-            opacity: 0.90;
-        }
-
-        #section5 .fp-tableCell{
-            background:#f4f4f4;
-            !*background: #c0dfffe3;*!
-            opacity: 0.90;
-        }*/
-
-        #section6 .fp-tableCell {
-            background: #fff;
-        }
-
-        /*.fp-tableCell{
-            padding: 0 0 0 150px;
-        }
-        .section:nth-child(2){
-            margin-top: -6.5rem;
-        }
-        */
-
-        .section {
-            margin-bottom: -5.5rem;
-        }
-
-        .section:nth-child(odd) .fp-tableCell .container .row {
-            flex-direction: row-reverse
-        }
-
-        .section:last-child .fp-tableCell {
-            padding: 0;
-            padding-top: 150px;
-        }
-
-        .section:last-child {
-            margin-top: -6.5rem;
-        }
-
-        .section:last-child #menu {
-            -webkit-transform: translate(-120%);
-            transform: translate(-120%);
-        }
-
-        .p-service-hero__mask {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding-top: 10.4166667%;
-            pointer-events: none;
-        }
-
-        .p-service-hero__mask svg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        @media (max-width: 991px) {
-            .fp-tableCell {
-                padding: 0;
-            }
-        }
-
-        .full_footer {
-            bottom: 0;
-            width: 100%;
-            left: 0;
-            padding: 0 0 10px;
-            z-index: 1;
-            position: fixed !important;
-        }
-
-        .list-unstyled {
-            display: flex;
-        }
-
-        .container-fluid {
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .h_slider_nav {
-            height: 100%;
-            display: flex;
-            justify-content: flex-end;
-            font-size: 20px;
-        }
-
-        .align-items-end {
-            -ms-flex-align: end !important;
-            align-items: flex-end !important;
-        }
-
-        .pr_details_nav span {
-            line-height: 12px;
-        }
-
-        .pr_details_nav span.next {
-            margin-left: 50px;
-            position: relative;
-        }
-
-        .pr_details_nav span.next:before {
-            content: "";
-            width: 1px;
-            height: 12px;
-            background: #777;
-            display: inline-block;
-            left: -25px;
-            position: absolute;
-        }
-
-        .w_img_one {
-            position: relative;
-        }
-
-        .w_img_one img {
-            position: relative;
-            z-index: 1;
-        }
-
-        @media (max-width: 991px) {
-            #menu {
-                display: none !important;
-            }
-        }
-
-        @media (max-width: 1400px) {
-            .w_img_one img {
-                max-width: 100%;
-            }
-        }
-
-        .social_icon a {
-            font-size: 22px;
-            color: #333;
-        }
-
-        .swiper-photo {
-            position: relative;
-            height: 50%;
-        }
-
-        .swiper-photo .swiper-container {
-            max-height: 50vh;
-            width: 100%;
-        }
-
-        .swiper-photo .swiper-container img {
-            max-height: 50vh;
-            width: 100%;
-            object-fit: contain;
-        }
-
-        .swiper-list {
-            height: 50%;
-            z-index: 1;
-        }
-
-        .swiper-list h4 {
-            font-weight: 500;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .swiper-list p {
-            font-size: 1.4rem;
-            font-weight: 400;
-            line-height: 1.75;
-            margin: 0;
-        }
-
-        @media (max-width: 991px) {
-            .swiper-photo {
-                width: 100%;
-            }
-
-            .swiper-list {
-                padding: 0 50px;
-            }
-        }
-
-        @media (min-width: 48em) {
-            .swiper-list h4 {
-                font-size: 2.25rem;
-            }
-        }
-
-        @media (min-width: 62em) {
-            .swiper-photo {
-                width: 50%;
-                margin: 0;
-            }
-
-            .swiper-list {
-                width: 50%;
-                padding: 0 0 0 3rem;
-            }
-        }
-
-        .swiper-slide {
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            position: relative;
-        }
-
-        .swiper-slide img {
-            display: block;
-            max-height: 500px;
-        }
-
-        .swiper-pagination-bullet {
-            border-radius: 0%;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet {
-            width: 100%;
-            height: 50px;
-            text-align: start;
-            vertical-align: middle;
-            opacity: 1;
-            background: center;
-            padding: 0 20px;
-            position: relative;
-            display: flex !important;
-            align-items: center;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet h4 {
-            font-size: 22px;
-            font-weight: bold;
-            line-height: 25px;
-            margin-bottom: 5px;
-            color: #c3c3c3;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet p {
-            font-size: 18px;
-            line-height: 20px;
-            color: #c3c3c3;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active h4,
-        .swiper-pagination .swiper-pagination-bullet-active p {
-            color: #333;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active {
-            opacity: 1;
-            transition: background 3s ease;
-        }
-
-        @media only screen and (max-width: 480px) {
-            .swiper-pagination .swiper-pagination-bullet {
-                font-size: 1.4em;
-            ;
-            }
-        }
-
-        .swiper-pagination .swiper-pagination-bullet .pagination_about {
-            display: none;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active .pagination_about {
-            display: block;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet .dot {
-            position: relative;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: #e6e6e6;
-            margin-right: 20px;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active .dot {
-            background: #007bff;
-        }
-    </style>
-
-    <style>
-        .gallery-main {
-            width: 600px;
-            height: 300px;
-            box-shadow: 0 50px 75px 50px rgba(30, 30, 30, 0.18);
-            border: 1px solid #e9e9e9;
-        }
-        .gallery-main .swiper-button-prev, .gallery-main .swiper-button-next {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            top: auto;
-            left: auto;
-            height: 75px;
-            width: 40px;
-            color: #e9e9e9;
-            background: #1e1e1e;
-        }
-        .gallery-main .swiper-button-prev::after, .gallery-main .swiper-button-next::after {
-            font-size: 12px;
-        }
-        .gallery-main .swiper-button-prev {
-            right: 40px;
-            border-right: 1px solid #e9e9e9;
-        }
-        .gallery-title {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            font-family: "Epilogue", sans-serif;
-            font-size: 50px;
-            font-weight: 700;
-            text-align: right;
-            text-transform: uppercase;
-            text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-            color: #fff;
-        }
-        .swiper-slide-active .gallery-title {
-            animation: slide-in 0.3s ease-in both;
-        }
-        .gallery-thumbs {
-            order: -1;
-            width: 100px;
-            height: 300px;
-            margin-right: 15px;
-            padding-left: 15px;
-        }
-        .gallery-thumbs .swiper-slide img {
-            transition: 0.3s;
-        }
-        .gallery-thumbs .swiper-slide-active {
-            opacity: 0.9;
-        }
-        .gallery-thumbs .swiper-slide-thumb-active {
-            opacity: 1;
-        }
-        .gallery-thumbs .swiper-slide-thumb-active img {
-            margin-left: -15px;
-        }
-
-
-        .gallery-circle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            width: 100%;
-            padding-top: 100%;
-        }
-
-        .gallery-circle div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            width: 0;
-            height: 0;
-            border: 1px solid #fff;
-            border-radius: 50%;
-            -webkit-animation: circle 2s infinite;
-            animation: circle 2s infinite
-        }
-
-        .gallery-circle div:nth-child(1) {
-            -webkit-animation-delay: .25s;
-            animation-delay: .25s
-        }
-
-        .gallery-circle div:nth-child(2) {
-            -webkit-animation-delay: .5s;
-            animation-delay: .5s
-        }
-
-        .gallery-circle div:nth-child(3) {
-            -webkit-animation-delay: .75s;
-            animation-delay: .75s
-        }
-
-        .gallery-circle div:nth-child(4) {
-            -webkit-animation-delay: 1s;
-            animation-delay: 1s
-        }
-
-        .gallery-circle div:nth-child(5) {
-            -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s
-        }
-
-        .gallery-circle div:nth-child(6) {
-            -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s
-        }
-
-        @-webkit-keyframes circle {
-            0% {
-                width: 0;
-                height: 0;
-                opacity: 0
-            }
-
-            50% {
-                opacity: 1
-            }
-
-            100% {
-                width: 100%;
-                height: 100%;
-                opacity: 0
-            }
-        }
-
-        @keyframes circle {
-            0% {
-                width: 0;
-                height: 0;
-                opacity: 0
-            }
-
-            50% {
-                opacity: 1
-            }
-
-            100% {
-                width: 100%;
-                height: 100%;
-                opacity: 0
-            }
-        }
-
-        .gallery-circle-primary div {
-            border-color: #007bff
-        }
-
-        .gallery-circle-white div {
-            border-color: #ffffff
-        }
-
-        .gallery-circle-black div {
-            border-color: #333333
-        }
-
-        .gallery-circle-red div {
-            border-color: #dc3545
-        }
-
-        .gallery-circle-yellow div {
-            border-color: #fabf13
-        }
-
-        .gallery-circle-gree div {
-            border-color: #28a745
-        }
-
-        .gallery-circle-purple div {
-            border-color: #8731e8
-        }
-
-        .home-animation-circle{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .gallery-thumbs {
-            height: 20%;
-            box-sizing: border-box;
-            padding: 10px 0;
-        }
-        .gallery-thumbs .swiper-slide {
-            width: 20%;
-            height: 100%;
-            opacity: 0.4;
-        }
-        .gallery-thumbs .swiper-slide-active {
-            opacity: 1;
-        }
-
-
-        .swiper-list-table {
-            height: 20%;
-            box-sizing: border-box;
-            padding: 10px 0;
-            margin: 3rem 0;
-        }
-
-        .swiper-list-table .swiper-slide{
-            width: 100% !important;
-            height: 60px !important;
-            text-align: start;
-            vertical-align: middle;
-            opacity: 1;
-            background: center;
-            /*padding: 0 20px;*/
-            position: relative;
-            display: flex !important;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .swiper-list-table .swiper-slide .pagination_about {
-            display: none;
-        }
-
-        .swiper-list-table .swiper-slide-thumb-active .pagination_about {
-            display: block;
-        }
-
-        .swiper-list-table .swiper-slide .dot {
-            position: relative;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: #fff;
-        }
-
-        .swiper-list-table .swiper-slide-thumb-active .dot {
-            background: #007bff;
-        }
-
-        .swipet-btn-group .swiper-wrapper{
-            flex-wrap: wrap;
-        }
-
-        .swiper-list-table h4 {
-            font-size: 1.4rem;
-            font-weight: 400;
-            line-height: 25px;
-            margin-bottom: 5px;
-            color: #6c757d;
-        }
-
-        .swiper-list-table .swiper-slide-thumb-active h4 {
-            color: #333;
-            font-weight: bold;
-        }
-
-        .swiper-list-table p {
-            font-size: 18px;
-            line-height: 20px;
-        }
-
-        .home_section:nth-child(even){
-            flex-direction: row-reverse;
-        }
-
-        @media (max-width: 991px) {
-            .swiper-list-table{
-                margin:  0;
-                text-align: center;
-            }
-            .swiper-list-table .swiper-slide{
-                height: auto !important;
-                margin-bottom: 10px;
-            }
-            .swipet-btn-group{
-                align-content: center;
-            }
-            .home_section{
-                flex-direction: row-reverse;
-            }
-            .swiper-list h4{
-                margin-bottom: 0;
-            }
-        }
-
-        /*============= wave_two_section_index css ==========*/
-        .wave_two_section_index {
-            position: relative;
-        }
-
-        .wave_two_section_index .t_first{
-            bottom: 250px;
-            right: 250px;
-        }
-        .wave_two_section_index .t_two {
-            right: 150px;
-            top: 100px;
-        }
-        .wave_two_section_index .t_three {
-            left: 10%;
-            bottom: 170px;
-        }
-
-        .wave_two_section_index .t_four {
-            left: 20%;
-            top: 120px;
-        }
-
-        .wave_two_section_index .t_five {
-            left: 10%;
-            top: 30%;
-        }
-
-        @media (max-width: 991px) {
-            #section0 h3{
-                font-size: 20px;
-                letter-spacing: 10px;
-            }
-
-            #section0 p{
-                font-size: 20px;
-                letter-spacing: 5px;
-            }
-            .wave_two_section_index .t_first{
-                bottom: 36%;
-                right: 10px;
-                width: 50%;
-            }
-            .wave_two_section_index .t_two {
-                right: 15px;
-                left: auto;
-                top: 100px;
-            }
-            .wave_two_section_index .t_three {
-                left: 10%;
-                top: 20%;
-                bottom: 370px;
-            }
-        }
-
-        /*============= wave_two_section_one css ==========*/
-        .wave_two_section_one {
-            position: relative;
-        }
-        .wave_two_section_one .t_two {
-            bottom: 100px;
-            right: 600px;
-        }
-        .wave_two_section_one .t_three {
-            right: 150px;
-            left: auto;
-            top: 250px;
-        }
-
-        /*============= wave_two_section_two css ==========*/
-
-        .wave_two_section_two {
-            position: relative;
-            z-index: 1;
-        }
-        .wave_two_section_two .t_first {
-            left: 10%;
-            top: auto;
-            bottom: 370px;
-        }
-        .wave_two_section_two .t_two {
-            right: 220px;
-            bottom: 185px;
-        }
-        .wave_two_section_two .t_three {
-            right: 150px;
-            left: auto;
-            top: 250px;
-        }
-
-        /*============= wave_two_section_three css ==========*/
-        .wave_two_section_three .t_first {
-            left: 4%;
-            bottom: 50px;
-            top: auto;
-        }
-        .wave_two_section_three .t_first img {
-            position: relative !important;
-        }
-        .wave_two_section_three .t_two {
-            top: 200px;
-            right: 8%;
-        }
-        .wave_two_section_three .t_two img {
-            position: relative !important;
-        }
-
-        .wave_two_section_three .t_three {
-            right: 150px;
-            left: auto;
-            top: 250px;
-        }
-
-
-        .p_absoulte {
-            position: absolute;
-        }
-
-
-        .c-gallery__media {
-            position: relative
-        }
-
-        .c-gallery__bg {
-            position: relative;
-            display: block;
-            width: 100%
-        }
-
-        .c-gallery__bg:not(:first-child) {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%
-        }
-    </style>-->
 
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
-
-<!--    <script type="text/javascript" src="js/head.js"></script>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css"/>
+    <link rel="stylesheet" href="css/chat.css">
 </head>
 
 <body>
 <!-- Menu -->
-<div class="header"></div>
-<!--<div class="header-logo-menu bg_cover">
-    <div class="container">
-        <div class="navigatin" id="main_nav_id">
-            <div class="row no-gutters">
-                <div class="col-lg-3 logo">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/icon/企業形象-白色.png" alt="menu" />
-                    </a>
-                </div>
-                <div class="col-lg-9">
-                    <nav id="mobile-menu" class="main-menu">
-                        <ul>
-                            <li class="current">
-                                <a href="index.html">首頁</a>
-                            </li>
-                            <li>
-                                <a href="news.html">最新消息</a>
-                            </li>
-                            <li>
-                                <a href="#">產品介紹</a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">#BIM (暫無)</a></li>
-                                    <li><a href="#">CRM (暫無)</a></li>
-                                    <li><a href="#">IOT (暫無)</a></li>
-                                    <li><a href="product/ihome.html">iHome</a></li>
-                                    <li><a href="product/attence.html">考勤系統</a></li>
-                                    &lt;!&ndash; <li><a href="#">建築前期資產管理 (暫無)</a></li> &ndash;&gt;
-                                    &lt;!&ndash; <li><a href="#">產權管理 (暫無)</a></li> &ndash;&gt;
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">優惠方案 (暫無)</a>
-                            </li>
-                            <li>
-                                <a href="clients.html">應用案例</a>
-                            </li>
-                            <li>
-                                <a href="#">關於我們</a>
-                                <ul class="sub-menu">
-                                    <li><a href="about/company.html">公司簡介</a></li>
-                                    <li><a href="about/technology.html">技術核心</a></li>
-                                    <li><a href="about/joinus.html">加入我們</a></li>
-                                </ul>
-                            </li>
-                            &lt;!&ndash; <li>
-                            <a href="#news_id">News</a>
-                        </li>
-                        <li>
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="single.html">Single</a></li>
-                                <li><a href="contact.html">Conatct</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="btn btn-style1" href="#">Download</a>
-                        </li> &ndash;&gt;
-                        </ul>
-                    </nav>
-                    <div class="mobile-menu"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
-
+<header class="headerpage"></header>
 <!--Side Menu-->
 <div class="contact-wrapper">
     <div class="contact-panel">
 
-        <div id="contact_list">
+        <div id="contact_list" class="my-class2">
             <div class="title">
                 <div class="contact-panel__header">聯絡我們</div>
                 <button class="contact-close"><i class="ri-close-line"></i></button>
             </div>
 
-            <div class="send">
+            <div class="button-list">
                 <button class="btn" onclick="window.location.href='contact.html'">填寫表單</button>
                 <button class="btn" onclick="window.location.href='tel:0423273199'">立即撥打電話</button>
-                <button class="btn" uk-toggle="target: #online">線上客服</button>
+                <button class="btn" uk-toggle="target: .my-class">線上客服</button>
             </div>
         </div>
 
-        <div id="online" hidden>
+        <div class="my-class" hidden>
             <div class="title">
-                <button class="contact-back" uk-toggle="target: #contact_list"><i class="ri-arrow-left-line"></i></button>
+                <button class="contact-back" uk-toggle="target: .my-class2"><i class="ri-arrow-left-line"></i></button>
                 <div class="contact-panel__header">線上客服</div>
                 <button class="contact-close"><i class="ri-close-line"></i></button>
             </div>
 
-            <div class="w-100 overflow-hidden position-relative">
-                <!-- chat user head -->
-                <div class="p-3 border-bottom">
-                    <div class="section_head">
-                        <div class="info_box has_member">
-                            <div class="d-block d-lg-none me-2 ms-0 chat-user-list-b" style="line-height: 85px;">
-                                <a href="#" class="user-chat-remove text-muted font-size-16 p-2">
-                                    <i class="ri-arrow-left-s-line"></i>
-                                </a>
-                            </div>
-
-                            <a class="event_member_menu thmb_area" href="javascript:;">
-                                    <span class="thmb_wrap">
-                                        <div class="thmb bg-secondary">
-                                            <img style="height: 100%;width: 100%;object-fit: cover;" src="assets/img/wallpaper.jpg" onerror="this.src='assets/img/unnamed.png'" alt="">
-                                        </div>
-                                    </span>
-                            </a>
-
-                            <dl class="chat_cont">
-                                <dt>
-                                    <span class="name">客服群組</span>
-                                </dt>
-                                <dd class="member user-profile-show">
-                                    <a href="javascript:;">成員<span class="num">4</span></a>
-                                </dd>
-                            </dl>
-
-                            <div class="info_tools">
-                                <div class="btn_tool dropdown">
-                                    <button class="btn_sort" type="button" id="dropdownMenuButton21" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="ico_srch">搜尋</i>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton21" style="padding: 10px;">
-                                        <input type="text" class="form-control bg-light border-0" placeholder="請輸入關鍵字">
-                                    </div>
-                                </div>
-                                <button class="btn_tool event_room_menu user-profile-show" title="查看更多" data-target=".collapse" role="button" data-toggle="collapse">
-                                    <i class=" ico_moremenu">查看更多</i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="w-100">
                 <!-- chat conversation -->
-                <div class="chat_box wp_01">
+                <div class="chat_box">
                     <div id="chat_room_scroll" class="scroller">
                         <div class="chat_view ps ps--active-y" id="perfect_scroll6">
 
-                            <div class="inform_date">
-                                <span class="date">2021. 4. 8. (禮拜四)</span>
-                            </div>
-
                             <div class="msg_lft msg_wrap">
                                 <div class="msg_inr">
-                                    <a class="thmb_area" href="javascript:;">
-                                        <div class="thmb bg-secondary">
-                                            <img style="height: auto; width: 100%;" src="assets/img/unnamed.png" onerror="this.src='assets/img/unnamed.png'" alt="">
-                                        </div>
-                                    </a>
                                     <div class="msg_area">
-                                        <em class="name">陳馬克</em>
                                         <div class="msg_box">
-                                            <p class="msg hl_content">員工會議今天下午2點開始</p>
+                                            <p class="msg hl_content">感謝您的詢問，請問您需要我們提供什麼服務？</p>
                                         </div>
                                         <div class="status_box">
-                                            <a class="read" href="javascript:;" data-toggle="modal" data-target="#exampleModal">已讀 3<i class="ico_arr"></i></a>
                                             <span class="date">上午 9:52</span>
-
-                                            <div class="dropdown" style="z-index: 999;">
-                                                <button class="more_menu" type="button" id="dropdownMenuButton22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton22" style="">
-                                                    <a class="dropdown-item" href="#">回覆</a>
-                                                    <a class="dropdown-item" href="#">轉發</a>
-                                                </div>
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -2241,177 +1486,17 @@
                             <div class="msg_rgt msg_wrap">
                                 <div class="msg_inr">
                                     <div class="msg_area">
-                                        <div class="chat-header">員工一</div>
                                         <div class="msg_box">
-                                            <p class="msg hl_content">收到</p>
+                                            <p class="msg hl_content">有一些產品問題想詢問</p>
                                         </div>
                                         <div class="status_box">
-                                            <a class="read" href="javascript:;" data-toggle="modal" data-target="#exampleModal">
-                                                <i class="ico_arr"></i>已讀 3</a>
                                             <span class="date">上午 10:52</span>
-
-                                            <div class="dropdown" style="z-index: 999;">
-                                                <button class="more_menu" type="button" id="dropdownMenuButton23" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton23">
-                                                    <a class="dropdown-item" href="#">回覆</a>
-                                                    <a class="dropdown-item" href="#">轉發</a>
-                                                </div>
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="inform_date">
-                                <span class="date">2021. 4. 9. (禮拜五)</span>
-                            </div>
-
-                            <div class="msg_rgt msg_wrap">
-                                <div class="msg_inr">
-                                    <div class="msg_area">
-                                        <div class="chat-header">員工一</div>
-                                        <div class="msg_box" style="cursor: pointer;">
-                                            <div class="attach">
-                                                <i class="ico_file zip"></i>
-                                                <em class="file_name">LINE Chat.zip</em>
-                                                <span class="file_info">
-                                                        <span>期間 : ~ 2024. 4. 09. 上午10:52</span>
-                                                        <span>大小 ：881.70KB</span>
-                                                    </span>
-                                            </div>
-                                        </div>
-                                        <div class="status_box">
-                                            <a class="read" href="javascript:;" data-toggle="modal" data-target="#exampleModal">
-                                                <i class="ico_arr"></i>已讀 3</a>
-                                            <span class="date">上午 10:52</span>
-
-                                            <div class="dropdown" style="z-index: 999;">
-                                                <button class="more_menu" type="button" id="dropdownMenuButton24" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton24">
-                                                    <a class="dropdown-item" href="#">回覆</a>
-                                                    <a class="dropdown-item" href="#">轉發</a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="msg_rgt msg_wrap">
-                                <div class="msg_inr">
-                                    <div class="msg_area">
-                                        <div class="chat-header">員工一</div>
-                                        <div class="msg_box">
-                                            <p class="msg hl_content">請各位確認</p>
-                                        </div>
-                                        <div class="status_box">
-                                            <a class="read" href="javascript:;" data-toggle="modal" data-target="#exampleModal">
-                                                <i class="ico_arr"></i>已讀 3</a>
-                                            <span class="date">上午 10:52</span>
-
-                                            <div class="dropdown" style="z-index: 999;">
-                                                <button class="more_menu" type="button" id="dropdownMenuButton25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton25">
-                                                    <a class="dropdown-item" href="#">回覆</a>
-                                                    <a class="dropdown-item" href="#">轉發</a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="msg_lft msg_wrap">
-                                <div class="msg_inr">
-                                    <a class="thmb_area" href="javascript:;">
-                                        <div class="thmb bg-secondary">
-                                            <img style="height: auto; width: 100%;" src="assets/img/unnamed.png" onerror="this.src='assets/img/unnamed.png'" alt="">
-                                        </div>
-                                    </a>
-                                    <div class="msg_area">
-                                        <em class="name">陳馬克</em>
-                                        <div class="msg_box">
-                                            <p class="msg hl_content">好的～</p>
-                                        </div>
-                                        <div class="status_box">
-                                            <a class="read" href="javascript:;" data-toggle="modal" data-target="#exampleModal">已讀 3<i class="ico_arr"></i></a>
-                                            <span class="date">上午 11:16</span>
-
-                                            <div class="dropdown" style="z-index: 999;">
-                                                <button class="more_menu" type="button" id="dropdownMenuButton26" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton26">
-                                                    <a class="dropdown-item" href="#">回覆</a>
-                                                    <a class="dropdown-item" href="#">轉發</a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="msg_lft msg_wrap">
-                                <div class="msg_inr">
-                                    <a class="thmb_area" href="javascript:;">
-                                        <div class="thmb bg-secondary">
-                                            <img style="height: auto; width: 100%;" src="assets/img/unnamed.png" onerror="this.src='assets/img/unnamed.png'" alt="">
-                                        </div>
-                                    </a>
-                                    <div class="msg_area">
-                                        <em class="name" style="cursor: pointer;">黃溫妮</em>
-                                        <div class="msg_box">
-                                            <p class="msg hl_content">ＯＫ</p>
-                                        </div>
-                                        <div class="status_box">
-                                            <a class="read" href="javascript:;" data-toggle="modal" data-target="#exampleModal">已讀 3<i class="ico_arr"></i></a>
-                                            <span class="date">下午 12:14</span>
-
-                                            <div class="dropdown" style="z-index: 999;">
-                                                <button class="more_menu" type="button" id="dropdownMenuButton27" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton27">
-                                                    <a class="dropdown-item" href="#">回覆</a>
-                                                    <a class="dropdown-item" href="#">轉發</a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="msg_rgt msg_wrap">
-                                <div class="msg_inr">
-                                    <div class="msg_area">
-                                        <div class="chat-header">員工一</div>
-                                        <div class="sticker_box" style="width: 164px; height: 143px;">
-                                            <img alt="" src="https://static.worksmobile.net/static/wm/stickers/0/0/1/12034/PC/66122839.png?1617845880861.243571800">
-                                        </div>
-                                        <div class="status_box">
-                                            <span class="date">下午 2:53</span>
-
-                                            <div class="dropdown" style="z-index: 999;">
-                                                <button class="more_menu" type="button" id="dropdownMenuButton28" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton28">
-                                                    <a class="dropdown-item" href="#">回覆</a>
-                                                    <a class="dropdown-item" href="#">轉發</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 723px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 620px;"></div></div></div>
+                        </div>
                     </div>
                 </div>
                 <!-- start chat input section -->
@@ -2430,7 +1515,8 @@
                                 </div>
                             </div>
                             <div class="editor">
-                                <textarea class="form-control" rows="2" placeholder="請輸入您的訊息 (請用 Shift + Enter 換行)"></textarea>
+                                <textarea class="form-control" rows="2"
+                                          placeholder="請輸入您的訊息 (請用 Shift + Enter 換行)"></textarea>
                             </div>
                         </div>
                     </div>
@@ -2440,12 +1526,9 @@
 
     </div>
 </div>
-
 <button class="contact-button">
     聯絡我們
 </button>
-
-
 <ul id="menu" class="sidemenu color-white">
     <li><span>產品簡介</span></li>
     <li class="sidemenu-list" data-menuanchor="1">
@@ -2476,7 +1559,7 @@
 </ul>
 
 <!--內容-->
-<div id="fullpage">
+<div id="fullpage" class="bg-blue">
     <div id="wrapper">
         <!--背景-->
         <div class="img-bg wave_two_section_index">
@@ -2525,7 +1608,8 @@
         </div>-->
             <div class="intro">
                 <div class="container custom_container">
-                    <div class="align-items-center home_section" style="text-align: center;" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+                    <div class="align-items-center home_section" style="text-align: center;"
+                         uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
                         <img style="width: 100%;max-width: 650px;" src="img/icon/企業形象-白色.png" alt="">
                         <h3 uk-scrollspy-class="uk-animation-slide-bottom">應用科技・創見未來</h3>
                         <p>BIM X FM X IOT X AI</p>
@@ -2552,21 +1636,6 @@
         </div>
         <!--考勤系統-->
         <div class="section wave_two_section_one parallax-window" id="section1">
-            <!--  <div class="t_first p_absoulte">
-            <div data-speed="-0.08">
-                <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
-            </div>
-        </div>
-        <div class="t_two p_absoulte">
-            <div data-speed="0.08">
-                <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
-            </div>
-        </div>
-        <div class="t_three p_absoulte">
-            <div data-speed="0.08">
-                <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
-            </div>
-        </div>-->
             <div class="intro">
                 <div class="container custom_container">
                     <div class="align-items-center home_section row">
@@ -2615,34 +1684,41 @@
                         </div>
 
                         <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false">考勤系統</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false">跟傳統打卡說掰掰，設定打卡範圍，正確紀錄打卡時間，並落實行動化管理。</p>
-                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false" thumbsSlider="" class="swiper-container attence_list swiper-list-table">
+                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                class="list-title">考勤系統</h4>
+                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                               class="list-content">跟傳統打卡說掰掰，設定打卡範圍，正確紀錄打卡時間，並落實行動化管理。</p>
+                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
+                                 thumbsSlider="" class="swiper-container attence_list swiper-list-table">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide swiper-btn">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>後台管理</h4>
                                             <p class="pagination_about">後台輕鬆管理人員</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>行動打卡</h4>
                                             <p class="pagination_about">線上快速打卡</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>行事曆</h4>
                                             <p class="pagination_about">班表一目瞭然</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>巡邏簽到</h4>
                                             <p class="pagination_about">異常通報、線上簽到</p>
                                         </div>
@@ -2721,34 +1797,41 @@
                         </div>
 
                         <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false">#BIM</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false" thumbsSlider="" class="swiper-container bim_list swiper-list-table">
+                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                class="list-title">#BIM</h4>
+                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                               class="list-content">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
+                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
+                                 thumbsSlider="" class="swiper-container bim_list swiper-list-table">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide swiper-btn">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>後台管理</h4>
                                             <p class="pagination_about">後台輕鬆管理人員</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>行動打卡</h4>
                                             <p class="pagination_about">線上快速打卡</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>行事曆</h4>
                                             <p class="pagination_about">班表一目瞭然</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>巡邏簽到</h4>
                                             <p class="pagination_about">異常通報、線上簽到</p>
                                         </div>
@@ -2826,34 +1909,41 @@
                         </div>
 
                         <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false">CRM</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false" thumbsSlider="" class="swiper-container crm_list swiper-list-table">
+                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                class="list-title">CRM</h4>
+                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                               class="list-content">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
+                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
+                                 thumbsSlider="" class="swiper-container crm_list swiper-list-table">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide swiper-btn">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>後台管理</h4>
                                             <p class="pagination_about">後台輕鬆管理人員</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>行動打卡</h4>
                                             <p class="pagination_about">線上快速打卡</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>行事曆</h4>
                                             <p class="pagination_about">班表一目瞭然</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>巡邏簽到</h4>
                                             <p class="pagination_about">異常通報、線上簽到</p>
                                         </div>
@@ -2869,21 +1959,6 @@
         </div>
         <!--IOT-->
         <div class="section wave_two_section_one parallax-window" id="section4">
-            <!-- <div class="t_first p_absoulte">
-            <div data-speed="-0.08">
-                <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
-            </div>
-        </div>
-        <div class="t_two p_absoulte">
-            <div data-speed="0.08">
-                <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
-            </div>
-        </div>
-        <div class="t_three p_absoulte">
-            <div data-speed="0.02">
-                <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
-            </div>
-        </div>-->
             <div class="intro">
                 <div class="container custom_container">
                     <div class="align-items-center home_section row">
@@ -2932,34 +2007,41 @@
                         </div>
 
                         <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false">IOT</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false" thumbsSlider="" class="swiper-container iot_list swiper-list-table">
+                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                class="list-title">IOT</h4>
+                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                               class="list-content">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
+                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
+                                 thumbsSlider="" class="swiper-container iot_list swiper-list-table">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-btn">
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>後台管理</h4>
                                             <p class="pagination_about">後台輕鬆管理人員</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>行動打卡</h4>
                                             <p class="pagination_about">線上快速打卡</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>行事曆</h4>
                                             <p class="pagination_about">班表一目瞭然</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>巡邏簽到</h4>
                                             <p class="pagination_about">異常通報、線上簽到</p>
                                         </div>
@@ -2975,21 +2057,6 @@
         </div>
         <!--ihome-->
         <div class="section wave_two_section_three parallax-window" id="section5">
-            <!--<div class="t_first p_absoulte">
-            <div data-speed="-0.08">
-                <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
-            </div>
-        </div>
-        <div class="t_two p_absoulte">
-            <div data-speed="0.08">
-                <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
-            </div>
-        </div>
-        <div class="t_three p_absoulte">
-            <div data-speed="0.02">
-                <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
-            </div>
-        </div>-->
             <div class="intro">
                 <div class="container custom_container">
                     <div class="align-items-center home_section row">
@@ -3038,34 +2105,41 @@
                         </div>
 
                         <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false">iHome</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false" thumbsSlider="" class="swiper-container ihome_list swiper-list-table">
+                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                class="list-title">iHome</h4>
+                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                               class="list-content">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
+                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
+                                 thumbsSlider="" class="swiper-container ihome_list swiper-list-table">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-btn">
+                                    <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>後台管理</h4>
                                             <p class="pagination_about">後台輕鬆管理人員</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>行動打卡</h4>
                                             <p class="pagination_about">線上快速打卡</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>行事曆</h4>
                                             <p class="pagination_about">班表一目瞭然</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
+                                        <div class="line"></div>
                                         <div class="dot"><span></span></div>
-                                        <div style="width: 100%;padding-left: 15px;">
+                                        <div class="flow-list">
                                             <h4>巡邏簽到</h4>
                                             <p class="pagination_about">異常通報、線上簽到</p>
                                         </div>
@@ -3085,19 +2159,23 @@
                 <!--預約專人諮詢-->
                 <div class="container" id="contact_us">
                     <div class="contact_us row">
-                        <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false" class="col-sm-6 contact_us_footer">
+                        <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false"
+                             class="col-sm-6 contact_us_footer">
                             <i class="ri-phone-line"></i>
                             <h4>直接電話聯繫我們</h4>
                             <p>電話客服時間：星期一～星期五 09:00~18:00</p>
-                            <button class="btn btn-circle btn_animation primary hover-left" onclick="window.location.href='tel:0423273199'">
+                            <button class="btn btn-circle btn_animation primary hover-left"
+                                    onclick="window.location.href='tel:0423273199'">
                                 04-2327-3199
                             </button>
                         </div>
-                        <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="col-sm-6 contact_us_footer">
+                        <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false"
+                             class="col-sm-6 contact_us_footer">
                             <i class="ri-mail-open-line"></i>
                             <h4>填寫表單聯繫我們</h4>
                             <p>歡迎填寫表單，我們會盡快回覆您！</p>
-                            <button class="btn btn-circle btn_animation primary hover-left" onclick="window.location.href='contact.html'">
+                            <button class="btn btn-circle btn_animation primary hover-left"
+                                    onclick="window.location.href='contact.html'">
                                 馬上預約
                             </button>
                         </div>
@@ -3110,11 +2188,12 @@
                             <div class="col-md-12">
                                 <div class="footer_content">
                                     <h3>現在可以開始</h3>
-                                    <a href="https://apps.apple.com/tw/developer/ez-tech-ltd/id1068678728" target="_blank">
-                                        <img src="img/icon/btn1.png" alt="" />
+                                    <a href="https://apps.apple.com/tw/developer/ez-tech-ltd/id1068678728"
+                                       target="_blank">
+                                        <img src="img/icon/btn1.png" alt=""/>
                                     </a>
                                     <a href="https://play.google.com/store/apps/developer?id=億集科技有限公司" target="_blank">
-                                        <img src="img/icon/btn2.png" alt="" />
+                                        <img src="img/icon/btn2.png" alt=""/>
                                     </a>
                                 </div>
                             </div>
@@ -3133,8 +2212,8 @@
                             </div>
                         </div>
                     </div>
-                    <img src="img/footer/footer_mock1.png" class="f-left" alt="" />
-                    <img src="img/footer/footer_mock2.png" class="f-right" alt="" />
+                    <img src="img/footer/footer_mock1.png" class="f-left" alt=""/>
+                    <img src="img/footer/footer_mock2.png" class="f-right" alt=""/>
                 </footer>
             </div>
         </div>
@@ -3165,7 +2244,11 @@
 
 
 <!--============Java Script=============-->
-
+<script>
+    $(function() {
+        $(".headerpage").load("head.html");
+    });
+</script>
 <script>
     const wrapper = document.createElement('div');
 
@@ -3182,7 +2265,6 @@
         contactWrapper.classList.remove('contact-wrapper--open')
     });
 </script>
-
 <script src="js/head.js"></script>
 <!--jquery-->
 <script src="js/jquery-1.12.4.min.js"></script>
@@ -3208,6 +2290,7 @@
             sidemenu.classList.remove("showsidemenu")
         }
     }
+
     document.addEventListener("scroll", handleScroll)
 </script>
 <!--back to top-->
@@ -3234,6 +2317,7 @@
             behavior: "smooth"
         })
     }
+
     scrollToTopBtn.addEventListener("click", scrollToTop)
     document.addEventListener("scroll", handleScroll)
 </script>
@@ -3249,92 +2333,18 @@
         autoScrolling: false,
     });
 
-    $(document).ready(function() {
-        $('#moveSectionUp').click(function(e) {
+    $(document).ready(function () {
+        $('#moveSectionUp').click(function (e) {
             e.preventDefault();
             $.fn.fullpage.moveSectionUp();
         });
 
-        $('#moveSectionDown').click(function(e) {
+        $('#moveSectionDown').click(function (e) {
             e.preventDefault();
             $.fn.fullpage.moveSectionDown();
         });
     })
 </script>
-<!--<script type="text/javascript">
-
-var myFullpage = new fullpage('#fullpage', {
-    sectionsColor: ['#f4f4f4', '#c7e5f0', '#ffe5d4', '#d8f8d3', '#f4f4f4'],
-    anchors: ['1', '2', '3', '4', '5', '6'],
-    menu: '#menu',
-    dragAndMove: true,
-    scrollOverflow: true,
-    verticalCentered: true,
-    autoScrolling:false,
-});
-
-// calling fullpage.js methods using jQuery
-$('#moveSectionUp').click(function(e) {
-    e.preventDefault();
-    $.fn.fullpage.moveSectionUp();
-});
-
-$('#moveSectionDown').click(function(e) {
-    e.preventDefault();
-    $.fn.fullpage.moveSectionDown();
-});
-
-$('.moveslideleft').click(function(e) {
-    e.preventDefault();
-    $.fn.fullpage.moveSlideLeft();
-});
-$('.moveslideright').click(function(e) {
-    e.preventDefault();
-    $.fn.fullpage.moveSlideRight();
-});
-
-$('.btn-next').on('click', function(e) {
-    $.scrollify.next();
-});
-
-//using document ready...
-/*$(document).ready(function() {
-$('#fullpage').fullpage({
-  sectionsColor: ['#f4f4f4', '#c7e5f0', '#ffe5d4', '#d8f8d3', '#f4f4f4'],
-  anchors: ['1', '2', '3', '4', '5', '6'],
-  menu: '#menu',
-  dragAndMove: true,
-  scrollOverflow: true,
-  verticalCentered: true,
-  autoScrolling:false,
-});
-
-// calling fullpage.js methods using jQuery
-$('#moveSectionUp').click(function(e) {
-  e.preventDefault();
-  $.fn.fullpage.moveSectionUp();
-});
-
-$('#moveSectionDown').click(function(e) {
-  e.preventDefault();
-  $.fn.fullpage.moveSectionDown();
-});
-
-$('.moveslideleft').click(function(e) {
-  e.preventDefault();
-  $.fn.fullpage.moveSlideLeft();
-});
-$('.moveslideright').click(function(e) {
-  e.preventDefault();
-  $.fn.fullpage.moveSlideRight();
-});
-
-$('.btn-next').on('click', function(e) {
-  $.scrollify.next();
-});
-
-});*/
-</script>-->
 <!-- swiper -->
 <script type="text/javascript">
     var attence2 = new Swiper(".attence_list", {
@@ -3351,10 +2361,6 @@ $('.btn-next').on('click', function(e) {
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
         },
         scrollbar: {
             el: '.swiper-scrollbar',
@@ -3379,10 +2385,6 @@ $('.btn-next').on('click', function(e) {
             delay: 2500,
             disableOnInteraction: false,
         },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
         scrollbar: {
             el: '.swiper-scrollbar',
         },
@@ -3405,10 +2407,6 @@ $('.btn-next').on('click', function(e) {
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
         },
         scrollbar: {
             el: '.swiper-scrollbar',
@@ -3433,10 +2431,6 @@ $('.btn-next').on('click', function(e) {
             delay: 2500,
             disableOnInteraction: false,
         },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
         scrollbar: {
             el: '.swiper-scrollbar',
         },
@@ -3460,10 +2454,6 @@ $('.btn-next').on('click', function(e) {
             delay: 2500,
             disableOnInteraction: false,
         },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
         scrollbar: {
             el: '.swiper-scrollbar',
         },
@@ -3472,187 +2462,6 @@ $('.btn-next').on('click', function(e) {
         },
     });
 </script>
-<!--<script>
-$(document).ready(function() {
-var attence2 = new Swiper(".attence_list", {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-});
-
-var attence = new Swiper('.attence_photo', {
-  direction: 'vertical',
-  loop: true,
-  autoHeight: true,
-  /*        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },*/
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-  thumbs: {
-    swiper: attence2,
-  },
-});
-
-var bim2 = new Swiper(".bim_list", {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-});
-
-var bim = new Swiper('.bim_photo', {
-  direction: 'vertical',
-  loop: true,
-  autoHeight: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-  thumbs: {
-    swiper: bim2,
-  },
-});
-
-var crm2 = new Swiper(".crm_list", {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-});
-
-var crm = new Swiper('.crm_photo', {
-  direction: 'vertical',
-  loop: true,
-  autoHeight: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-  thumbs: {
-    swiper: crm2,
-  },
-});
-
-var iot2 = new Swiper(".iot_list", {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-});
-
-var iot = new Swiper('.iot_photo', {
-  direction: 'vertical',
-  loop: true,
-  autoHeight: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-  thumbs: {
-    swiper: iot2,
-  },
-});
-
-var ihome2 = new Swiper(".ihome_list", {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-});
-
-var ihmoe = new Swiper('.ihome_photo', {
-  direction: 'vertical',
-  loop: true,
-  autoHeight: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-  thumbs: {
-    swiper: ihome2,
-  },
-});
-
-
-/*var ihome_title = ['修繕管理', 'cCash', '訪客管理', '群組通訊', '線上繳費', '郵件包裹'];
-var ihome_about = ['線上提報修繕單', '社區貨幣代付服務', '線上添加訪客', '即時在線群聊', '社區相關費用', '社區包裹通知'];
-var swiper5 = new Swiper('.ihome', {
-  direction: 'vertical',
-  loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<div class=" ' + className + '">' +
-              '<div class="dot">' +
-              '<span></span>' +
-              '</div>' +
-              '<div>' +
-              '<h4>' + (ihome_title[index]) + '</h4>' +
-              '<p class="pagination_about">' + (ihome_about[index]) + '</p>' +
-              '</div>' +
-              '</div>';
-    },
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});*/
-
-});
-</script>-->
-
 <!--bootstrap v4 js-->
 <script src="js/vendor/bootstrap.min.js"></script>
 <!--popper js-->
