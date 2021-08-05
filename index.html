@@ -1,13 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>億集創見</title>
-    <!--bootstrap v4.0.0-->
+
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!--reset css-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -32,323 +28,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--modernizr-->
     <script src="js/vendor/modernizr.js"></script>
-
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
     <!--  fullpage-->
-    <link rel="stylesheet" href="css/fullpage/fullpage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css"/>
 
-
-    <style>
-
-        /*＝＝＝＝＝＝＝＝＝＝＝ 綠色主題 ＝＝＝＝＝＝＝＝＝＝＝*/
-
-        .bg-green .services_titles h2 {
-            color: #28a745 !important;
-        }
-
-        .bg-green .single_fact_in:hover {
-            color: #28a745 !important;
-        }
-
-        .bg-green .scroll-dots span {
-            background: #28a745;
-        }
-
-        /*基數*/
-        .bg-green .section:nth-child(odd) .gallery-circle div {
-            border-color: #28a745;
-        }
-
-        .bg-green .section:nth-child(odd) .fp-tableCell {
-            background: rgba(255, 255, 255, 0.9);
-        }
-
-        .bg-green .section:nth-child(odd) .swiper-list-table .swiper-slide-thumb-active .dot {
-            background: #28a745 !important;
-        }
-
-        .bg-green .section:nth-child(odd) .swiper-list-table .swiper-slide-thumb-active h4,
-        .bg-green .section:nth-child(odd) .swiper-slide .flow-list:hover h4 {
-            color: #ffffff;
-        }
-
-        .bg-green .section:nth-child(odd) .list-title {
-            font-size: 34px;
-            font-weight: 500;
-            color: #212529;
-        }
-
-        .bg-green .section:nth-child(odd) .list-content {
-            font-size: 24px !important;
-            font-weight: 400;
-            line-height: 1.75;
-            margin: 0;
-            color: #212529;
-        }
-
-        .bg-green .section:nth-child(odd) .swiper-list-table h4 {
-            color: #212529;
-        }
-
-        .bg-green .section:nth-child(odd) .swiper-list-table .swiper-slide .dot {
-            position: relative;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #dadada;
-            margin-right: 15px;
-        }
-
-        .bg-green .section:nth-child(odd) .line {
-            width: 2px;
-            top: 0;
-            bottom: 0;
-            left: 9px;
-            position: absolute;
-            border-color: inherit;
-            background-color: #dadada;
-        }
-
-        .bg-green .section:nth-child(odd) .swiper-slide .flow-list {
-            padding: 10px;
-            background-size: 200% auto;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        }
-
-        .bg-green .section:nth-child(odd) .swiper-slide-thumb-active .flow-list,
-        .bg-green .section:nth-child(odd) .swiper-slide .flow-list:hover {
-            background: #28a745 !important;
-            border-radius: 10px;
-        }
-
-        /*偶數*/
-        .bg-green .section:nth-child(even) .gallery-circle div {
-            border-color: #ffffff;
-        }
-
-        .bg-green .section:nth-child(even) .fp-tableCell {
-            background: rgba(41, 168, 71, 0.9);
-        }
-
-        .bg-green .section:nth-child(even) .swiper-list-table .swiper-slide-thumb-active .dot {
-            background: #28a745 !important;
-            border: 3px #fff solid;
-        }
-
-        .bg-green .section:nth-child(even) .swiper-list-table .swiper-slide-thumb-active h4,
-        .bg-green .section:nth-child(even) .swiper-slide .flow-list:hover h4 {
-            color: #28a745;
-        }
-
-        .bg-green .section:nth-child(even) .list-title {
-            font-size: 34px;
-            font-weight: 500;
-            color: #fff;
-        }
-
-        .bg-green .section:nth-child(even) .list-content {
-            font-size: 24px !important;
-            font-weight: 400;
-            line-height: 1.75;
-            margin: 0;
-            color: #fff;
-        }
-
-        .bg-green .section:nth-child(even) .swiper-list-table h4 {
-            color: #ffffff;
-        }
-
-        .bg-green .section:nth-child(even) .swiper-list-table .swiper-slide .dot {
-            position: relative;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #fff;
-            margin-right: 15px;
-        }
-
-        .bg-green .section:nth-child(even) .line {
-            width: 2px;
-            top: 0;
-            bottom: 0;
-            left: 9px;
-            position: absolute;
-            border-color: inherit;
-            background-color: #ffffff;
-        }
-
-        .bg-green .section:nth-child(even) .swiper-slide .flow-list {
-            padding: 10px;
-            background-size: 200% auto;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        }
-
-        .bg-green .section:nth-child(even) .swiper-slide-thumb-active .flow-list,
-        .bg-green .section:nth-child(even) .swiper-slide .flow-list:hover {
-            background: #fff !important;
-            border-radius: 10px;
-        }
-
-        /*＝＝＝＝＝＝＝＝＝＝＝ 綠色主題結束 ＝＝＝＝＝＝＝＝＝＝＝*/
-
-        /*＝＝＝＝＝＝＝＝＝＝＝ 藍色主題 ＝＝＝＝＝＝＝＝＝＝＝*/
-
-        .bg-blue .services_titles h2 {
-            color: #28a745 !important;
-        }
-
-        .bg-blue .single_fact_in:hover {
-            color: #28a745 !important;
-        }
-
-        .bg-blue .scroll-dots span {
-            background: #28a745;
-        }
-
-        /*基數*/
-        .bg-blue .section:nth-child(odd) .gallery-circle div {
-            border-color: #007bff;
-        }
-
-        .bg-blue .section:nth-child(odd) .fp-tableCell {
-            background: rgba(255, 255, 255, 0.9);
-        }
-
-        .bg-blue .section:nth-child(odd) .swiper-list-table .swiper-slide-thumb-active .dot {
-            background: #007bff !important;
-        }
-
-        .bg-blue .section:nth-child(odd) .swiper-list-table .swiper-slide-thumb-active h4,
-        .bg-blue .section:nth-child(odd) .swiper-slide .flow-list:hover h4,
-        .bg-blue .section:nth-child(odd) .pagination_about,
-        .bg-blue .section:nth-child(odd) .swiper-slide .flow-list:hover .pagination_about {
-            color: #ffffff;
-        }
-
-        .bg-blue .section:nth-child(odd) .list-title {
-            font-size: 34px;
-            font-weight: 500;
-            color: #212529;
-        }
-
-        .bg-blue .section:nth-child(odd) .list-content {
-            font-size: 24px !important;
-            font-weight: 400;
-            line-height: 1.75;
-            margin: 0;
-            color: #212529;
-        }
-
-        .bg-blue .section:nth-child(odd) .swiper-list-table h4 {
-            color: #212529;
-        }
-
-        .bg-blue .section:nth-child(odd) .swiper-list-table .swiper-slide .dot {
-            position: relative;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #dadada;
-            margin-right: 15px;
-        }
-
-        .bg-blue .section:nth-child(odd) .line {
-            width: 2px;
-            top: 0;
-            bottom: 0;
-            left: 9px;
-            position: absolute;
-            border-color: inherit;
-            background-color: #dadada;
-        }
-
-        .bg-blue .section:nth-child(odd) .swiper-slide .flow-list {
-            padding: 10px;
-            background-size: 200% auto;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            width: 100%;
-        }
-
-        .bg-blue .section:nth-child(odd) .swiper-slide-thumb-active .flow-list,
-        .bg-blue .section:nth-child(odd) .swiper-slide .flow-list:hover {
-            background: #007bff !important;
-            border-radius: 10px;
-        }
-
-        /*偶數*/
-        .bg-blue .section:nth-child(even) .gallery-circle div {
-            border-color: #ffffff;
-        }
-
-        .bg-blue .section:nth-child(even) .fp-tableCell {
-            background: #007bff;
-        }
-
-        .bg-blue .section:nth-child(even) .swiper-list-table .swiper-slide-thumb-active .dot {
-            background: #007bff !important;
-            border: 3px #fff solid;
-        }
-
-        .bg-blue .section:nth-child(even) .swiper-list-table .swiper-slide-thumb-active h4,
-        .bg-blue .section:nth-child(even) .swiper-slide .flow-list:hover h4 {
-            color: #007bff;
-        }
-
-        .bg-blue .section:nth-child(even) .list-title {
-            font-size: 34px;
-            font-weight: 500;
-            color: #fff;
-        }
-
-        .bg-blue .section:nth-child(even) .list-content {
-            font-size: 24px !important;
-            font-weight: 400;
-            line-height: 1.75;
-            margin: 0;
-            color: #fff;
-        }
-
-        .bg-blue .section:nth-child(even) .swiper-list-table h4 {
-            color: #ffffff;
-        }
-
-        .bg-blue .section:nth-child(even) .swiper-list-table .swiper-slide .dot {
-            position: relative;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #fff;
-            margin-right: 15px;
-        }
-
-        .bg-blue .section:nth-child(even) .line {
-            width: 2px;
-            top: 0;
-            bottom: 0;
-            left: 9px;
-            position: absolute;
-            border-color: inherit;
-            background-color: #ffffff;
-        }
-
-        .bg-blue .section:nth-child(even) .swiper-slide .flow-list {
-            padding: 10px;
-            background-size: 200% auto;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            width: 100%;
-        }
-
-        .bg-blue .section:nth-child(even) .swiper-slide-thumb-active .flow-list,
-        .bg-blue .section:nth-child(even) .swiper-slide .flow-list:hover {
-            background: #fff !important;
-            border-radius: 10px;
-        }
-
-        /*＝＝＝＝＝＝＝＝＝＝＝ 藍色主題結束 ＝＝＝＝＝＝＝＝＝＝＝*/
-    </style>
+    <!--聯絡我們按鈕-->
+    <link rel="stylesheet" href="css/contact-us.css">
+    <!--顏色-->
+    <link rel="stylesheet" href="css/color/bule.css">
+    <!--臨時-->
+    <link rel="stylesheet" href="css/chat.css">
 
     <style>
         @keyframes animate {
@@ -464,7 +158,7 @@
         .sidemenu {
             position: fixed;
             right: 0px;
-            top: 45%;
+            top: 60%;
             z-index: 99;
             width: auto;
             text-align: start;
@@ -566,6 +260,7 @@
             align-items: center;
         }
 
+        /*背景*/
         .img-bg {
             position: fixed !important;
             top: 0;
@@ -612,13 +307,14 @@
         }
 
         #section2 .fp-tableCell,
-        #section4 .fp-tableCell {
+        #section4 .fp-tableCell,
+        #section6 .fp-tableCell {
             -webkit-clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
             clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
             padding: 7.5rem 0;
         }
 
-        #section6 .fp-tableCell {
+        #section7 .fp-tableCell {
             background: #fff;
         }
 
@@ -626,8 +322,12 @@
             margin-bottom: -5.5rem;
         }
 
-        .section:nth-child(odd) .fp-tableCell .container .row {
+        .section:nth-child(odd):not(:last-child) .fp-tableCell .container .row {
             flex-direction: row-reverse;
+        }
+
+        .our-service .fp-tableCell .container .row {
+            flex-direction: row !important;
         }
 
         .section:last-child {
@@ -1024,7 +724,7 @@
             height: 20%;
             box-sizing: border-box;
             padding: 10px 0;
-            margin: 3rem 0;
+            margin: 15px 0;
         }
 
         .swiper-list-table .swiper-slide {
@@ -1292,963 +992,1126 @@
         }
 
     </style>
-    <style>
-        .contact-wrapper {
-            position: fixed;
-            left: 0;
-            bottom: 120px;
-            transform: translateX(-100%);
-            -webkit-transition: transform .4s ease-in-out;
-            transition: transform .4s ease-in-out;
-            z-index: 99;
-        }
 
-        .contact-wrapper.contact-wrapper--open {
-            transform: translateX(20px);
-        }
-
-        .contact-panel {
-            background-color: #fff;
-            border-radius: 15px;
-            position: relative;
-            /*padding: 32px 24px;*/
-            width: 350px;
-            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
-        }
-
-        .contact-panel .title {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 70px;
-            margin: 0 20px;
-        }
-
-
-        .contact-panel__header {
-            position: relative;
-            color: #333;
-            font-size: 21px;
-            line-height: 16px;
-            padding: 15px;
-            text-align: center;
-            margin: 0;
-        }
-
-        .contact-close {
-            border: 0;
-            color: #333;
-            position: absolute;
-            right: 10px;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-        }
-
-        .contact-close:focus {
-            outline: none;
-        }
-
-        .contact-back {
-            border: 0;
-            color: #333;
-            position: absolute;
-            left: 10px;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-        }
-
-        .contact-back:focus {
-            outline: none;
-        }
-
-        .contact-button {
-            border: 0;
-            background-color: #007bff;
-            color: #fff;
-            cursor: pointer;
-            font-size: 16px;
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            z-index: 99;
-            box-shadow: 0 0 0 0 #0347b4;
-            -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-            -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-            -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-            animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-        }
-
-        @-webkit-keyframes pulse {
-            to {
-                box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
-            }
-        }
-
-        @-moz-keyframes pulse {
-            to {
-                box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
-            }
-        }
-
-        @-ms-keyframes pulse {
-            to {
-                box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
-            }
-        }
-
-        @keyframes pulse {
-            to {
-                box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
-            }
-        }
-
-        .button-list {
-            padding: 0 25px 30px;
-        }
-
-        .button-list .btn {
-            background: #ececec;
-            color: #333;
-            width: 100%;
-            border-radius: 16px;
-            height: 52px;
-        }
-
-        .button-list .btn:hover {
-            background: #1e87f0;
-            color: #fff;
-        }
-
-        @media (max-width: 991px) {
-            .contact-panel {
-                width: 90%;
-            }
-        }
-    </style>
-
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css"/>
-    <link rel="stylesheet" href="css/chat.css">
 </head>
 
 <body>
-<!-- Menu -->
-<header class="headerpage"></header>
-<!--Side Menu-->
-<div class="contact-wrapper">
-    <div class="contact-panel">
+<div id="app" class="bg-color">
 
-        <div id="contact_list" class="my-class2">
-            <div class="title">
-                <div class="contact-panel__header">聯絡我們</div>
-                <button class="contact-close"><i class="ri-close-line"></i></button>
-            </div>
-
-            <div class="button-list">
-                <button class="btn" onclick="window.location.href='contact.html'">填寫表單</button>
-                <button class="btn" onclick="window.location.href='tel:0423273199'">立即撥打電話</button>
-                <button class="btn" uk-toggle="target: .my-class">線上客服</button>
-            </div>
-        </div>
-
-        <div class="my-class" hidden>
-            <div class="title">
-                <button class="contact-back" uk-toggle="target: .my-class2"><i class="ri-arrow-left-line"></i></button>
-                <div class="contact-panel__header">線上客服</div>
-                <button class="contact-close"><i class="ri-close-line"></i></button>
-            </div>
-
-            <div class="w-100">
-                <!-- chat conversation -->
-                <div class="chat_box">
-                    <div id="chat_room_scroll" class="scroller">
-                        <div class="chat_view ps ps--active-y" id="perfect_scroll6">
-
-                            <div class="msg_lft msg_wrap">
-                                <div class="msg_inr">
-                                    <div class="msg_area">
-                                        <div class="msg_box">
-                                            <p class="msg hl_content">感謝您的詢問，請問您需要我們提供什麼服務？</p>
-                                        </div>
-                                        <div class="status_box">
-                                            <span class="date">上午 9:52</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="msg_rgt msg_wrap">
-                                <div class="msg_inr">
-                                    <div class="msg_area">
-                                        <div class="msg_box">
-                                            <p class="msg hl_content">有一些產品問題想詢問</p>
-                                        </div>
-                                        <div class="status_box">
-                                            <span class="date">上午 10:52</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+    <!-- Header -->
+<div id="header"></div>
+    <!--<div class="header-logo-menu bg_cover">
+        <div class="container">
+            <div class="navigatin" id="main_nav_id">
+                <div class="row no-gutters">
+                    <div class="col-lg-3 logo">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/icon/企業形象-白色.png" alt="menu"/>
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <nav id="mobile-menu" class="main-menu">
+                            <ul>
+                                <li class="current">
+                                    <a href="index.html">首頁</a>
+                                </li>
+                                <li>
+                                    <a href="news.html">最新消息</a>
+                                </li>
+                                <li>
+                                    <a href="#">產品介紹</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="product/bim.html">#BIM</a></li>
+                                        <li><a href="product/crm.html">CRM</a></li>
+                                        <li><a href="product/iot.html">IOT</a></li>
+                                        <li><a href="product/ihome.html">iHome</a></li>
+                                        <li><a href="product/attence.html">考勤系統</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">優惠方案 (暫無)</a>
+                                </li>
+                                <li>
+                                    <a href="clients.html">應用案例</a>
+                                </li>
+                                <li>
+                                    <a href="#">關於我們</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="about/company.html">公司簡介</a></li>
+                                        <li><a href="about/technology.html">技術核心</a></li>
+                                        <li><a href="about/joinus.html">加入我們</a></li>
+                                    </ul>
+                                </li>
+                                &lt;!&ndash; <li>
+                                <a href="#news_id">News</a>
+                            </li>
+                            <li>
+                                <a href="#">Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="single.html">Single</a></li>
+                                    <li><a href="contact.html">Conatct</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="btn btn-style1" href="#">Download</a>
+                            </li> &ndash;&gt;
+                            </ul>
+                        </nav>
+                        <div class="mobile-menu"></div>
                     </div>
                 </div>
-                <!-- start chat input section -->
-                <div class="chat-input-section border-top">
-                    <div class="chat_editor">
-                        <div class="editor_inner ui-resizable">
-                            <div class="editor_tools">
-                                <div class="tool_box">
-                                    <button class="btn_file event_upload_menu">
-                                        <i class="ico_attach">附件</i>
-                                    </button>
+            </div>
+        </div>
+    </div>-->
 
-                                    <button class="btn_imgedit">
-                                        <i class="ico_imgedit">照片</i>
-                                    </button>
+    <!--聯絡我們圓形按鈕-->
+    <template>
+        <div class="contact-wrapper">
+            <div class="contact-panel">
+
+                <div id="contact_list" class="my-class2">
+                    <div class="title">
+                        <div class="contact-panel__header">聯絡我們</div>
+                        <button class="contact-close"><i class="ri-close-line"></i></button>
+                    </div>
+
+                    <div class="button-list">
+                        <button class="btn" onclick="window.location.href='contact.html'">填寫表單</button>
+                        <button class="btn" onclick="window.location.href='tel:0423273199'">立即撥打電話</button>
+                        <button class="btn" uk-toggle="target: .my-class">線上客服</button>
+                    </div>
+                </div>
+
+                <div class="my-class" hidden>
+                    <div class="title">
+                        <button class="contact-back" uk-toggle="target: .my-class2"><i class="ri-arrow-left-line"></i>
+                        </button>
+                        <div class="contact-panel__header">線上客服</div>
+                        <button class="contact-close"><i class="ri-close-line"></i></button>
+                    </div>
+
+                    <div class="w-100">
+                        <!-- chat conversation -->
+                        <div class="chat_box">
+                            <div id="chat_room_scroll" class="scroller">
+                                <div class="chat_view ps ps--active-y" id="perfect_scroll6">
+
+                                    <div class="msg_lft msg_wrap">
+                                        <div class="msg_inr">
+                                            <div class="msg_area">
+                                                <div class="msg_box">
+                                                    <p class="msg hl_content">感謝您的詢問，請問您需要我們提供什麼服務？</p>
+                                                </div>
+                                                <div class="status_box">
+                                                    <span class="date">上午 9:52</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="msg_rgt msg_wrap">
+                                        <div class="msg_inr">
+                                            <div class="msg_area">
+                                                <div class="msg_box">
+                                                    <p class="msg hl_content">有一些產品問題想詢問</p>
+                                                </div>
+                                                <div class="status_box">
+                                                    <span class="date">上午 10:52</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="editor">
+                        </div>
+                        <!-- start chat input section -->
+                        <div class="chat-input-section border-top">
+                            <div class="chat_editor">
+                                <div class="editor_inner ui-resizable">
+                                    <div class="editor_tools">
+                                        <div class="tool_box">
+                                            <button class="btn_file event_upload_menu">
+                                                <i class="ico_attach">附件</i>
+                                            </button>
+
+                                            <button class="btn_imgedit">
+                                                <i class="ico_imgedit">照片</i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="editor">
                                 <textarea class="form-control" rows="2"
                                           placeholder="請輸入您的訊息 (請用 Shift + Enter 換行)"></textarea>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
+        <button class="contact-button">
+            聯絡我們
+        </button>
+    </template>
 
-    </div>
-</div>
-<button class="contact-button">
-    聯絡我們
-</button>
-<ul id="menu" class="sidemenu color-white">
-    <li><span>產品簡介</span></li>
-    <li class="sidemenu-list" data-menuanchor="1">
-        <div class="dot"></div>
-        <a class="p-service-anchor__link" href="#1">考勤系統</a>
-    </li>
-    <li class="sidemenu-list" data-menuanchor="2">
-        <div class="dot"></div>
-        <a href="#2">#BIM</a>
-    </li>
-    <li class="sidemenu-list" data-menuanchor="3">
-        <div class="dot"></div>
-        <a href="#3">CRM</a>
-    </li>
-    <li class="sidemenu-list" data-menuanchor="4">
-        <div class="dot"></div>
-        <a href="#4">IOT</a>
-    </li>
-    <li class="sidemenu-list" data-menuanchor="5">
-        <div class="dot"></div>
-        <a href="#5">iHome</a>
-    </li>
-    <hr>
-    <li class="sidemenu-list" data-menuanchor="6">
-        <div class="dot"></div>
-        <a href="#6">聯絡我們</a>
-    </li>
-</ul>
+    <!--導覽-->
+    <ul id="menu" class="sidemenu color-white">
+        <li class="sidemenu-list" data-menuanchor="1" style="margin-bottom: 20px">
+            <div class="dot"></div>
+            <a class="p-service-anchor__link" href="#1">服務對象</a>
+        </li>
 
-<!--內容-->
-<div id="fullpage" class="bg-blue">
-    <div id="wrapper">
-        <!--背景-->
-        <div class="img-bg wave_two_section_index">
-            <div class="t_first p_absoulte">
+        <li><span>產品簡介</span></li>
+        <li class="sidemenu-list" data-menuanchor="2">
+            <div class="dot"></div>
+            <a class="p-service-anchor__link" href="#2">考勤系統</a>
+        </li>
+        <li class="sidemenu-list" data-menuanchor="3">
+            <div class="dot"></div>
+            <a href="#3">#BIM</a>
+        </li>
+        <li class="sidemenu-list" data-menuanchor="4">
+            <div class="dot"></div>
+            <a href="#4">CRM</a>
+        </li>
+        <li class="sidemenu-list" data-menuanchor="5">
+            <div class="dot"></div>
+            <a href="#5">IOT</a>
+        </li>
+        <li class="sidemenu-list" data-menuanchor="6">
+            <div class="dot"></div>
+            <a href="#6">iHome</a>
+        </li>
+        <!--    <hr>
+            <li class="sidemenu-list" data-menuanchor="7">
+                <div class="dot"></div>
+                <a href="#7">聯絡我們</a>
+            </li>-->
+    </ul>
+
+    <!--內容-->
+    <full-page :options="options" id="fullpage" ref="fullpage">
+        <!--背景移動用-->
+        <div id="wrapper">
+            <div class="img-bg wave_two_section_index">
+                <div class="t_first p_absoulte">
+                    <div data-speed="0.02">
+                        <img class="layer layer2" src="img/home/bg/pijom.png" alt="">
+                    </div>
+                </div>
+                <div class="t_two p_absoulte">
+                    <div data-speed="-0.04">
+                        <img class="layer layer2" src="img/home/bg/round_img1.png" alt="">
+                    </div>
+                </div>
+                <div class="t_three p_absoulte">
+                    <div data-speed="0.06">
+                        <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
+                    </div>
+                </div>
+                <div class="t_four p_absoulte">
+                    <div data-speed="-0.08">
+                        <img class="layer layer2" src="img/home/bg/triangle_1.png" alt="">
+                    </div>
+                </div>
+                <div class="t_five p_absoulte">
+                    <div data-speed="-0.08">
+                        <img class="layer layer2" src="img/home/bg/pijom_2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--首頁-->
+            <div class="section wave_two_section_index parallax-window" id="section0">
+                <!--<div class="t_first p_absoulte">
                 <div data-speed="0.02">
-                    <img class="layer layer2" src="img/home/bg/pijom.png" alt="">
+                    <img class="layer layer2" src="img/home/bg/dot.svg" alt="">
                 </div>
             </div>
             <div class="t_two p_absoulte">
-                <div data-speed="-0.04">
+                <div data-speed="-0.05">
                     <img class="layer layer2" src="img/home/bg/round_img1.png" alt="">
                 </div>
             </div>
             <div class="t_three p_absoulte">
-                <div data-speed="0.06">
-                    <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
-                </div>
-            </div>
-            <div class="t_four p_absoulte">
-                <div data-speed="-0.08">
+                <div data-speed="0.02">
                     <img class="layer layer2" src="img/home/bg/triangle_1.png" alt="">
                 </div>
-            </div>
-            <div class="t_five p_absoulte">
-                <div data-speed="-0.08">
-                    <img class="layer layer2" src="img/home/bg/pijom_2.png" alt="">
-                </div>
-            </div>
-        </div>
-        <!--首頁-->
-        <div class="section wave_two_section_index parallax-window" id="section0">
-            <!--<div class="t_first p_absoulte">
-            <div data-speed="0.02">
-                <img class="layer layer2" src="img/home/bg/dot.svg" alt="">
-            </div>
-        </div>
-        <div class="t_two p_absoulte">
-            <div data-speed="-0.05">
-                <img class="layer layer2" src="img/home/bg/round_img1.png" alt="">
-            </div>
-        </div>
-        <div class="t_three p_absoulte">
-            <div data-speed="0.02">
-                <img class="layer layer2" src="img/home/bg/triangle_1.png" alt="">
-            </div>
-        </div>-->
-            <div class="intro">
-                <div class="container custom_container">
-                    <div class="align-items-center home_section" style="text-align: center;"
-                         uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
-                        <img style="width: 100%;max-width: 650px;" src="img/icon/企業形象-白色.png" alt="">
-                        <h3 uk-scrollspy-class="uk-animation-slide-bottom">應用科技・創見未來</h3>
-                        <p>BIM X FM X IOT X AI</p>
+            </div>-->
+                <div class="intro">
+                    <div class="container custom_container">
+                        <div class="align-items-center home_section" style="text-align: center;"
+                             uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+                            <img style="width: 100%;max-width: 650px;" src="img/icon/企業形象-白色.png" alt="">
+                            <h3 uk-scrollspy-class="uk-animation-slide-bottom">應用科技・創見未來</h3>
+                            <p>BIM X FM X IOT X AI</p>
 
-                        <div class="scroll-down" id="moveTo">
-                            <a href="#1">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
+                            <div class="scroll-down" id="moveTo">
+                                <a href="#1">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!--底部變尖-->
+                <!--<div class="p-service-hero__mask">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 150">
+                    <g>
+                        <path d="M1304,3155.027H-136V3004.865L584,3155l720-149.036v149.063Zm0-894.194H-136V2260H1304v.832Z" transform="translate(135.999 -3005)" fill="#fff"></path>
+                    </g>
+                </svg>
+            </div>-->
             </div>
-
-            <!--底部變尖-->
-            <!--<div class="p-service-hero__mask">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 150">
-                <g>
-                    <path d="M1304,3155.027H-136V3004.865L584,3155l720-149.036v149.063Zm0-894.194H-136V2260H1304v.832Z" transform="translate(135.999 -3005)" fill="#fff"></path>
-                </g>
-            </svg>
-        </div>-->
-        </div>
-        <!--考勤系統-->
-        <div class="section wave_two_section_one parallax-window" id="section1">
-            <div class="intro">
-                <div class="container custom_container">
-                    <div class="align-items-center home_section row">
-
-                        <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="swiper-photo">
-                            <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-primary">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div class="attence_photo swiper-container">
-                                <div class="swiper-wrapper">
-
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
-                                class="list-title">考勤系統</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
-                               class="list-content">跟傳統打卡說掰掰，設定打卡範圍，正確紀錄打卡時間，並落實行動化管理。</p>
-                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
-                                 thumbsSlider="" class="swiper-container attence_list swiper-list-table">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-btn">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>後台管理</h4>
-                                            <p class="pagination_about">後台輕鬆管理人員</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>行動打卡</h4>
-                                            <p class="pagination_about">線上快速打卡</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>行事曆</h4>
-                                            <p class="pagination_about">班表一目瞭然</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>巡邏簽到</h4>
-                                            <p class="pagination_about">異常通報、線上簽到</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="product/attence.html" class="btn btn-style2">瞭解更多</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--BIM-->
-        <div class="section wave_two_section_three parallax-window" id="section2">
-            <!--<div class="t_first p_absoulte">
-            <div data-speed="-0.08">
-                <img class="layer layer2" src="img/home/bg/clients_plan_bottom.png" alt="">
-            </div>
-        </div>
-        <div class="t_two p_absoulte">
-            <div data-speed="0.08">
-                <img class="layer layer2" src="img/home/bg/clients_plan.png" alt="">
-            </div>
-        </div>
-        <div class="t_three p_absoulte">
-            <div data-speed="0.02">
-                <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
-            </div>
-        </div>-->
-            <div class="intro">
-                <div class="container custom_container">
-                    <div class="align-items-center home_section row">
-
-                        <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false" class="swiper-photo">
-                            <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-black">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div class="bim_photo swiper-container">
-                                <div class="swiper-wrapper">
-
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
-                                class="list-title">#BIM</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
-                               class="list-content">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
-                                 thumbsSlider="" class="swiper-container bim_list swiper-list-table">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-btn">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>後台管理</h4>
-                                            <p class="pagination_about">後台輕鬆管理人員</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>行動打卡</h4>
-                                            <p class="pagination_about">線上快速打卡</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>行事曆</h4>
-                                            <p class="pagination_about">班表一目瞭然</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>巡邏簽到</h4>
-                                            <p class="pagination_about">異常通報、線上簽到</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="product/bim.html" class="btn btn-style2">瞭解更多</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--CRM-->
-        <div class="section wave_two_section_two parallax-window" id="section3">
-            <!-- <div class="t_first p_absoulte">
-            <div data-speed="-0.08">
-                <img class="layer layer2" src="img/home/bg/pijom.png" alt="">
-            </div>
-        </div>
-        <div class="t_two p_absoulte">
-            <div data-speed="0.08">
-                <img class="layer layer2" src="img/home/bg/pijom_2.png" alt="">
-            </div>
-        </div>
-        <div class="t_three p_absoulte">
-            <div data-speed="0.02">
-                <img class="layer layer2" src="img/home/bg/v_dot.png" alt="">
-            </div>
-        </div>-->
-            <div class="intro">
-                <div class="container custom_container">
-                    <div class="align-items-center home_section row">
-
-                        <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="swiper-photo">
-                            <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-primary">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div class="crm_photo swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
-                                class="list-title">CRM</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
-                               class="list-content">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
-                                 thumbsSlider="" class="swiper-container crm_list swiper-list-table">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-btn">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>後台管理</h4>
-                                            <p class="pagination_about">後台輕鬆管理人員</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>行動打卡</h4>
-                                            <p class="pagination_about">線上快速打卡</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>行事曆</h4>
-                                            <p class="pagination_about">班表一目瞭然</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>巡邏簽到</h4>
-                                            <p class="pagination_about">異常通報、線上簽到</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="product/crm.html" class="btn btn-style2">瞭解更多</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--IOT-->
-        <div class="section wave_two_section_one parallax-window" id="section4">
-            <div class="intro">
-                <div class="container custom_container">
-                    <div class="align-items-center home_section row">
-
-                        <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false" class="swiper-photo">
-                            <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-black">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div class="iot_photo swiper-container">
-                                <div class="swiper-wrapper">
-
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
-                                class="list-title">IOT</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
-                               class="list-content">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
-                                 thumbsSlider="" class="swiper-container iot_list swiper-list-table">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>後台管理</h4>
-                                            <p class="pagination_about">後台輕鬆管理人員</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>行動打卡</h4>
-                                            <p class="pagination_about">線上快速打卡</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>行事曆</h4>
-                                            <p class="pagination_about">班表一目瞭然</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>巡邏簽到</h4>
-                                            <p class="pagination_about">異常通報、線上簽到</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="product/iot.html" class="btn btn-style2">瞭解更多</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--ihome-->
-        <div class="section wave_two_section_three parallax-window" id="section5">
-            <div class="intro">
-                <div class="container custom_container">
-                    <div class="align-items-center home_section row">
-
-                        <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="swiper-photo">
-                            <div class="home-animation-circle">
-                                <div class="gallery-circle gallery-circle-primary">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div class="ihome_photo swiper-container">
-                                <div class="swiper-wrapper">
-
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="w_img_one">
-                                            <div class="c-gallery__media">
-                                                <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swipet-btn-group swiper-list">
-                            <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
-                                class="list-title">iHome</h4>
-                            <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
-                               class="list-content">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
-                            <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
-                                 thumbsSlider="" class="swiper-container ihome_list swiper-list-table">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>後台管理</h4>
-                                            <p class="pagination_about">後台輕鬆管理人員</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>行動打卡</h4>
-                                            <p class="pagination_about">線上快速打卡</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>行事曆</h4>
-                                            <p class="pagination_about">班表一目瞭然</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="line"></div>
-                                        <div class="dot"><span></span></div>
-                                        <div class="flow-list">
-                                            <h4>巡邏簽到</h4>
-                                            <p class="pagination_about">異常通報、線上簽到</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="product/ihome.html" class="btn btn-style2">瞭解更多</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--footer-->
-        <div class="section fp-auto-height" id="section6">
-            <div class="section-footer">
-                <!--預約專人諮詢-->
-                <div class="container" id="contact_us">
-                    <div class="contact_us row">
-                        <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false"
-                             class="col-sm-6 contact_us_footer">
-                            <i class="ri-phone-line"></i>
-                            <h4>直接電話聯繫我們</h4>
-                            <p>電話客服時間：星期一～星期五 09:00~18:00</p>
-                            <button class="btn btn-circle btn_animation primary hover-left"
-                                    onclick="window.location.href='tel:0423273199'">
-                                04-2327-3199
-                            </button>
-                        </div>
-                        <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false"
-                             class="col-sm-6 contact_us_footer">
-                            <i class="ri-mail-open-line"></i>
-                            <h4>填寫表單聯繫我們</h4>
-                            <p>歡迎填寫表單，我們會盡快回覆您！</p>
-                            <button class="btn btn-circle btn_animation primary hover-left"
-                                    onclick="window.location.href='contact.html'">
-                                馬上預約
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!--footers-->
-                <footer class="footers">
+            <!--服務對象-->
+            <div class="section our-service" id="section1">
+                <!--服務對象-->
+                <div class="services_sec">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12">
-                                <div class="footer_content">
-                                    <h3>現在可以開始</h3>
-                                    <a href="https://apps.apple.com/tw/developer/ez-tech-ltd/id1068678728"
-                                       target="_blank">
-                                        <img src="img/icon/btn1.png" alt=""/>
-                                    </a>
-                                    <a href="https://play.google.com/store/apps/developer?id=億集科技有限公司" target="_blank">
-                                        <img src="img/icon/btn2.png" alt=""/>
-                                    </a>
+                            <div class="services_titles">
+                                <h2>我們服務的對象</h2>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single_service_in2 home3 wow animated fadeIn">
+                                    <img src="img/icon/builder.svg" alt="">
+                                    <h4><a href="#">建設公司</a></h4>
+                                    <p>住宅社區的居住舒適度以及智能化服務是目前的新趨勢</p>
+                                </div>
+
+                                <!-- <div class="service_row_in  wow zoomIn animated">
+                                              <div class="icon">
+                                                  <img src="img/home/builder.svg" alt="" />
+                                              </div>
+                                              <div class="content">
+                                                  <h4><a href="#">建商</a></h4>
+                                                  <p></p>
+                                              </div>
+                                          </div> -->
+                                <!--/.service_row_in-->
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single_service_in2 home3 wow animated fadeIn">
+                                    <img src="img/icon/owner.svg" alt="">
+                                    <h4><a href="#">物業管理公司</a></h4>
+                                    <p>良好的居住體驗以及方便的辦事流程是所有業主的目標</p>
                                 </div>
                             </div>
-                            <div class="w-100"></div>
-                            <div class="col-md-12">
-                                <div class="copyright_con">
-                                    <div class="row">
-                                        <div class="col logo">
-                                            <img src="img/icon/企業形象-白色.png" alt="">
+                            <div class="col-md-4">
+                                <div class="single_service_in2 home3 wow animated fadeIn">
+                                    <img src="img/icon/company.svg" alt="">
+                                    <h4><a href="#">企業公司</a></h4>
+                                    <p>更多的客源渠道以及對應的宣傳平台是商家不可獲缺的</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--考勤系統-->
+            <div class="section wave_two_section_one parallax-window" id="section2">
+                <div class="intro">
+                    <div class="container custom_container">
+                        <div class="align-items-center home_section row">
+
+                            <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="swiper-photo">
+                                <div class="home-animation-circle">
+                                    <div class="gallery-circle gallery-circle-primary">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="attence_photo swiper-container">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/attence/swiper/swiper-1.svg" alt="">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col my-auto text-right">
-                                            <p>2021 Copyright by <a href="#">EZ-plus</a> . All Rights Reserved</p>
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/attence/swiper/swiper-2.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/attence/swiper/swiper-3.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/attence/swiper/swiper-4.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swipet-btn-group swiper-list">
+                                <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                    class="list-title">考勤系統</h4>
+                                <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                                   class="list-content">跟傳統打卡說掰掰，設定打卡範圍，正確紀錄打卡時間，並落實行動化管理。</p>
+                                <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
+                                     thumbsSlider="" class="swiper-container attence_list swiper-list-table">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide swiper-btn">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>後台管理</h4>
+                                                <p class="pagination_about">後台輕鬆管理人員</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>行動打卡</h4>
+                                                <p class="pagination_about">線上快速打卡</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>行事曆</h4>
+                                                <p class="pagination_about">班表一目瞭然</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>巡邏簽到</h4>
+                                                <p class="pagination_about">異常通報、線上簽到</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="product/attence.html" class="btn btn-style2">瞭解更多</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--BIM-->
+            <div class="section wave_two_section_three parallax-window" id="section3">
+                <div class="intro">
+                    <div class="container custom_container">
+                        <div class="align-items-center home_section row">
+
+                            <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false" class="swiper-photo">
+                                <div class="home-animation-circle">
+                                    <div class="gallery-circle gallery-circle-black">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="bim_photo swiper-container">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/bim/swiper/swiper-1.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/bim/swiper/swiper-2.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/bim/swiper/swiper-3.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swipet-btn-group swiper-list">
+                                <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                    class="list-title">#BIM</h4>
+                                <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                                   class="list-content">透過BIM管理建物全生命週期，於規劃、施工、營運階段導入與應用。</p>
+                                <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
+                                     thumbsSlider="" class="swiper-container bim_list swiper-list-table">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide swiper-btn">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>前期規劃(清圖檢討)</h4>
+                                                <p class="pagination_about">可視化直觀衝突檢討</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>中期施工(施工查驗)</h4>
+                                                <p class="pagination_about">現場套疊執行施工紀錄</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>後期營運(設備管理)</h4>
+                                                <p class="pagination_about">詳細記錄設備經歷</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <a href="product/bim.html" class="btn btn-style2">瞭解更多</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--CRM-->
+            <div class="section wave_two_section_two parallax-window" id="section4">
+
+                <div class="slide" id="slide1">
+                    <div class="intro">
+                        <div class="container custom_container">
+                            <div class="align-items-center home_section row">
+
+                                <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="swiper-photo">
+                                    <div class="home-animation-circle">
+                                        <div class="gallery-circle gallery-circle-primary">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div class="crm_photo swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="w_img_one">
+                                                    <div class="c-gallery__media">
+                                                        <img class="c-gallery__bg" src="img/crm/swiper/swiper-1.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="w_img_one">
+                                                    <div class="c-gallery__media">
+                                                        <img class="c-gallery__bg" src="img/crm/swiper/swiper-2.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="w_img_one">
+                                                    <div class="c-gallery__media">
+                                                        <img class="c-gallery__bg" src="img/crm/swiper/swiper-3.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="w_img_one">
+                                                    <div class="c-gallery__media">
+                                                        <img class="c-gallery__bg" src="img/crm/swiper/swiper-4.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="w_img_one">
+                                                    <div class="c-gallery__media">
+                                                        <img class="c-gallery__bg" src="img/crm/swiper/swiper-5.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swipet-btn-group swiper-list">
+                                    <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                        class="list-title">CRM：企業推廣模組</h4>
+                                    <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                                       class="list-content">管理系統為一套，提供建商永續經營客戶關係之管理系統。
+                                        系統專注於企業推廣與售後服務兩大應用，功能項目如下：
+                                    </p>
+                                    <div style="display: flex"
+                                         uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false">
+                                        <div @click="$refs.fullpage.api.moveSlideRight()" class="actions-button">
+                                            <i class="ri-arrow-left-s-line"></i>
+                                        </div>
+                                        <div @click="$refs.fullpage.api.moveSlideLeft()" class="actions-button">
+                                            <i class="ri-arrow-right-s-line"></i>
+                                        </div>
+                                    </div>
+
+                                    <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
+                                         thumbsSlider="" class="swiper-container crm_list swiper-list-table">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide swiper-btn">
+                                                <div class="line"></div>
+                                                <div class="dot"><span></span></div>
+                                                <div class="flow-list">
+                                                    <h4>企業形象</h4>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="line"></div>
+                                                <div class="dot"><span></span></div>
+                                                <div class="flow-list">
+                                                    <h4>熱銷建案</h4>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="line"></div>
+                                                <div class="dot"><span></span></div>
+                                                <div class="flow-list">
+                                                    <h4>生活月刊</h4>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="line"></div>
+                                                <div class="dot"><span></span></div>
+                                                <div class="flow-list">
+                                                    <h4>最新消息</h4>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="line"></div>
+                                                <div class="dot"><span></span></div>
+                                                <div class="flow-list">
+                                                    <h4>文化活動</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="product/crm.html" class="btn btn-style2">瞭解更多</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" id="slide2">
+                    <div class="intro">
+                        <div class="container custom_container">
+                            <div class="align-items-center home_section row">
+
+                                <div class="swiper-photo">
+                                    <div class="home-animation-circle">
+                                        <div class="gallery-circle gallery-circle-primary">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div class="crmtwo_photo swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="w_img_one">
+                                                    <div class="c-gallery__media">
+                                                        <img class="c-gallery__bg" src="img/crm/swiper/swiper-6.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="w_img_one">
+                                                    <div class="c-gallery__media">
+                                                        <img class="c-gallery__bg" src="img/crm/swiper/swiper-7.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="w_img_one">
+                                                    <div class="c-gallery__media">
+                                                        <img class="c-gallery__bg" src="img/crm/swiper/swiper-8.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="w_img_one">
+                                                    <div class="c-gallery__media">
+                                                        <img class="c-gallery__bg" src="img/crm/swiper/swiper-9.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="w_img_one">
+                                                    <div class="c-gallery__media">
+                                                        <img class="c-gallery__bg" src="img/crm/swiper/swiper-10.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="w_img_one">
+                                                    <div class="c-gallery__media">
+                                                        <img class="c-gallery__bg" src="img/crm/swiper/swiper-11.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="w_img_one">
+                                                    <div class="c-gallery__media">
+                                                        <img class="c-gallery__bg" src="img/crm/swiper/swiper-12.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swipet-btn-group swiper-list">
+                                    <h4 class="list-title">CRM：售後服務管理模組</h4>
+                                    <p class="list-content">管理系統為一套，提供建商永續經營客戶關係之管理系統。
+                                        系統專注於企業推廣與售後服務兩大應用，功能項目如下：
+                                    </p>
+                                    <div style="display: flex">
+                                        <div @click="$refs.fullpage.api.moveSlideRight()" class="actions-button">
+                                            <i class="ri-arrow-left-s-line"></i>
+                                        </div>
+                                        <div @click="$refs.fullpage.api.moveSlideLeft()" class="actions-button">
+                                            <i class="ri-arrow-right-s-line"></i>
+                                        </div>
+                                    </div>
+
+                                    <div thumbsSlider="" class="swiper-container crmtwo_list swiper-list-table">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide swiper-btn">
+                                                <div class="line"></div>
+                                                <div class="dot"><span></span></div>
+                                                <div class="flow-list">
+                                                    <h4>工程進度</h4>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="line"></div>
+                                                <div class="dot"><span></span></div>
+                                                <div class="flow-list">
+                                                    <h4>特約商店認同卡</h4>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="line"></div>
+                                                <div class="dot"><span></span></div>
+                                                <div class="flow-list">
+                                                    <h4>客服通訊</h4>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="line"></div>
+                                                <div class="dot"><span></span></div>
+                                                <div class="flow-list">
+                                                    <h4>專案活動</h4>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="line"></div>
+                                                <div class="dot"><span></span></div>
+                                                <div class="flow-list">
+                                                    <h4>建案繳款</h4>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="line"></div>
+                                                <div class="dot"><span></span></div>
+                                                <div class="flow-list">
+                                                    <h4>問卷調查</h4>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="line"></div>
+                                                <div class="dot"><span></span></div>
+                                                <div class="flow-list">
+                                                    <h4>修繕管理</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="product/crm.html" class="btn btn-style2">瞭解更多</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--IOT-->
+            <div class="section wave_two_section_one parallax-window" id="section5">
+                <div class="intro">
+                    <div class="container custom_container">
+                        <div class="align-items-center home_section row">
+
+                            <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false" class="swiper-photo">
+                                <div class="home-animation-circle">
+                                    <div class="gallery-circle gallery-circle-black">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="iot_photo swiper-container">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swipet-btn-group swiper-list">
+                                <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                    class="list-title">IOT</h4>
+                                <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                                   class="list-content">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
+                                <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
+                                     thumbsSlider="" class="swiper-container iot_list swiper-list-table">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>後台管理</h4>
+                                                <p class="pagination_about">後台輕鬆管理人員</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>行動打卡</h4>
+                                                <p class="pagination_about">線上快速打卡</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>行事曆</h4>
+                                                <p class="pagination_about">班表一目瞭然</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>巡邏簽到</h4>
+                                                <p class="pagination_about">異常通報、線上簽到</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="product/iot.html" class="btn btn-style2">瞭解更多</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ihome-->
+            <div class="section wave_two_section_three parallax-window" id="section6">
+                <div class="intro">
+                    <div class="container custom_container">
+                        <div class="align-items-center home_section row">
+
+                            <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="swiper-photo">
+                                <div class="home-animation-circle">
+                                    <div class="gallery-circle gallery-circle-primary">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="ihome_photo swiper-container">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/banner/考勤-1.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/banner/考勤-2.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/banner/考勤-3.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="w_img_one">
+                                                <div class="c-gallery__media">
+                                                    <img class="c-gallery__bg" src="img/banner/考勤-4.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swipet-btn-group swiper-list">
+                                <h4 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: false"
+                                    class="list-title">iHome</h4>
+                                <p uk-scrollspy="cls: uk-animation-slide-bottom; delay: 700; repeat: false"
+                                   class="list-content">為所有人設計的人資系統，將人事管理功能全面整合，節省人資行政作業時間，並落實行動化管理。</p>
+                                <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: false"
+                                     thumbsSlider="" class="swiper-container ihome_list swiper-list-table">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>後台管理</h4>
+                                                <p class="pagination_about">後台輕鬆管理人員</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>行動打卡</h4>
+                                                <p class="pagination_about">線上快速打卡</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>行事曆</h4>
+                                                <p class="pagination_about">班表一目瞭然</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="line"></div>
+                                            <div class="dot"><span></span></div>
+                                            <div class="flow-list">
+                                                <h4>巡邏簽到</h4>
+                                                <p class="pagination_about">異常通報、線上簽到</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="product/ihome.html" class="btn btn-style2">瞭解更多</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--footer-->
+            <div class="section fp-auto-height footer" id="section7">
+                <div class="section-footer">
+                    <!--預約專人諮詢-->
+                    <div class="container" id="contact_us">
+                        <div class="contact_us row">
+                            <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false"
+                                 class="col-sm-6 contact_us_footer">
+                                <i class="ri-phone-line"></i>
+                                <h4>直接電話聯繫我們</h4>
+                                <p>電話客服時間：星期一～星期五 09:00~18:00</p>
+                                <button class="btn btn-circle btn_animation primary hover-left"
+                                        onclick="window.location.href='tel:0423273199'">
+                                    04-2327-3199
+                                </button>
+                            </div>
+                            <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false"
+                                 class="col-sm-6 contact_us_footer">
+                                <i class="ri-mail-open-line"></i>
+                                <h4>填寫表單聯繫我們</h4>
+                                <p>歡迎填寫表單，我們會盡快回覆您！</p>
+                                <button class="btn btn-circle btn_animation primary hover-left"
+                                        onclick="window.location.href='contact.html'">
+                                    馬上預約
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--footers-->
+                    <footer class="footers">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="footer_content">
+                                        <h3>現在可以開始</h3>
+                                        <a href="https://apps.apple.com/tw/developer/ez-tech-ltd/id1068678728"
+                                           target="_blank">
+                                            <img src="img/icon/btn1.png" alt=""/>
+                                        </a>
+                                        <a href="https://play.google.com/store/apps/developer?id=億集科技有限公司"
+                                           target="_blank">
+                                            <img src="img/icon/btn2.png" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col-md-12">
+                                    <div class="copyright_con">
+                                        <div class="row">
+                                            <div class="col logo">
+                                                <img src="img/icon/企業形象-白色.png" alt="">
+                                            </div>
+                                            <div class="col my-auto text-right">
+                                                <p>2021 Copyright by <a href="#">EZ-plus</a> . All Rights Reserved</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <img src="img/footer/footer_mock1.png" class="f-left" alt=""/>
-                    <img src="img/footer/footer_mock2.png" class="f-right" alt=""/>
-                </footer>
+                        <img src="img/footer/footer_mock1.png" class="f-left" alt=""/>
+                        <img src="img/footer/footer_mock2.png" class="f-right" alt=""/>
+                    </footer>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<!--<footer class="full_footer p_absoulte f_footer_one" id="full_footer">
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-6 col-6">
-            <ul class="list-unstyled social_icon align-items-end">
-                <li><a href="#"><i class="ri-line-fill"></i></a></li>
-                <li><a href="#"><i class="ri-facebook-circle-fill"></i></a></li>
-                <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
-            </ul>
-        </div>
-        <div class="col-sm-6 col-6">
-            <div class="pr_details_nav h_slider_nav align-items-end">
-                <span class="prev" id="moveSectionUp"><i class="ri-arrow-up-line"></i></span>
-                <span class="next moveUp" id="moveSectionDown"><i class="ri-arrow-down-line"></i></span>
-            </div>
-        </div>
-    </div>
-</div>
-</footer>-->
+    </full-page>
 
-<!--Back To Top-->
-<button class="scrollToTopBtn"><i class="ri-arrow-up-s-line"></i>️</button>
+    <!--Back To Top-->
+    <button class="scrollToTopBtn"><i class="ri-arrow-up-s-line"></i>️</button>
+</div>
 
 
 <!--============Java Script=============-->
+
 <script>
-    $(function() {
-        $(".headerpage").load("head.html");
+    $(document).ready(function(){
+        $("#header").load("header.html");
     });
 </script>
+<!--共用首頁-->
+<script src="js/head.js"></script>
+<!--vue-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<!--Fullpage-->
+<script src="https://unpkg.com/vue-fullpage.js/dist/vue-fullpage.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                options: {
+                    afterLoad: this.afterLoad,
+                    controlArrows: false,
+                    // navigation: true,
+                    anchors: ['0', '1', '2', '3', '4', '5', '6', '7'],
+                    menu: '#menu',
+                    dragAndMove: true,
+                    scrollOverflow: true,
+                    verticalCentered: true,
+                    autoScrolling: false,
+                },
+            }
+        },
+        methods: {
+            afterLoad: function (origin, destination, direction) {
+                console.log("After load....");
+                console.log(destination);
+            },
+            addSection: function (e) {
+                var newSectionNumber = document.querySelectorAll('.fp-section').length + 1
+
+                // creating the section div
+                var section = document.createElement('div')
+                section.className = 'section'
+                section.innerHTML = `<h3>Section ${newSectionNumber}</h3>`
+
+                // adding section
+                document.querySelector('#fullpage').appendChild(section)
+
+                // creating the section menu element
+                var sectionMenuItem = document.createElement('li')
+                sectionMenuItem.setAttribute('data-menuanchor', 'page' + newSectionNumber)
+                sectionMenuItem.innerHTML = `<a href="#page${newSectionNumber}">Section${newSectionNumber}</a>`
+
+                // adding anchor for the section
+                this.options.anchors.push(`page${newSectionNumber}`)
+
+                // we have to call `update` manually as DOM changes won't fire updates
+                // requires the use of the attribute ref="fullpage" on the
+                // component element, in this case, <full-page>
+                // ideally, use an ID element for that element too
+                this.$refs.fullpage.build()
+            },
+
+            removeSection: function () {
+                var sections = document.querySelector('#fullpage').querySelectorAll('.fp-section')
+                var lastSection = sections[sections.length - 1]
+
+                // removing the last section
+                lastSection.parentNode.removeChild(lastSection)
+
+                // removing the last anchor
+                this.options.anchors.pop()
+
+                // removing the last item on the sections menu
+                var sectionsMenuItems = document.querySelectorAll('#menu li')
+                var lastItem = sectionsMenuItems[sectionsMenuItems.length - 1]
+                lastItem.parentNode.removeChild(lastItem)
+            },
+        }
+    });
+</script>
+
+<!--聯絡我們圓形按鈕-->
 <script>
     const wrapper = document.createElement('div');
 
@@ -2265,7 +2128,7 @@
         contactWrapper.classList.remove('contact-wrapper--open')
     });
 </script>
-<script src="js/head.js"></script>
+
 <!--jquery-->
 <script src="js/jquery-1.12.4.min.js"></script>
 <!-- UIkit JS -->
@@ -2274,9 +2137,6 @@
 <!--swiper-->
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!--fullpage-->
-<script src="js/fullpage/fullpage.js"></script>
-<script src="js/fullpage/fullpage.min.js"></script>
 <!--menu hide-->
 <script>
     var sidemenu = document.querySelector(".sidemenu")
@@ -2320,30 +2180,6 @@
 
     scrollToTopBtn.addEventListener("click", scrollToTop)
     document.addEventListener("scroll", handleScroll)
-</script>
-<!-- fullpage -->
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        // sectionsColor: ['#f4f4f4','#f4f4f4', '#c7e5f0', '#ffe5d4', '#d8f8d3', '#f4f4f4'],
-        anchors: ['0', '1', '2', '3', '4', '5', '6'],
-        menu: '#menu',
-        dragAndMove: true,
-        scrollOverflow: true,
-        verticalCentered: true,
-        autoScrolling: false,
-    });
-
-    $(document).ready(function () {
-        $('#moveSectionUp').click(function (e) {
-            e.preventDefault();
-            $.fn.fullpage.moveSectionUp();
-        });
-
-        $('#moveSectionDown').click(function (e) {
-            e.preventDefault();
-            $.fn.fullpage.moveSectionDown();
-        });
-    })
 </script>
 <!-- swiper -->
 <script type="text/javascript">
@@ -2413,6 +2249,29 @@
         },
         thumbs: {
             swiper: crm2,
+        },
+    });
+
+    var crmtwo2 = new Swiper(".crmtwo_list", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var crmtwo = new Swiper('.crmtwo_photo', {
+        direction: 'vertical',
+        loop: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        thumbs: {
+            swiper: crmtwo2,
         },
     });
 
